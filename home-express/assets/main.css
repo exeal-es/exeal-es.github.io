@@ -1,0 +1,404 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}body{-webkit-text-size-adjust:none}mark{background-color:transparent;color:inherit}input::-moz-focus-inner{border:0;padding:0}input[type="text"],input[type="email"],select,textarea{-moz-appearance:none;-webkit-appearance:none;-ms-appearance:none;appearance:none}
+
+html {
+	font-size: 16pt;
+	background-color: #182935;
+}
+
+@media (min-width: 1200px) {
+	.container{
+		max-width: 1250px;
+	}
+}
+
+.light {
+	background-color: #FFFFFF;
+	color: #182935
+}
+
+.gloaming {
+	background-color: #F1FFF9;
+}
+
+.dark {
+	background-color: #182935;
+	color: #FFFFFF;
+}
+
+.black {
+	background-color: #000000;
+}
+
+section {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+body {
+	font-family: 'Work Sans', Sans-Serif;
+	letter-spacing: 0.02rem;
+	line-height: 1.75rem;
+}
+
+h1 {
+	font-size: 1.875em;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+	font-family: 'Gopher Medium', 'Work Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	margin-bottom: 1.25em;
+}
+
+h2 em {
+	border-bottom: 3px solid #1fe589;
+}
+
+h3 {
+	font-size: 1.375em;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 1.375em;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+	font-family: 'Work Sans', sans-serif;
+}
+
+p {
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+}
+
+p em {
+	font-style: italic;
+	font-weight: bold;
+}
+
+nav {
+	border-style: solid;
+	border-color: #707070;
+	border-bottom-width: 2px;
+	font-size: 1.1em;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+}
+
+.navbar {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.nav-item {
+	margin-left: 3em;
+}
+
+.background.background-01 {
+	background-image: url('img/background-01-right.png'), url('img/background-01-left.png');
+	background-attachment: fixed, fixed;
+	background-position: top right, top left;
+	background-repeat: no-repeat, repeat;
+	background-size: 40em, 128em;
+}
+
+.background.background-02 {
+	background-image: url('img/background-02.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+.background.background-03 {
+	background-image: url('img/background-03.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+.icons {
+	cursor: default;
+	padding: 0;
+	letter-spacing: 0;
+}
+
+.icons li {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+}
+
+.icons li a {
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+}
+
+.icons li a svg {
+	display: block;
+	position: relative;
+	-moz-transition: fill 0.25s ease;
+	-webkit-transition: fill 0.25s ease;
+	-ms-transition: fill 0.25s ease;
+	transition: fill 0.25s ease;
+}
+
+.icons li a + svg {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	-moz-pointer-events: none;
+	-webkit-pointer-events: none;
+	-ms-pointer-events: none;
+	pointer-events: none;
+	-moz-transition: fill 0.25s ease, stroke 0.25s ease;
+	-webkit-transition: fill 0.25s ease, stroke 0.25s ease;
+	-ms-transition: fill 0.25s ease, stroke 0.25s ease;
+	transition: fill 0.25s ease, stroke 0.25s ease;
+}
+
+.icons li a .label {
+	display: none;
+}
+
+#icons02 {
+	font-size: 1em;
+	width: calc(100% + 1.25rem);
+	margin-left: -0.625rem;
+}
+
+#icons02 li {
+	margin: 0.625rem;
+}
+
+#icons02 li a {
+	border-radius: 2rem;
+	width: 2em;
+	height: 2em;
+}
+
+#icons02 li a svg {
+	width: 60%;
+	height: 60%;
+}
+
+#icons02 a svg {
+	fill: #FFFFFF;
+}
+
+#icons02 a {
+	border: solid 1px #FFFFFF;
+}
+
+#icons02 a:hover {
+	border-color: #1fe589 !important;
+}
+
+#icons02 a:hover svg {
+	fill: #1fe589 !important;
+}
+
+#icons02 .n01:hover {
+	border-color: #1fe589 !important;
+}
+
+#icons02 .n01:hover svg {
+	fill: #1fe589 !important;
+}
+
+div.service {
+	border-style: solid;
+	border-color: #1fe589;
+	border-width: 4px;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	height:100%;
+}
+
+div.service h3 {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+div.service a {
+	margin: auto;
+}
+
+img.avatar {
+	width: 6em;
+	height: 6em;
+}
+
+.form-control {
+	border-color: #1fe589;
+	border-width: 2px;
+	border-radius: 0px;
+}
+
+.form-control:focus {
+  border-color: #1fe589;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(31, 229, 137, 0.6);
+}
+
+.btn-submit {
+	border-width: 0px;
+	border-radius: 0px;
+	background-color: #1fe589;
+	width: 100%;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	color: #FFFFFF;
+}
+
+.btn-submit:active {
+	background-color: #1fe589;
+	border-color: #1fe589;
+}
+
+@font-face {
+	font-family: 'Gopher Medium';
+	src: url('font/gopher-medium-webfont.woff2') format('woff2'),
+			 url('font/gopher-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Gopher Bold';
+	src: url('font/gopher-bold-webfont.woff2') format('woff2'),
+			 url('font/gopher-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Gopher Regular';
+	src: url('font/gopher-regular-webfont.woff2') format('woff2'),
+			 url('font/gopher-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+img.arrow-down {
+	height: 4em;
+	width: auto;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+img.arrow-right {
+	height: auto;
+	width: 3.5em;
+}
+
+a.button {
+	display: block;
+	border-style: solid;
+	border-color: #E6AD1C;
+	background-color: #E6AD1C;
+	border-width: 3px;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	text-decoration: none;
+	width: fit-content;
+	font-size: 1.3em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	padding-left: 1.4em;
+	padding-right: 1.4em;
+	border-radius: 2rem;
+	justify-content: center;
+  align-items: center;
+}
+
+.dark a.button {
+	color: #182935;
+}
+
+.light a.button {
+	color: #FFFFFF;
+}
+
+.gloaming a.button {
+	color: #FFFFFF;
+}
+
+a.button:after {
+	float: right;
+	margin-left: .75em;
+	margin-top: 4px;
+}
+
+.dark a.button:after {
+	content: url('img/arrow-cta-dark.svg');
+}
+
+.light a.button:after {
+	content: url('img/arrow-cta-white.svg');
+}
+
+.gloaming a.button:after {
+	content: url('img/arrow-cta-white.svg');
+}
+
+a.button-hollow {
+	display: block;
+	border-style: solid;
+	border-color: #E6AD1C;
+	border-width: 3px;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	text-decoration: none;
+	width: fit-content;
+	font-size: 1.3em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	padding-left: 1.4em;
+	padding-right: 1.4em;
+	border-radius: 2rem;
+	justify-content: center;
+	align-items: center;
+	color: #E6AD1C;
+}
+
+a.button-hollow:after {
+	float: right;
+	margin-left: .75em;
+	margin-top: 4px;
+	content: url('img/arrow-cta-yellow.svg');
+}
+
+.footer {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
