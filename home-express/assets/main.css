@@ -6,7 +6,7 @@ html {
 }
 
 @media (min-width: 1200px) {
-	.container{
+	.container {
 		max-width: 1250px;
 	}
 }
@@ -63,7 +63,6 @@ h2 em {
 
 h3 {
 	font-size: 1.375em;
-	margin-top: 1.25em;
 	margin-bottom: 1.25em;
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 	font-style: italic;
@@ -107,9 +106,19 @@ nav {
 .background.background-01 {
 	background-image: url('img/background-01-right.png'), url('img/background-01-left.png');
 	background-attachment: fixed, fixed;
-	background-position: top right, top left;
-	background-repeat: no-repeat, repeat;
-	background-size: 40em, 128em;
+	background-position: top right, top;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 40em, 100em;
+}
+
+@media (max-width: 1400px) {
+	.background.background-01 {
+		background-image: url('img/background-01-right.png');
+		background-attachment: fixed;
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 40em;
+	}
 }
 
 .background.background-02 {
@@ -240,7 +249,8 @@ div.service {
 	text-align: center;
 	align-items: center;
 	justify-content: center;
-	height:100%;
+	height: 100%;
+	position: relative;
 }
 
 div.service h3 {
@@ -401,4 +411,24 @@ a.button-hollow:after {
 .footer {
 	padding-top: 3em;
 	padding-bottom: 3em;
+}
+
+.service > .flap {
+	display: block;
+	border-top-right-radius: 50%;
+	border-color: #1fe589;
+	border-right-style: solid;
+	border-top-style: solid;
+	border-width: 4px;
+	width: 10em;
+	padding-bottom: 10em;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+}
+
+@media (min-width: 992px) {
+	div.container img.img-fluid {
+		padding: 1.5em;
+	}
 }
