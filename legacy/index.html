@@ -61,11 +61,11 @@
   <div class="container">
     <div class="row mt-3 mb-3">
       <div class="col-md-7 mb-3">
-        <h1>Legacy Code Training</h1>
+        <h1 class="arrow-right">Legacy Code Training</h1>
         <h2>No tener los conocimientos necesarios para modificar <em>Legacy Code</em> te está haciendo perder mucho <em>tiempo, esfuerzo y confianza</em> dentro del equipo de tu empresa.</h2>
         <a class="button" href="#inscribete">Inscríbete</a>
       </div>
-      <div class="col-md-5 photo">
+      <div class="col-md-5 photo d-none d-sm-none d-md-block">
 				<img class="img-fluid" src="/assets/img/legacy/code-snippets.png" />
 			</div>
     </div>
@@ -96,7 +96,7 @@
         <p>Es lo que hemos aprendido con la experiencia y nuestros alumnos lo corroboran.</p>
         <p><a data-scroll="sect-testimonials" href="#"><img class="arrow-down" src="/assets/img/arrow-down-secondary.svg" /></a></p>
       </div>
-      <div class="col-md-5 photo">
+      <div class="col-md-5 photo d-none d-sm-none d-md-block">
 				<img class="img-fluid" src="/assets/img/legacy/karateka.png" />
 			</div>
     </div>
@@ -130,29 +130,41 @@
         <h2>El programa <em>&quot;Legacy Code Training&quot;</em> de Exeal es diferente.</h2>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-3">
       <div class="col-md-4">
-        <img src="/assets/img/legacy/icons/icon-01.svg" />
+        <div class="icon-container">
+          <img src="/assets/img/legacy/icons/icon-01.svg" />
+        </div>
         <p>Durante <em>2 días</em> (8 horas cada día) vas a trabajar teoría y práctica sobre un proyecto de Legacy Code.</p>
       </div>
       <div class="col-md-4">
-        <img src="/assets/img/legacy/icons/icon-02.svg" />
+        <div class="icon-container">
+          <img src="/assets/img/legacy/icons/icon-02.svg" />
+        </div>
         <p><span>El formato del programa se basa en <em>“pair programming”</em> mediante <em>ejercicios de katas</em>, por videoconferencia en el que vas a poder consultar al tutor sobre cualquier duda o pregunta que te surja.</p>
       </div>
       <div class="col-md-4">
-        <img src="/assets/img/legacy/icons/icon-03.svg" />
+        <div class="icon-container">
+          <img src="/assets/img/legacy/icons/icon-03.svg" />
+        </div>
         <p>El programa intensivo es <em>personalizado</em> y <em>adaptable</em> a cada persona o grupo, por ese motivo y para ofrecer el mejor servicio nuestras plazas están limitadas a <em>12 personas</em>.</p>
       </div>
       <div class="col-md-4">
-        <img src="/assets/img/legacy/icons/icon-04.svg" />
+        <div class="icon-container">
+          <img src="/assets/img/legacy/icons/icon-04.svg" />
+        </div>
         <p>Podrás trabajar sobre <em>tu propio proyecto de Legacy Code</em> siempre que sea open source o, en el caso de las empresas, el propio código de la misma.</p>
       </div>
       <div class="col-md-4">
-        <img src="/assets/img/legacy/icons/icon-05.svg" />
+        <div class="icon-container">
+          <img src="/assets/img/legacy/icons/icon-05.svg" />
+        </div>
         <p>Una vez finalizado el programa de 2 días tendrás <em>acceso al grupo privado de Slack</em> “Exeal alumni”, para que junto al equipo y alumnos de otras ediciones puedas resolver tus dudas.</p>
       </div>
       <div class="col-md-4">
-        <img src="/assets/img/legacy/icons/icon-06.svg" />
+        <div class="icon-container">
+          <img src="/assets/img/legacy/icons/icon-06.svg" />
+        </div>
         <p>Te daremos <em>consejos y sugerencias</em>, una vez acabado el programa, para que puedas enfrentarte tu solo al proyecto de la empresa sobre el que estás trabajando.</p>
       </div>
     </div>
@@ -169,16 +181,20 @@
         <h2>En este programa intensivo 100% online, por videoconferencia, <em>vas a aprender</em> a:</h2>
       </div>
     </div>
-    <ul class="ticked">
-      <li><span>Identificar errores existentes en Legacy Code.</span></li>
-      <li>Entender cómo romper dependencias en código heredado.</li>
-      <li>Diferentes técnicas para la refactorización del código.</li>
-      <li>Añadir nuevas funcionalidades con éxito o corregir errores sobre Legacy Code.</li>
-      <li>Reglas que te ayudarán a escribir y mejorar el código heredado.</li>
-      <li>Cómo y cuando usar los diferentes test para identificar el código que debes modificar.</li>
-      <li>Separar módulos que están unidos y no se puede probar.</li>
-      <li>Cómo aplicar con éxito estas herramientas a</li>
-    </ul>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="row ticked">
+          <li class="col-md-6">Identificar errores existentes en Legacy Code.</li>
+          <li class="col-md-6">Entender cómo romper dependencias en código heredado.</li>
+          <li class="col-md-6">Diferentes técnicas para la refactorización del código.</li>
+          <li class="col-md-6">Añadir nuevas funcionalidades con éxito o corregir errores sobre Legacy Code.</li>
+          <li class="col-md-6">Reglas que te ayudarán a escribir y mejorar el código heredado.</li>
+          <li class="col-md-6">Cómo y cuando usar los diferentes test para identificar el código que debes modificar.</li>
+          <li class="col-md-6">Separar módulos que están unidos y no se puede probar.</li>
+          <li class="col-md-6">Cómo aplicar con éxito estas herramientas a</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -189,9 +205,38 @@
         <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
       </div>
       <div class="col-md-10 col-sm-12">
-        <h2>Durante 2 días (8 horas cada día) vas a trabajar teoría y práctica sobre un <em>proyecto de Legacy Code</em>.</h2>
+        <h2>Durante <em>2 días</em> (8 horas cada día) vas a trabajar teoría y práctica sobre un <em>proyecto de Legacy Code</em>.</h2>
         <p>Esto es lo que vas a aprender durante la duración del programa.</p>
-        
+
+        <div class="bordered" data-toggle="collapse" href="#day1program">
+          <div class="dropdown"></div>
+          <h2>Descubre el programa del Día 1</h2>
+          <a href="#"></a>
+        </div>
+        <div class="collapse bordered expanded" id="day1program">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget pellentesque dui, eu euismod nunc. Duis et neque urna. Aliquam a hendrerit turpis. Donec consequat ex risus, eu consectetur nunc hendrerit non. Nunc a nulla metus. Donec semper odio at bibendum vestibulum. Integer nunc mi, rutrum commodo mi id, faucibus varius tortor. Vivamus auctor ante eget nibh ultrices ornare. Cras dictum nec lorem non feugiat. In hac habitasse platea dictumst.</p>
+          <ul>
+            <li>- Foo</li>
+            <li>- Bar</li>
+            <li>- Baz</li>
+          </ul>
+          <p>Suspendisse nec pharetra libero, eu vulputate magna. Vivamus risus odio, luctus quis nunc vel, molestie tincidunt odio. Vestibulum imperdiet bibendum tellus, ut dictum eros feugiat non. In vehicula, dolor nec gravida dictum, lacus dolor faucibus enim, eget euismod risus augue ut lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis facilisis magna. Phasellus sagittis nisl vitae libero tempus, a interdum purus sagittis. Integer et purus sed metus efficitur tempor eu ac nibh. In aliquam non dolor sit amet facilisis. Sed quis accumsan tortor.</p>
+          <p>Duis id pellentesque tellus. Nulla commodo dapibus lectus, eu pharetra massa mattis id. Nunc sed lacus sit amet nisi eleifend vehicula sed eget diam. Nulla at ultricies justo, ac elementum justo. Nullam in odio quis ante tempus imperdiet at a diam. Mauris pretium nisl tortor, quis feugiat arcu blandit eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus pharetra est ut ullamcorper cursus. Phasellus sit amet nunc fringilla, bibendum leo in, ornare ex. Vestibulum nulla quam, finibus et fermentum non, accumsan at lacus. Praesent pretium bibendum luctus. Aenean pellentesque posuere nisi, id lacinia tortor laoreet maximus. Donec venenatis, erat sit amet faucibus mattis, neque nibh ultrices dolor, a sollicitudin lorem nunc id nibh. Nam et turpis dolor.</p>
+          <p>Cras in luctus dui. Quisque libero erat, efficitur a turpis et, malesuada malesuada ipsum. Etiam viverra dictum nisl, nec ornare nibh mollis quis. Integer non finibus lacus. Vestibulum vel dui in diam efficitur ornare consequat ut sapien. Morbi a felis eleifend, hendrerit neque quis, maximus quam. Cras tellus enim, aliquam eget nunc eu, accumsan vulputate magna. Nullam tincidunt justo eu elementum luctus.</p>
+        </div>
+
+        <div class="bordered mt-3" data-toggle="collapse" href="#day2program">
+          <div class="dropdown"></div>
+          <h2>Descubre el programa del Día 2</h2>
+          <a href="#"></a>
+        </div>
+        <div class="collapse bordered expanded" id="day2program">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a sapien id purus vestibulum varius. Nam eleifend dolor non sem accumsan sagittis. Vivamus eleifend ipsum iaculis leo facilisis fermentum. Ut pretium volutpat sem, eget vulputate mauris faucibus at. Mauris varius faucibus urna vitae sodales. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean purus nunc, pellentesque pulvinar congue eget, mollis in arcu.</p>
+          <p>Aliquam erat volutpat. Phasellus erat metus, congue ac nibh a, bibendum dignissim mauris. In dignissim lorem vitae metus convallis tempor. Cras tincidunt rutrum nisl, sit amet malesuada lacus elementum vitae. Curabitur eu pharetra nulla. Nam et finibus quam, quis ultrices odio. Donec laoreet finibus urna, quis tempus turpis vestibulum a. Aenean tellus urna, sodales sed sem in, semper commodo ligula. Aenean ac pellentesque velit. Mauris ut sollicitudin nisl. Donec odio nulla, feugiat in lacus lacinia, ultrices sagittis dolor.</p>
+          <p>Morbi posuere sem eu lectus maximus, at tempor leo accumsan. Donec ultricies luctus orci, at fringilla eros fermentum id. Donec purus eros, tempor et molestie quis, feugiat non turpis. Nulla et eros vestibulum, sodales tellus at, vulputate ex. Cras porttitor felis dolor, ut faucibus sapien egestas eu. Fusce nulla libero, tempor at molestie quis, posuere vel velit. Ut erat sem, pulvinar eu nisl a, maximus finibus tortor. Vestibulum vel mi enim. Nunc sollicitudin velit id erat vehicula, eget aliquet est aliquam.  </p>
+        </div>
+
+        <p><a class="button" href="#">Reservar plaza</a></p>
       </div>
     </div>
   </div>
@@ -204,21 +249,34 @@
         <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
       </div>
       <div class="col-md-10 col-sm-12">
-        <h2>Si eres empresa, esto te puede interesar</h2>
+        <h2>Si eres <em>empresa</em>, esto te puede interesar.</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
-        <p>Tendrás la posibilidad de elegir si quieres hacerlo online o prefieres que nos desplacemos a vuestras oficinas de manera presencial.</p>
+      <div class="col-md-4 mb-3">
+        <div class="service">
+          <div class="flap"></div>
+          <p>Tendrás la posibilidad de elegir si quieres hacerlo online o prefieres que nos desplacemos a vuestras oficinas de manera presencial.</p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <p>El formato del programa se basa en &quot;pair programming&quot; mediante ejercicios de katas, por videoconferencia, en el que vas a poder consultar al tutor sobre cualquier duda o pregunta que te surja.</p>
+      <div class="col-md-4 mb-3">
+        <div class="service">
+          <div class="flap"></div>
+          <p>El formato del programa se basa en &quot;pair programming&quot; mediante ejercicios de katas, por videoconferencia, en el que vas a poder consultar al tutor sobre cualquier duda o pregunta que te surja.</p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <p>Habrá un 3o día 100% práctico en el que trabajaremos sobre el Legacy Code de la empresa para corregir fallos y añadir funcionalidades.</p>
+      <div class="col-md-4 mb-3">
+        <div class="service">
+          <div class="flap"></div>
+          <p>Habrá un 3<sup>er</sup> día 100% práctico en el que trabajaremos sobre el Legacy Code de la empresa para corregir fallos y añadir funcionalidades.</p>
+        </div>
       </div>
     </div>
-    <a class="button" href="#empresas">Quiero más información sobre el programa para empresas</a>
+    <div class="row">
+      <div class="col-md-12">
+        <p><a class="button center-horizontal" href="#empresas">Quiero saber más</a></p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -239,7 +297,7 @@
   </div>
 </section>
 
-<section class="gloaming">
+<section class="gray">
   <div class="container">
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
@@ -247,7 +305,16 @@
       </div>
       <div class="col-md-10 col-sm-12">
         <h2>Preguntas frecuentes</h2>
-        
+        <dl class="faq">
+          <dt data-toggle="collapse" href="#question1">¿Hay alguna garantía?</dt>
+          <dd class="collapse" id="question1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget pellentesque dui, eu euismod nunc.</dd>
+      
+          <dt data-toggle="collapse" href="#question2">¿Se puede pagar a plazos?</dt>
+          <dd class="collapse" id="question2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget pellentesque dui, eu euismod nunc.</dd>
+      
+          <dt data-toggle="collapse" href="#question3">¿Cómo se hacen los pagos?</dt>
+          <dd class="collapse" id="question3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget pellentesque dui, eu euismod nunc.</dd>
+        </dl>
       </div>
     </div>
   </div>
