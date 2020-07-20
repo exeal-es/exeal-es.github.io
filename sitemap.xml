@@ -3,11 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/</loc>
+    <lastmod>2020-07-19T16:14:05+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/legacy/</loc>
+    <lastmod>2020-07-19T16:14:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
   </url>
   
   <url>
