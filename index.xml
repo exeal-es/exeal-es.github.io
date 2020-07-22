@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Exeal</title>
+    <title>Formación y coaching para desarrolladores on Exeal</title>
     <link>/</link>
-    <description>Recent content on Exeal</description>
+    <description>Recent content in Formación y coaching para desarrolladores on Exeal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <lastBuildDate>Sun, 19 Jul 2020 16:14:05 +0200</lastBuildDate>
@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Legacy</title>
+      <title>Legacy Code Training</title>
       <link>/legacy/</link>
       <pubDate>Sun, 19 Jul 2020 16:14:05 +0200</pubDate>
       
