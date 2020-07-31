@@ -3,12 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/blog/</loc>
+    <lastmod>2020-07-19T16:14:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/coding/</loc>
+    <lastmod>2020-07-19T16:14:05+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2020-07-19T16:14:05+02:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/legacy/</loc>
+    <lastmod>2020-07-19T16:14:05+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/legacy/</loc>
+    <lastmod>2020-07-19T16:14:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2020/07/lorem-ipsum/</loc>
+    <lastmod>2020-07-19T16:14:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/software/</loc>
+    <lastmod>2020-07-19T16:14:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
     <lastmod>2020-07-19T16:14:05+02:00</lastmod>
   </url>
   
@@ -19,10 +49,6 @@
   
   <url>
     <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
   </url>
   
 </urlset>

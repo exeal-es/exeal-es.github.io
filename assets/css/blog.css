@@ -1,0 +1,218 @@
+.hero {
+  height: 10em;
+  min-height: 700px;
+  background-image: url('/assets/img/blog/blog-cover-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-mask {
+  background: rgba(24,41,53,0.75);
+  height: 100%;
+}
+
+.hero h1 {
+  color: #FFFFFF;
+  font-size: 3rem;
+  font-weight: normal;
+	font-style: normal;
+  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  line-height: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.hero h2 {
+  color: #E4E4E4;
+  font-size: 1.5rem;
+  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.hero h1 span.underline {
+  border-bottom: 4px solid #1fe589;
+}
+
+.hero p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ul.tags {
+  margin: 1em 0em;
+}
+
+ul.tags li {
+  display: inline-block;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  padding: 0em 0.5em;
+  margin: 0.5em 1em;
+}
+
+ul.tags.tags-light li {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+ul.tags.tags-dark li {
+  color: #182935;
+  border-color: #182935;
+}
+
+ul.tags.tags-light a {
+  color: #FFFFFF;
+}
+
+ul.tags.tags-light li:hover a {
+  color: #182935;
+  transition: 0.2s;
+}
+
+ul.tags.tags-light li:hover {
+  background-color: #FFFFFF;
+  transition: 0.2s;
+}
+
+ul.tags.tags-dark a {
+  color: #182935;
+}
+
+ul.tags.tags-dark li:hover a {
+  color: #FFFFFF;
+  transition: 0.2s;
+}
+
+ul.tags.tags-dark li:hover {
+  background-color: #182935;
+  transition: 0.2s;
+}
+
+ul.tags a:hover {
+  text-decoration: none;
+}
+
+pre {
+  border-style: solid;
+	border-color: #1fe589;
+  border-width: 4px;
+  margin: 0em 2rem;
+  padding: 2em 2em;
+  font-family: 'JetBrainsMono-Regular', 'Work Sans', sans-serif;
+}
+
+div.post-author {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #1fe589;
+  margin: 2em 0em;
+}
+
+.post-author .customer-name {
+  margin: 2em 0em;
+}
+
+.post-author .customer-name h2 {
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  text-align: left;
+}
+
+.post-author .customer-name {
+  max-width: 30rem;
+}
+
+.post-card {
+  background-image: url('/assets/img/blog/covers/torii.png');
+}
+
+.post-card-inner {
+  background: rgba(24,41,53,0.75);
+  height: 100%;
+  padding: 2rem;
+  color: #FFFFFF;
+  height: 22em;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.post-card-inner:hover {
+  background: rgba(24,41,53,1.0);
+  transition: 0.2s;
+}
+
+.post-card ul.tags {
+  font-size: 0.75rem;
+  margin: 0px;
+}
+
+.post-card p {
+  margin-top: 0.5em;
+}
+
+.post-card h2 {
+  margin-bottom: 0em;
+}
+
+.post-card ul.tags li {
+  display: inline;
+  padding: 0.25em 0.5em;
+  margin: 0.25em 0em;
+}
+
+.post-card p.author {
+  border-top: #1fe589;
+  border-top-style: solid;
+  border-top-width: 4px;
+  font-size: 0.75em;
+  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+}
+
+.post-card .post-title {
+  position: absolute;
+  bottom: 0;
+  left: 2em;
+  right: 2em;
+}
+
+.post-card a {
+  color: white;
+}
+
+.post-card a:hover {
+  text-decoration: none;
+}
+
+.post-card-detail {
+  display: none;
+  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+}
+
+div.post-card-reading-time {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  font-size: 0.85em;
+  color: #1fe589;
+
+}
+
+.post-card-summary {
+  font-size: 1.15em;
+}
+
+.post-card:hover .post-card-detail {
+  display: block;
+  transition: 0.2s;
+}
+
+.post-card:hover .post-card-cover {
+  display: none;
+  transition: 0.2s;
+}

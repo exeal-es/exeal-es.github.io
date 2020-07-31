@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Lorem ipsum dolor sit amet, consectetur adipiscing elit</title>
+      <link>/blog/2020/07/lorem-ipsum/</link>
+      <pubDate>Sun, 19 Jul 2020 16:14:05 +0200</pubDate>
+      
+      <guid>/blog/2020/07/lorem-ipsum/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu metus non purus tincidunt tristique lobortis sit amet mi.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Términos y condiciones del Legacy Code Training</title>
       <link>/legacy/terminos-y-condiciones/</link>
       <pubDate>Sun, 19 Jul 2020 16:14:05 +0200</pubDate>
