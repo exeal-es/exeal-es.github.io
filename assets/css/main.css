@@ -150,6 +150,14 @@ nav.dark {
 	background-repeat: repeat;
 }
 
+.background.background-05 {
+	background-image: url('../img/background-05.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
 .background.background-01-simple {
 	background-image: url('../img/background-01-left.png');
 	background-attachment: fixed;
@@ -396,6 +404,10 @@ a.button {
   align-items: center;
 }
 
+a.button.expand {
+	width: 100%;
+}
+
 .dark a.button {
 	color: #182935;
 }
@@ -445,7 +457,7 @@ a.button-hollow {
 	color: #E6AD1C;
 }
 
-a.button-hollow:after {
+.button-hollow:after {
 	float: right;
 	margin-left: .75em;
 	margin-top: 4px;
@@ -458,7 +470,7 @@ a.button-hollow:after {
 }
 
 @media (min-width: 992px) {
-	div.container img.img-fluid {
+	div.container img.img-fluid.pad {
 		padding: 1.5em;
 	}
 }
@@ -686,4 +698,170 @@ div.horizontal-center {
 
 div.thank-you-hero {
 	height: 25rem;
+}
+
+img.client-logo {
+	padding: 1.5rem;
+	max-width: 10rem;
+	filter: grayscale(100%);
+	opacity: 0.5;
+}
+
+.course-card {
+	box-shadow: 0.5rem 0.5rem 1rem -1rem rgba(0,0,0,0.75);
+	margin-bottom: 2rem;
+}
+
+.course-header {
+	background-image: url('/assets/img/blog/posts/pain-developer.jpeg');
+  background-size: cover;
+  background-position: center;
+	background-repeat: no-repeat;
+	min-height: 16rem;
+}
+
+.course-body {
+	padding: 1.5rem 1.5rem;
+}
+
+.course-body h3 {
+	font-size: 1.5em;
+	font-style: normal;
+	margin-bottom: 1.25rem;
+}
+
+.course-body p.level {
+	color: #909090;
+	font-size: 1em;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	margin-bottom: 1.25rem;
+	margin-top: 0rem;
+}
+
+.course-body p.description {
+	color: #707070;
+	font-size: 1rem;
+	margin-bottom: 1.25rem;
+	margin-top: 0rem;
+	line-height: 150%;
+}
+
+.course-body li {
+	color: #909090;
+	font-size: 0.85rem;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	margin-bottom: 0.5rem;
+	margin-top: 0rem;
+}
+
+.course-body ul {
+	margin-bottom: 1.25rem;
+}
+
+.courses-tagline {
+	background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+	background-image: url('/assets/img/blog/blog-cover-1.png');
+}
+
+.courses-tagline-inner {
+	height: 100%;
+  padding: 2rem;
+  color: #FFFFFF;
+  height: 22em;
+  position: relative;
+}
+
+.courses-tagline h1 {
+	margin-left: 2rem;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-size: 2rem;
+  max-width: 25rem;
+}
+
+.course-header div.featured-course {
+	display: block;
+	background-color: #E6AD1C;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	color: #FFFFFF;
+	padding: 0.25rem 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+img.mockup-brochure {
+	max-height: 14rem;
+}
+
+.course-page-tagline h1 {
+	margin-top: 0rem;
+}
+
+label {
+  font-size: 0.85rem;
+  color: #707070;
+  line-height: 100%;
+}
+
+.dark .form-control {
+	border-color: white;
+	background-color: transparent;
+}
+
+input.button {
+	display: block;
+	border-style: solid;
+	border-color: #E6AD1C;
+	background-color: #E6AD1C;
+	border-width: 3px;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	text-decoration: none;
+	width: 100%;
+	font-size: 1.3em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	padding-left: 1.4em;
+	padding-right: 1.4em;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+ul.course-features li:before {
+	content: url('/assets/img/icon-markup-green-xs.svg');
+	width: 1rem;
+	display: inline-block;
+	margin-right: 0.3em;
+	position: relative;
+	top: 0.15em;
+}
+
+i.icon {
+	display: inline-block;
+	margin-right: 0.25rem;
+	position: relative;
+	top: 0.15em;
+}
+
+i.i-level-black {
+	width: 24px;
+	height: 24px;
+	background-image: url('/assets/img/icon-markup-black-s.svg');
+}
+
+i.i-level-grey {
+	width: 24px;
+	height: 24px;
+	background-image: url('/assets/img/icon-markup-grey-s.svg');
+}
+
+img.tagline-img-max-height {
+	height: 100%;
+}
+
+img.icon-mid {
+	max-height: 6rem;
+	margin-bottom: 1rem;
 }
