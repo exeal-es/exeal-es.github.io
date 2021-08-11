@@ -1,5 +1,70 @@
-<!doctype html><html lang=es><head><meta charset=utf-8><title>Gestiona los errores de tus APIs web como un pro | Exeal</title><meta name=description content="La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y darle un punto de calidad de vida a los usuarios de la misma."><meta name=author content="Exeal"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta property="og:title" content="Gestiona los errores de tus APIs web como un pro"><meta property="og:description" content="La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y darle un punto de calidad de vida a los usuarios de la misma."><meta property="og:type" content="article"><meta property="og:url" content="https://www.exeal.com/blog/2020/09/gestiona-los-errores-de-tus-apis-web-como-un-pro/"><meta property="og:image" content="https://www.exeal.com/assets/img/blog/posts/controlled-explosion.jpg"><meta property="article:published_time" content="2020-09-04T00:00:00+02:00"><meta property="article:modified_time" content="2020-09-04T00:00:00+02:00"><meta itemprop=name content="Gestiona los errores de tus APIs web como un pro"><meta itemprop=description content="La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y darle un punto de calidad de vida a los usuarios de la misma."><meta itemprop=datePublished content="2020-09-04T00:00:00+02:00"><meta itemprop=dateModified content="2020-09-04T00:00:00+02:00"><meta itemprop=wordCount content="1551"><meta itemprop=image content="https://www.exeal.com/assets/img/blog/posts/controlled-explosion.jpg"><meta itemprop=keywords content="apis,netcore,csharp,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://www.exeal.com/assets/img/blog/posts/controlled-explosion.jpg"><meta name=twitter:title content="Gestiona los errores de tus APIs web como un pro"><meta name=twitter:description content="La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y darle un punto de calidad de vida a los usuarios de la misma."><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css integrity=sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm crossorigin=anonymous><link rel=stylesheet href=https://www.exeal.com/scss/main.css><link rel=stylesheet href=https://www.exeal.com/scss/blog.css><link rel=icon type=image/png href=/assets/img/favicon.png><link rel=apple-touch-icon href=/assets/img/apple-touch-icon.png><script async src="https://www.googletagmanager.com/gtag/js?id=UA-172984297-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-172984297-1');</script><script type=text/javascript id=hs-script-loader async defer src=//js.hs-scripts.com/8231847.js></script></head><body><nav class="navbar navbar-expand-lg navbar-shrink"><div class=container><a href=/blog class=navbar-brand><img src=/assets/img/blog/logo-blog.svg alt="Exeal Blog"></a></div></nav><header class="hero hero-bg-img" style=background-image:url(/assets/img/blog/posts/controlled-explosion.jpg)><div class="hero-bg-img-mask bg-mask"><div class="container h-100"><div class="row h-100 align-items-center"><div class="col-12 text-center"><ul class="tags tags-light"><li><a href=https://www.exeal.com/tags/apis/>#apis</a></li><li><a href=https://www.exeal.com/tags/netcore/>#netcore</a></li><li><a href=https://www.exeal.com/tags/csharp/>#csharp</a></li></ul><h1><span class=underline>Gestiona los errores de tus APIs web como un pro</span></h1><h2>Pedro Pardal</h2><p class=date>2020/09/04</p><p><a data-scroll=sect-body href=#><img class=arrow-down src=/assets/img/arrow-down-secondary.svg></a></p></div></div></div></div></header><section id=sect-body><div class=container><article><p>La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y <strong>darle un punto de calidad de vida a los usuarios de la misma</strong>.</p><p>Aún así, son muchos los proveedores que descuidan este aspecto, y no es raro encontrar APIs de terceros con las que la integración se complica. Escenarios como errores no documentados, información insuficiente para diagnosticar los problemas, representación inconsistente que dificulta la integración&mldr; son por desgracia bastante comunes.</p><h2 id=un-estándar-para-dominarlos-a-todos>Un estándar para dominarlos a todos</h2><p>Prueba de que esto es un problema, es que la <strong>existe un estándar RFC</strong> elaborado por la <a href=https://www.ietf.org/>IETF</a> para representar errores devueltos por APIs web HTTP: <a href=https://tools.ietf.org/html/rfc7807>Problem Details for HTTP APIs</a>.</p><p>Adoptar un estándar como este tiene numerosos beneficios, entre los que se incluyen:</p><ul><li>No hace falta que diseñemos una representación de los errores para cada API que hagamos, ya <strong>tenemos un estándar que podemos usar</strong>. Además, seguramente está mejor pensado que una solución ad-hoc a la que podamos llegar nosotros mismos.</li><li>Es altamente probable encontrar <strong>herramientas como frameworks o librerías que nos faciliten la vida</strong>. Tanto desde nuestro punto de vista como proveedor de la API a la hora de implementarla, como para nuestro cliente consumidor, podrá beneficiarse de estas herramientas para agilizar la integración.</li></ul><p>Adicionalmente, una de las ventajas concretas de este estándar es que nos permite una <strong>representación más granular</strong> de los errores más allá del status code HTTP de la respuesta, mediante tipos y detalles de error, tal como veremos más adelante.</p><h2 id=qué-pinta-tiene>¿Qué pinta tiene?</h2><p>El estándar define el formato de las respuestas de error de nuestra API. Estas deberían verse parecidas al siguiente snippet (extraído del propio RFC):</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=color:#960050;background-color:#1e0010>HTTP/</span><span style=color:#ae81ff>1.1</span> <span style=color:#ae81ff>403</span> <span style=color:#960050;background-color:#1e0010>Forbidden</span>
+<!doctype html><html lang=es>
+<head><meta charset=utf-8>
+<title>Gestiona los errores de tus APIs web como un pro | Exeal</title>
+<meta name=description content="La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y darle un punto de calidad de vida a los usuarios de la misma.">
+<meta name=author content="Exeal">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta property="og:title" content="Gestiona los errores de tus APIs web como un pro">
+<meta property="og:description" content="La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y darle un punto de calidad de vida a los usuarios de la misma.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.exeal.com/blog/2020/09/gestiona-los-errores-de-tus-apis-web-como-un-pro/"><meta property="og:image" content="https://www.exeal.com/assets/img/blog/posts/controlled-explosion.jpg"><meta property="article:section" content="blog">
+<meta property="article:published_time" content="2020-09-04T00:00:00+02:00">
+<meta property="article:modified_time" content="2020-09-04T00:00:00+02:00">
+<meta itemprop=name content="Gestiona los errores de tus APIs web como un pro">
+<meta itemprop=description content="La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y darle un punto de calidad de vida a los usuarios de la misma."><meta itemprop=datePublished content="2020-09-04T00:00:00+02:00">
+<meta itemprop=dateModified content="2020-09-04T00:00:00+02:00">
+<meta itemprop=wordCount content="1551"><meta itemprop=image content="https://www.exeal.com/assets/img/blog/posts/controlled-explosion.jpg">
+<meta itemprop=keywords content="apis,netcore,csharp,"><meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://www.exeal.com/assets/img/blog/posts/controlled-explosion.jpg">
+<meta name=twitter:title content="Gestiona los errores de tus APIs web como un pro">
+<meta name=twitter:description content="La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y darle un punto de calidad de vida a los usuarios de la misma.">
+<link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css integrity=sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm crossorigin=anonymous>
+<link rel=stylesheet href=https://www.exeal.com/scss/main.css>
+<link rel=stylesheet href=https://www.exeal.com/scss/blog.css>
+<link rel=icon type=image/png href=/assets/img/favicon.png>
+<link rel=apple-touch-icon href=/assets/img/apple-touch-icon.png>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172984297-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-172984297-1')</script>
+<script type=text/javascript id=hs-script-loader async defer src=//js.hs-scripts.com/8231847.js></script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-shrink">
+<div class=container>
+<a href=/blog class=navbar-brand>
+<img src=/assets/img/blog/logo-blog.svg alt="Exeal Blog">
+</a>
+</div>
+</nav><header class="hero hero-bg-img" style=background-image:url(/assets/img/blog/posts/controlled-explosion.jpg)>
+<div class="hero-bg-img-mask bg-mask">
+<div class="container h-100">
+<div class="row h-100 align-items-center">
+<div class="col-12 text-center">
+<ul class="tags tags-light">
+<li><a href=https://www.exeal.com/tags/apis/>#apis</a></li> <li><a href=https://www.exeal.com/tags/netcore/>#netcore</a></li> <li><a href=https://www.exeal.com/tags/csharp/>#csharp</a></li>
+</ul>
+<h1><span class=underline>Gestiona los errores de tus APIs web como un pro</span></h1>
+<h2>Pedro Pardal</h2>
+<p class=date>2020/09/04</p>
+<p><a data-scroll=sect-body href=#><img class=arrow-down src=/assets/img/arrow-down-secondary.svg></a></p>
+</div>
+</div>
+</div>
+</div>
+</header><section id=sect-body>
+<div class=container>
+<article>
+<p>La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y <strong>darle un punto de calidad de vida a los usuarios de la misma</strong>.</p>
+<p>Aún así, son muchos los proveedores que descuidan este aspecto, y no es raro encontrar APIs de terceros con las que la integración se complica. Escenarios como errores no documentados, información insuficiente para diagnosticar los problemas, representación inconsistente que dificulta la integración&mldr; son por desgracia bastante comunes.</p>
+<h2 id=un-estándar-para-dominarlos-a-todos>Un estándar para dominarlos a todos</h2>
+<p>Prueba de que esto es un problema, es que la <strong>existe un estándar RFC</strong> elaborado por la <a href=https://www.ietf.org/>IETF</a> para representar errores devueltos por APIs web HTTP: <a href=https://tools.ietf.org/html/rfc7807>Problem Details for HTTP APIs</a>.</p>
+<p>Adoptar un estándar como este tiene numerosos beneficios, entre los que se incluyen:</p>
+<ul>
+<li>No hace falta que diseñemos una representación de los errores para cada API que hagamos, ya <strong>tenemos un estándar que podemos usar</strong>. Además, seguramente está mejor pensado que una solución ad-hoc a la que podamos llegar nosotros mismos.</li>
+<li>Es altamente probable encontrar <strong>herramientas como frameworks o librerías que nos faciliten la vida</strong>. Tanto desde nuestro punto de vista como proveedor de la API a la hora de implementarla, como para nuestro cliente consumidor, podrá beneficiarse de estas herramientas para agilizar la integración.</li>
+</ul>
+<p>Adicionalmente, una de las ventajas concretas de este estándar es que nos permite una <strong>representación más granular</strong> de los errores más allá del status code HTTP de la respuesta, mediante tipos y detalles de error, tal como veremos más adelante.</p>
+<h2 id=qué-pinta-tiene>¿Qué pinta tiene?</h2>
+<p>El estándar define el formato de las respuestas de error de nuestra API. Estas deberían verse parecidas al siguiente snippet (extraído del propio RFC):</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=color:#960050;background-color:#1e0010>HTTP/</span><span style=color:#ae81ff>1.1</span> <span style=color:#ae81ff>403</span> <span style=color:#960050;background-color:#1e0010>Forbidden</span>
 <span style=color:#960050;background-color:#1e0010>Content-Type:</span> <span style=color:#960050;background-color:#1e0010>application/problem+json</span>
 <span style=color:#960050;background-color:#1e0010>Content-Language:</span> <span style=color:#960050;background-color:#1e0010>en</span>
 
@@ -12,7 +77,26 @@ gtag('js',new Date());gtag('config','UA-172984297-1');</script><script type=text
   <span style=color:#f92672>&#34;accounts&#34;</span>: [<span style=color:#e6db74>&#34;/account/12345&#34;</span>,
                 <span style=color:#e6db74>&#34;/account/67890&#34;</span>]
 }
-</code></pre></div><p>Lo primero que se aprecia es que las respuestas de error deben incluir el header <code>Content-Type</code> con el valor <code>application/problem+json</code>. A partir de ahí, el estándar es bastante laxo: técnicamente en el body no define ningún campo obligatorio, pero sí que define la semántica de un pequeño conjunto de campos que, sí están presentes, deben ser interpretados de cierta manera. Estos campos son los siguientes:</p><ul><li><code>type</code>: URI que identifica el tipo de error. Debería apuntar a la documentación sobre el error.</li><li><code>title</code>: Breve resumen del error, legible por humanos. Siempre debería ser el mismo por cada <code>type</code>.</li><li><code>status</code>: Código HTTP de la respuesta. Se incluye meramente por conveniencia.</li><li><code>instance</code>: URI que identifica la ocurrencia concreta del error.</li><li><code>detail</code>: Explicación, legible por humanos, de la ocurrencia concreta del error, que ayude al cliente de la API a diagnosticar el problema (no es información de depuración).</li></ul><p>Además de estos campos, se pueden devolver todos los campos adicionales que se deseen, con una semántica concreta acordada por cliente y servidor, pero el cliente no debería asumir que siempre estarán presentes.</p><h2 id=errores-en-apis-aspnet-core>Errores en APIs ASP.NET Core</h2><p>Asumamos que <strong>queremos hacer que todos los errores de nuestra API se devuelvan con el formato indicado en el RFC</strong>. En primer lugar, repasemos brevemente qué errores se pueden dar en una API ASP.NET Core:</p><ul><li>Errores de validación: cuando el framework encuentra un error de validación y lo guarda en <a href=https://exceptionnotfound.net/asp-net-mvc-demystified-modelstate/>ModelState</a>, antes siquiera de ceder el control a nuestro código devuelve los fallos de validación al cliente, decidiendo por su cuenta cómo pintarlos.</li><li>Errores de código de aplicación: aquellos errores que forman parte del código de la aplicación, y en los que nosotros mismos construimos la respuesta desde nuestro controller.</li><li>Excepciones no controladas: cuando una excepción que ocurre en la request no es capturada por nuestro código, el control pasa al framework, que también en este caso decidirá por su cuenta cómo pintarla.</li></ul><p>En cada uno de estos escenarios, la forma en la que se pintan los errores es diferente. Por tanto, debemos analizar caso por caso cuál es el mecanismo para pintar los errores, y cómo alterarlo.</p><h2 id=errores-de-validación>Errores de validación</h2><p>Supongamos que tenemos una ruta en un controller con el siguiente código:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#a6e22e>[HttpPost]</span>
+</code></pre></div><p>Lo primero que se aprecia es que las respuestas de error deben incluir el header <code>Content-Type</code> con el valor <code>application/problem+json</code>. A partir de ahí, el estándar es bastante laxo: técnicamente en el body no define ningún campo obligatorio, pero sí que define la semántica de un pequeño conjunto de campos que, sí están presentes, deben ser interpretados de cierta manera. Estos campos son los siguientes:</p>
+<ul>
+<li><code>type</code>: URI que identifica el tipo de error. Debería apuntar a la documentación sobre el error.</li>
+<li><code>title</code>: Breve resumen del error, legible por humanos. Siempre debería ser el mismo por cada <code>type</code>.</li>
+<li><code>status</code>: Código HTTP de la respuesta. Se incluye meramente por conveniencia.</li>
+<li><code>instance</code>: URI que identifica la ocurrencia concreta del error.</li>
+<li><code>detail</code>: Explicación, legible por humanos, de la ocurrencia concreta del error, que ayude al cliente de la API a diagnosticar el problema (no es información de depuración).</li>
+</ul>
+<p>Además de estos campos, se pueden devolver todos los campos adicionales que se deseen, con una semántica concreta acordada por cliente y servidor, pero el cliente no debería asumir que siempre estarán presentes.</p>
+<h2 id=errores-en-apis-aspnet-core>Errores en APIs ASP.NET Core</h2>
+<p>Asumamos que <strong>queremos hacer que todos los errores de nuestra API se devuelvan con el formato indicado en el RFC</strong>. En primer lugar, repasemos brevemente qué errores se pueden dar en una API ASP.NET Core:</p>
+<ul>
+<li>Errores de validación: cuando el framework encuentra un error de validación y lo guarda en <a href=https://exceptionnotfound.net/asp-net-mvc-demystified-modelstate/>ModelState</a>, antes siquiera de ceder el control a nuestro código devuelve los fallos de validación al cliente, decidiendo por su cuenta cómo pintarlos.</li>
+<li>Errores de código de aplicación: aquellos errores que forman parte del código de la aplicación, y en los que nosotros mismos construimos la respuesta desde nuestro controller.</li>
+<li>Excepciones no controladas: cuando una excepción que ocurre en la request no es capturada por nuestro código, el control pasa al framework, que también en este caso decidirá por su cuenta cómo pintarla.</li>
+</ul>
+<p>En cada uno de estos escenarios, la forma en la que se pintan los errores es diferente. Por tanto, debemos analizar caso por caso cuál es el mecanismo para pintar los errores, y cómo alterarlo.</p>
+<h2 id=errores-de-validación>Errores de validación</h2>
+<p>Supongamos que tenemos una ruta en un controller con el siguiente código:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#a6e22e>[HttpPost]</span>
 <span style=color:#66d9ef>public</span> IActionResult Post(ValueObject vo) {
   <span style=color:#66d9ef>return</span> Ok(<span style=color:#e6db74>&#34;todo bien&#34;</span>);
 }
@@ -21,7 +105,8 @@ gtag('js',new Date());gtag('config','UA-172984297-1');</script><script type=text
 <span style=color:#a6e22e>  [Required]</span>
   <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>string</span> Name { <span style=color:#66d9ef>get</span>; <span style=color:#66d9ef>set</span>; }
 }
-</code></pre></div><p>Y enviamos un POST sin especificar el campo <code>Name</code>. Obtenemos la siguiente respuesta del servidor:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+</code></pre></div><p>Y enviamos un POST sin especificar el campo <code>Name</code>. Obtenemos la siguiente respuesta del servidor:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
   <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;https://tools.ietf.org/html/rfc7231#section-6.5.1&#34;</span>,
   <span style=color:#f92672>&#34;title&#34;</span>: <span style=color:#e6db74>&#34;One or more validation errors occurred.&#34;</span>,
   <span style=color:#f92672>&#34;status&#34;</span>: <span style=color:#ae81ff>400</span>,
@@ -32,32 +117,45 @@ gtag('js',new Date());gtag('config','UA-172984297-1');</script><script type=text
     ]
   }
 }
-</code></pre></div><p>Esto tiene pinta de ajustarse al formato del estándar: tenemos los campos <code>type</code>, <code>title</code> y <code>status</code> cuyo contenido se interpreta tal como dice el estándar, además de dos campos adicionales <code>traceId</code> y <code>errors</code> que añade el framework para nosotros. En este caso, <strong>ASP.NET Core ya está usando el estándar para pintar los errores de validación</strong>, así que no tenemos que hacer nada salvo felicitarnos por nuestra sabia decisión. ¡Otro trabajo bien hecho!</p><h2 id=excepciones-código-de-aplicación>Excepciones código de aplicación</h2><p>Imagina ahora que el error se produce por un camino controlado en el código, y nosotros mismos estamos construyendo la respuesta:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#a6e22e>[HttpPost]</span>
+</code></pre></div><p>Esto tiene pinta de ajustarse al formato del estándar: tenemos los campos <code>type</code>, <code>title</code> y <code>status</code> cuyo contenido se interpreta tal como dice el estándar, además de dos campos adicionales <code>traceId</code> y <code>errors</code> que añade el framework para nosotros. En este caso, <strong>ASP.NET Core ya está usando el estándar para pintar los errores de validación</strong>, así que no tenemos que hacer nada salvo felicitarnos por nuestra sabia decisión. ¡Otro trabajo bien hecho!</p>
+<h2 id=excepciones-código-de-aplicación>Excepciones código de aplicación</h2>
+<p>Imagina ahora que el error se produce por un camino controlado en el código, y nosotros mismos estamos construyendo la respuesta:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#a6e22e>[HttpPost]</span>
 <span style=color:#66d9ef>public</span> IActionResult Post() {
   <span style=color:#66d9ef>return</span> NotFound(<span style=color:#e6db74>&#34;No sé de qué me hablas&#34;</span>);
 }
-</code></pre></div><p>Evidentemente en este caso, no obtendremos una respuesta del estándar, sino con el mensaje de error que estamos indicando como texto plano.</p><p>Afortunadamente, el <code>ControllerBase</code> de ASP.NET Core nos ofrece el método <code>Problem()</code> para construir una respuesta con el formato del estándar, por lo que podemos sustituir el código anterior por:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#66d9ef>return</span> Problem(<span style=color:#e6db74>&#34;No sé de qué me hablas&#34;</span>, title: <span style=color:#e6db74>&#34;Not Found&#34;</span>, statusCode: <span style=color:#ae81ff>404</span>);
-</code></pre></div><p>De esta forma obtendremos la siguiente respuesta, que sí se adapta al estándar:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+</code></pre></div><p>Evidentemente en este caso, no obtendremos una respuesta del estándar, sino con el mensaje de error que estamos indicando como texto plano.</p>
+<p>Afortunadamente, el <code>ControllerBase</code> de ASP.NET Core nos ofrece el método <code>Problem()</code> para construir una respuesta con el formato del estándar, por lo que podemos sustituir el código anterior por:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#66d9ef>return</span> Problem(<span style=color:#e6db74>&#34;No sé de qué me hablas&#34;</span>, title: <span style=color:#e6db74>&#34;Not Found&#34;</span>, statusCode: <span style=color:#ae81ff>404</span>);
+</code></pre></div><p>De esta forma obtendremos la siguiente respuesta, que sí se adapta al estándar:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
   <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;https://tools.ietf.org/html/rfc7231#section-6.5.4&#34;</span>,
   <span style=color:#f92672>&#34;title&#34;</span>: <span style=color:#e6db74>&#34;Not Found&#34;</span>,
   <span style=color:#f92672>&#34;status&#34;</span>: <span style=color:#ae81ff>404</span>,
   <span style=color:#f92672>&#34;detail&#34;</span>: <span style=color:#e6db74>&#34;No sé de qué me hablas&#34;</span>,
   <span style=color:#f92672>&#34;traceId&#34;</span>: <span style=color:#e6db74>&#34;|c2d557d3-4c49d2a35baa5d03.&#34;</span>
 }
-</code></pre></div><h2 id=excepciones-no-controladas>Excepciones no controladas</h2><p>Supongamos ahora el siguiente código:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#a6e22e>[HttpPost]</span>
+</code></pre></div><h2 id=excepciones-no-controladas>Excepciones no controladas</h2>
+<p>Supongamos ahora el siguiente código:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#a6e22e>[HttpPost]</span>
 <span style=color:#66d9ef>public</span> IActionResult Post() {
   <span style=color:#66d9ef>throw</span> <span style=color:#66d9ef>new</span> Exception(<span style=color:#e6db74>&#34;He mezclado ácido clorhídrico con sulfato de cloro y ha hecho una reacción que flipas y, vamos, que la he liao parda&#34;</span>);
 }
-</code></pre></div><p>Al hacer una llamada, la respuesta que obtenemos es:</p><pre><code>System.Exception: He mezclado ácido clorhídrico con sulfato de cloro y ha hecho una reacción que flipas y, vamos, que la he liao parda
+</code></pre></div><p>Al hacer una llamada, la respuesta que obtenemos es:</p>
+<pre><code>System.Exception: He mezclado ácido clorhídrico con sulfato de cloro y ha hecho una reacción que flipas y, vamos, que la he liao parda
    at SampleApplication.Controllers.MyController.Post() in /path/to/SampleApplication/SampleApplication/Controllers/MyController.cs:line 43
    at lambda_method(Closure , Object , Object[] )
    at ...
-</code></pre><p>Obtenemos la traza del error en texto plano. De hecho, vemos esto porque tenemos el modo <code>Development</code> activado. Si lo desactivamos, directamente lo que vemos es:</p><pre><code>
-</code></pre><p>Exacto, nada de nada. Un error 500 sin más pistas. Si a tu cliente le llega esta respuesta en un entorno productivo, le estarás poniendo las cosas muy difíciles.</p><p>Afortunadamente, ASP.NET Core nos deja engancharnos al ciclo de vida de las excepciones no controladas desde el startup, y añadiendo el siguiente código en nuestra clase <code>Startup</code> podemos redirigir cualquier excepción no controlada a la ruta que queramos:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> Configure(IApplicationBuilder app, IWebHostEnvironment env) {
+</code></pre><p>Obtenemos la traza del error en texto plano. De hecho, vemos esto porque tenemos el modo <code>Development</code> activado. Si lo desactivamos, directamente lo que vemos es:</p>
+<pre><code>
+</code></pre><p>Exacto, nada de nada. Un error 500 sin más pistas. Si a tu cliente le llega esta respuesta en un entorno productivo, le estarás poniendo las cosas muy difíciles.</p>
+<p>Afortunadamente, ASP.NET Core nos deja engancharnos al ciclo de vida de las excepciones no controladas desde el startup, y añadiendo el siguiente código en nuestra clase <code>Startup</code> podemos redirigir cualquier excepción no controlada a la ruta que queramos:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> Configure(IApplicationBuilder app, IWebHostEnvironment env) {
   app.UseExceptionHandler(<span style=color:#e6db74>&#34;/error&#34;</span>);
   <span style=color:#75715e>//...
 </span><span style=color:#75715e></span>}
-</code></pre></div><p>Únicamente queda crear un controller que atienda a esta ruta y pinte el error como nosotros queramos:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#a6e22e>[ApiController]</span>
+</code></pre></div><p>Únicamente queda crear un controller que atienda a esta ruta y pinte el error como nosotros queramos:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#a6e22e>[ApiController]</span>
 <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>ErrorController</span> : ControllerBase {
 <span style=color:#a6e22e>  [Route(&#34;/error&#34;)]</span>
   <span style=color:#66d9ef>public</span> IActionResult Error() {
@@ -65,11 +163,90 @@ gtag('js',new Date());gtag('config','UA-172984297-1');</script><script type=text
     <span style=color:#66d9ef>return</span> Problem(exception.Message, title: <span style=color:#e6db74>&#34;Internal Server Error&#34;</span>);
   }
 }
-</code></pre></div><p>Ahora el error anterior se pinta de la siguiente manera:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+</code></pre></div><p>Ahora el error anterior se pinta de la siguiente manera:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
   <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;https://tools.ietf.org/html/rfc7231#section-6.6.1&#34;</span>,
   <span style=color:#f92672>&#34;title&#34;</span>: <span style=color:#e6db74>&#34;Internal Server Error&#34;</span>,
   <span style=color:#f92672>&#34;status&#34;</span>: <span style=color:#ae81ff>500</span>,
   <span style=color:#f92672>&#34;detail&#34;</span>: <span style=color:#e6db74>&#34;He mezclado ácido clorhídrico con sulfato de cloro y ha hecho una reacción que flipas y, vamos, que la he liao parda&#34;</span>,
   <span style=color:#f92672>&#34;traceId&#34;</span>: <span style=color:#e6db74>&#34;|d2d6bfe9-449fc26f253a845a.&#34;</span>
 }
-</code></pre></div><p>¡Mucho mejor! Si quieres establecer diferentes formas de pintar los errores en función del entorno en el que estés (p.ej. Dev/Prod) puedes establecer varias rutas con manejadores diferentes. Esto es especialmente recomendable si, por ejemplo, quieres devolver más detalles sobre el error en un entorno de desarrollo o staging, pero quieres ocultar detalles potencialmente sensibles en entornos productivos.</p><h2 id=alternativas>Alternativas</h2><h3 id=problemdetails-middleware>ProblemDetails Middleware</h3><p>Para el caso de las excepciones, si no quieres complicarte mucho configurando tus propios manejadores, puedes usar el Nuget <a href=https://www.nuget.org/packages/Hellang.Middleware.ProblemDetails/>Hellang.Middleware.ProblemDetails</a>. Con apenas un par de líneas de configuración en el Startup puedes hacer que las excepciones no controladas se pinten como <em>problems</em> de acuerdo al estándar <em>automágicamente</em>. Además, la configuración por defecto ya incluye diferentes comportamientos para entornos de desarrollo y productivos, por lo que apenas hay que preocuparse en configurarlo. Como punto negativo, es una solución específica al caso de excepciones no controladas: el resto de errores deberás seguir manejandolos manualmente.</p><h3 id=autowrapper>AutoWrapper</h3><p>Otro Nuget interesante es <a href=https://github.com/proudmonkey/AutoWrapper>AutoWrapper</a>. En este caso se trata de una solución integral que, una vez instalada, puede hacer que todas las respuestas de la API sigan un formato concreto, incluyendo los errores. El precio a pagar es que es bastante más invasivo en nuestro código: para usar la librería debemos devolver objetos <code>ApiResponse</code> en nuestros controllers, y lanzar errores usando excepciones <code>ApiException</code> y <code>ApiProblemDetailsException</code>. En cualquier caso es una opción muy interesante a valorar.</p><h2 id=conclusión>Conclusión</h2><p>Hemos visto cómo el estándar RFC <a href=https://tools.ietf.org/html/rfc7807>Problem Details for HTTP APIs</a> puede ayudarnos en la tarea de implementar el mecanismo de gestión de errores de nuestras APIs Web. Para el caso de APIs basadas en ASP.NET Core, hemos identificado las diferentes vías por las que se pueden devolver errores, y cómo modificar cada una de ellas para devolver errores en un formato consistente. Finalmente, hemos discutido posibles alternativas basadas en Nugets de 3rd parties que abordan esta misma problemática. Sea cual sea el enfoque de implementación, es extremadamente recomendable asegurar que seguimos una política de gestión de errores consistente y estándar.</p></article></div><div class=container><div class="row h-100 align-items-center"><div class="col-12 text-center"><ul class="tags tags-dark"><li><a href=https://www.exeal.com/tags/apis/>#apis</a></li><li><a href=https://www.exeal.com/tags/netcore/>#netcore</a></li><li><a href=https://www.exeal.com/tags/csharp/>#csharp</a></li></ul><div class=post-author><div class=avatar-with-name><img class=rounded-circle src=/assets/img/blog/authors/pedro-pardal.png><div class=customer-name><h2>Pedro Pardal</h2><p>CEO y fundador de Exeal, Software Craftsman y Technical Coach. Ayudo a equipos a mejorar la forma en que desarrollan software.</p><ul class="social-icons list-inline"><li class=list-inline-item><a target=_blank href=https://twitter.com/ppardalj><img src=/assets/img/blog/social-icons/icon-twitter.svg></a></li><li class=list-inline-item><a target=_blank href=https://www.linkedin.com/in/pedro-pardal-jimena-36764344/><img src=/assets/img/blog/social-icons/icon-linkedin.svg></a></li><li class=list-inline-item><a target=_blank href=https://github.com/ppardalj><img src=/assets/img/blog/social-icons/icon-github.svg></a></li><li class=list-inline-item><a target=_blank href=mailto:pedro.pardal@exeal.com><img src=/assets/img/blog/social-icons/icon-email.svg></a></li></ul></div></div></div><div class=addthis_inline_share_toolbox></div></div></div></div></section><footer class="black footer"><div class=container><div class="row align-items-center"><div class="col-lg-6 text-lg-left"><a href=/><img src=/assets/img/logo-exeal-footer.svg alt=Exeal></a></div><div class="col-lg-6 text-lg-right"><ul class="list-inline text-lg-right mt-3 mt-lg-0"><li class=list-inline-item><a target=_blank href=https://twitter.com/exeal_es><img src=/assets/img/social/twitter.svg></a></li><li class=list-inline-item><a target=_blank href=https://www.linkedin.com/company/exeal/><img src=/assets/img/social/linkedin.svg></a></li><li class=list-inline-item><a target=_blank href=https://www.youtube.com/channel/UCxVspi-mashFr1RPGxSxEPA><img src=/assets/img/social/youtube.svg></a></li><li class=list-inline-item><a target=_blank href=https://github.com/exeal-es><img src=/assets/img/social/github.svg></a></li><li class=list-inline-item><a target=_blank href=mailto:hola@exeal.com><img src=/assets/img/social/email.svg></a></li></ul></div></div></div></footer><script src=https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js integrity=sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q crossorigin=anonymous></script><script src=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js integrity=sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl crossorigin=anonymous></script><script src=/assets/js/scroll.js></script><script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"45d30dfb71957d625ad900e4772a2d6a"})});</script><script type=text/javascript src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2bf2edad69c454"></script></body></html>
+</code></pre></div><p>¡Mucho mejor! Si quieres establecer diferentes formas de pintar los errores en función del entorno en el que estés (p.ej. Dev/Prod) puedes establecer varias rutas con manejadores diferentes. Esto es especialmente recomendable si, por ejemplo, quieres devolver más detalles sobre el error en un entorno de desarrollo o staging, pero quieres ocultar detalles potencialmente sensibles en entornos productivos.</p>
+<h2 id=alternativas>Alternativas</h2>
+<h3 id=problemdetails-middleware>ProblemDetails Middleware</h3>
+<p>Para el caso de las excepciones, si no quieres complicarte mucho configurando tus propios manejadores, puedes usar el Nuget <a href=https://www.nuget.org/packages/Hellang.Middleware.ProblemDetails/>Hellang.Middleware.ProblemDetails</a>. Con apenas un par de líneas de configuración en el Startup puedes hacer que las excepciones no controladas se pinten como <em>problems</em> de acuerdo al estándar <em>automágicamente</em>. Además, la configuración por defecto ya incluye diferentes comportamientos para entornos de desarrollo y productivos, por lo que apenas hay que preocuparse en configurarlo. Como punto negativo, es una solución específica al caso de excepciones no controladas: el resto de errores deberás seguir manejandolos manualmente.</p>
+<h3 id=autowrapper>AutoWrapper</h3>
+<p>Otro Nuget interesante es <a href=https://github.com/proudmonkey/AutoWrapper>AutoWrapper</a>. En este caso se trata de una solución integral que, una vez instalada, puede hacer que todas las respuestas de la API sigan un formato concreto, incluyendo los errores. El precio a pagar es que es bastante más invasivo en nuestro código: para usar la librería debemos devolver objetos <code>ApiResponse</code> en nuestros controllers, y lanzar errores usando excepciones <code>ApiException</code> y <code>ApiProblemDetailsException</code>. En cualquier caso es una opción muy interesante a valorar.</p>
+<h2 id=conclusión>Conclusión</h2>
+<p>Hemos visto cómo el estándar RFC <a href=https://tools.ietf.org/html/rfc7807>Problem Details for HTTP APIs</a> puede ayudarnos en la tarea de implementar el mecanismo de gestión de errores de nuestras APIs Web. Para el caso de APIs basadas en ASP.NET Core, hemos identificado las diferentes vías por las que se pueden devolver errores, y cómo modificar cada una de ellas para devolver errores en un formato consistente. Finalmente, hemos discutido posibles alternativas basadas en Nugets de 3rd parties que abordan esta misma problemática. Sea cual sea el enfoque de implementación, es extremadamente recomendable asegurar que seguimos una política de gestión de errores consistente y estándar.</p>
+</article>
+</div>
+<div class=container>
+<div class="row h-100 align-items-center">
+<div class="col-12 text-center">
+<ul class="tags tags-dark">
+<li><a href=https://www.exeal.com/tags/apis/>#apis</a></li> <li><a href=https://www.exeal.com/tags/netcore/>#netcore</a></li> <li><a href=https://www.exeal.com/tags/csharp/>#csharp</a></li>
+</ul>
+<div class=post-author>
+<div class=avatar-with-name>
+<img class=rounded-circle src=/assets/img/blog/authors/pedro-pardal.png>
+<div class=customer-name>
+<h2>Pedro Pardal</h2>
+<p>CEO y fundador de Exeal, Software Craftsman y Technical Coach. Ayudo a equipos a mejorar la forma en que desarrollan software.</p>
+<ul class="social-icons list-inline">
+<li class=list-inline-item>
+<a target=_blank href=https://twitter.com/ppardalj> <img src=/assets/img/blog/social-icons/icon-twitter.svg> </a>
+</li>
+<li class=list-inline-item>
+<a target=_blank href=https://www.linkedin.com/in/pedro-pardal-jimena-36764344/> <img src=/assets/img/blog/social-icons/icon-linkedin.svg> </a>
+</li>
+<li class=list-inline-item>
+<a target=_blank href=https://github.com/ppardalj> <img src=/assets/img/blog/social-icons/icon-github.svg> </a>
+</li>
+<li class=list-inline-item>
+<a target=_blank href=mailto:pedro.pardal@exeal.com> <img src=/assets/img/blog/social-icons/icon-email.svg> </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class=addthis_inline_share_toolbox></div>
+</div>
+</div>
+</div>
+</section><footer class="black footer">
+<div class=container>
+<div class="row align-items-center">
+<div class="col-lg-6 text-lg-left">
+<a href=/><img src=/assets/img/logo-exeal-footer.svg alt=Exeal></a>
+</div>
+<div class="col-lg-6 text-lg-right">
+<ul class="list-inline text-lg-right mt-3 mt-lg-0">
+<li class=list-inline-item>
+<a target=_blank href=https://twitter.com/exeal_es> <img src=/assets/img/social/twitter.svg> </a>
+</li>
+<li class=list-inline-item>
+<a target=_blank href=https://www.linkedin.com/company/exeal/> <img src=/assets/img/social/linkedin.svg> </a>
+</li>
+<li class=list-inline-item>
+<a target=_blank href=https://www.youtube.com/channel/UCxVspi-mashFr1RPGxSxEPA> <img src=/assets/img/social/youtube.svg> </a>
+</li>
+<li class=list-inline-item>
+<a target=_blank href=https://github.com/exeal-es> <img src=/assets/img/social/github.svg> </a>
+</li>
+<li class=list-inline-item>
+<a target=_blank href=mailto:hola@exeal.com> <img src=/assets/img/social/email.svg> </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js integrity=sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q crossorigin=anonymous></script>
+<script src=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js integrity=sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl crossorigin=anonymous></script>
+<script src=/assets/js/scroll.js></script>
+<script>function loadScript(b){var c=document.getElementsByTagName("head")[0],a=document.createElement("script");a.type="text/javascript",a.src="https://tracker.metricool.com/resources/be.js",a.onreadystatechange=b,a.onload=b,c.appendChild(a)}loadScript(function(){beTracker.t({hash:"45d30dfb71957d625ad900e4772a2d6a"})})</script>
+<script type=text/javascript src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2bf2edad69c454"></script>
+</body>
+</html>

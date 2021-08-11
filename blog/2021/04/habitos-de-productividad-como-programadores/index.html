@@ -1,2 +1,159 @@
-<!doctype html><html lang=es><head><meta charset=utf-8><title>Hábitos de productividad como programadores | Exeal</title><meta name=description content="Comienza a usar el IDE de forma correcta para aumentar tu productividad al escribir código."><meta name=author content="Exeal"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta property="og:title" content="Hábitos de productividad como programadores"><meta property="og:description" content="Comienza a usar el IDE de forma correcta para aumentar tu productividad al escribir código."><meta property="og:type" content="article"><meta property="og:url" content="https://www.exeal.com/blog/2021/04/habitos-de-productividad-como-programadores/"><meta property="og:image" content="https://www.exeal.com/assets/img/blog/posts/keyboard.jpg"><meta property="article:published_time" content="2021-04-18T00:10:00+01:00"><meta property="article:modified_time" content="2021-04-18T00:10:00+01:00"><meta itemprop=name content="Hábitos de productividad como programadores"><meta itemprop=description content="Comienza a usar el IDE de forma correcta para aumentar tu productividad al escribir código."><meta itemprop=datePublished content="2021-04-18T00:10:00+01:00"><meta itemprop=dateModified content="2021-04-18T00:10:00+01:00"><meta itemprop=wordCount content="779"><meta itemprop=image content="https://www.exeal.com/assets/img/blog/posts/keyboard.jpg"><meta itemprop=keywords content="legacy,habitos,refactoring,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://www.exeal.com/assets/img/blog/posts/keyboard.jpg"><meta name=twitter:title content="Hábitos de productividad como programadores"><meta name=twitter:description content="Comienza a usar el IDE de forma correcta para aumentar tu productividad al escribir código."><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css integrity=sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm crossorigin=anonymous><link rel=stylesheet href=https://www.exeal.com/scss/main.css><link rel=stylesheet href=https://www.exeal.com/scss/blog.css><link rel=icon type=image/png href=/assets/img/favicon.png><link rel=apple-touch-icon href=/assets/img/apple-touch-icon.png><script async src="https://www.googletagmanager.com/gtag/js?id=UA-172984297-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-172984297-1');</script><script type=text/javascript id=hs-script-loader async defer src=//js.hs-scripts.com/8231847.js></script></head><body><nav class="navbar navbar-expand-lg navbar-shrink"><div class=container><a href=/blog class=navbar-brand><img src=/assets/img/blog/logo-blog.svg alt="Exeal Blog"></a></div></nav><header class="hero hero-bg-img" style=background-image:url(/assets/img/blog/posts/keyboard.jpg)><div class="hero-bg-img-mask bg-mask"><div class="container h-100"><div class="row h-100 align-items-center"><div class="col-12 text-center"><ul class="tags tags-light"><li><a href=https://www.exeal.com/tags/legacy/>#legacy</a></li><li><a href=https://www.exeal.com/tags/habitos/>#habitos</a></li><li><a href=https://www.exeal.com/tags/refactoring/>#refactoring</a></li></ul><h1><span class=underline>Hábitos de productividad como programadores</span></h1><h2>Pedro Pardal</h2><p class=date>2021/04/18</p><p><a data-scroll=sect-body href=#><img class=arrow-down src=/assets/img/arrow-down-secondary.svg></a></p></div></div></div></div></header><section id=sect-body><div class=container><article><p>En el <a href=/blog/2021/03/por-que-el-codigo-degenera/>anterior post</a> de esta serie sobre cómo evitar que el código greenfield se convierta en legacy, hablábamos de que una de las áreas en las que podíamos trabajar era en mejorar nuestras competencias y habilidades como desarrolladores para ser más productivo.</p><p>En mi experiencia haciendo coaching a equipos, uno de los primeros grandes saltos cualitativos para la mayoría de ellos es aprender a usar correctamente las herramientas de nuestro día a día. Y la herramienta con la que más tiempo pasamos todos los desarrolladores es <strong>nuestro IDE</strong>, o <strong>entorno de desarrollo</strong>. Adoptar buenos hábitos para exprimir al máximo sus capacidades nos va a dar un boost de productividad muy relevante.</p><h2 id=productividad-con-el-ide>Productividad con el IDE</h2><p>En los últimos años, la mayoría de IDEs han desarrollado funcionalidades para editar y transformar código muy superiores a las que tenían en el pasado, que podemos aprovechar a nuestro favor.</p><p>Sin embargo, hay muchos programadores que siguen usando su <strong>IDE como si fuese un editor de texto</strong>.</p><p>Hay 2 hábitos indispensables en la forma de programar que harán que la experiencia con el IDE sea mucho más productiva:</p><ul><li><strong>Usar el Autofix</strong>. Los IDEs modernos se dan cuenta rápidamente cuando introduces un fallo de compilación, y sugieren posibilidades para arreglarlos por ti. P.ej. si usas una clase que no existe, y el IDE te sugiere crearla. Puedes aprovechar esto adoptando el estilo “consume-first” de programación, en el que escribes código que usa elementos que todavía no existen (clases, métodos, variables…), y luego dejas que el Autofix genere ese código en lugar de escribirlo tú.</li><li>Cambiar el código usando <strong>refactors automáticos</strong>. El IDE es capaz de hacer por ti transformaciones súper típicas, como renombrar variables, extraer métodos, <em>inlinear</em> parámetros, mover métodos de una clase a otra, etc.</li></ul><p>Adoptar estos hábitos te otorgará las siguientes dos ventajas:</p><ul><li><strong>Cambiarás el código más rápido</strong> (porque escribirás menos código, el IDE lo escribirá por ti).</li><li><strong>Minimizarás el riesgo de equivocarnte</strong>. Si el IDE te escribe el código, minimizas la posibilidad del error humano.</li></ul><h2 id=cómo-empezar-cheat-sheet>Cómo empezar: cheat sheet</h2><p>Sea cual sea el IDE que uses, busca en la documentación el “cheat sheet” donde vienen todos los atajos de teclado del IDE. Imprímelo y póntelo al lado de la pantalla.</p><p>De ahora en adelante, cuando te pongas a editar código y te des cuenta de que estás repitiendo múltiples veces la misma tarea, echa un vistazo a la hoja a ver si hay algún atajo para hacerlo más rápido. Poco a poco empezarás a coger mucha más soltura y a ir más rápido.</p><h2 id=quick-win-refactors-seguros>Quick win: refactors seguros</h2><p>Adoptar estos hábitos, aparte de hacerte más productivo, tiene un quick win inmediato, y es que si aprendes a aprovechar la potencia del IDE, puedes empezar a hacer transformaciones locales pequeñitas <strong>incluso a código que no tiene tests</strong>, porque cuando usas un refactor automático, <strong>el IDE se encarga de no cambiar la semántica del código</strong>. Es decir, que puedes tener más confianza en que no vas a romper nada, y así comenzarás a reducir poco a poco el miedo a tocar código legacy.</p><h2 id=katas>Katas</h2><p>El valor de las katas es la repetición de la solución para automatizarla. Es decir, que cuando tu te encuentres en tu código productivo una dependencia acoplada, sepas identificarla y desacoplarla rápidamente de forma segura, porque <strong>lo has repetido ya mil veces</strong>.</p><p><img src=/assets/img/blog/posts/dojo.jpg alt></p><p>Lo que buscamos con la katas es <strong>crear hábitos, automatizar tareas</strong>. Y hacemos esto para dejar de pensar en ellos y poder elevar el nivel de abstracción de nuestro pensamiento. Cuando dejamos de preocuparnos de qué shortcut sirve para hacer determinada tarea, podemos poner foco en lo que de verdad importa:</p><ul><li>Tener una discusión de diseño con los compañeros acerca de qué diseño es mejor.</li><li>Preguntarnos si el código es expresivo o no.</li><li>Probar diferentes diseños a ver cuál me convence más porque es <strong>muy barato</strong>.</li></ul><p>Las katas hay que hacerlas <strong>todos los días</strong> hasta que automatices lo que quieres.</p><h2 id=call-to-action>Call to action</h2><p>A partir de mañana, busca un hueco en tu rutina diaria para hacer una kata. <strong>No más de 10 minutos</strong>. Si no sabes cuál hacer, te recomiendo buscar algún ejercicio de <a href=https://github.com/exeal-es/refactoring-golf>Refactoring Golf</a>, o echarle un vistazo a los <a href=https://github.com/exeal-es/legacy-code-koans>Legacy Code Koans</a> que están en el Github de Exeal. Básicamente son ejercicios muy pequeñitos que se resuelven enteramente con refactors automáticos, y que apenas te llevan 2 o 3 minutos hacer.</p><p>Busca un hueco en el día, después del café, antes de abrir el correo, antes de la daily meeting… lo que a ti te funcione.</p><p>Mide cuánto tiempo tardas en hacer el ejercicio cada día. Repítelo durante una o dos semanas, y fíjate cómo varía el tiempo que tardas en hacerlo cada vez.</p></article></div><div class=container><div class="row h-100 align-items-center"><div class="col-12 text-center"><ul class="tags tags-dark"><li><a href=https://www.exeal.com/tags/legacy/>#legacy</a></li><li><a href=https://www.exeal.com/tags/habitos/>#habitos</a></li><li><a href=https://www.exeal.com/tags/refactoring/>#refactoring</a></li></ul><div class=post-author><div class=avatar-with-name><img class=rounded-circle src=/assets/img/blog/authors/pedro-pardal.png><div class=customer-name><h2>Pedro Pardal</h2><p>CEO y fundador de Exeal, Software Craftsman y Technical Coach. Ayudo a equipos a mejorar la forma en que desarrollan software.</p><ul class="social-icons list-inline"><li class=list-inline-item><a target=_blank href=https://twitter.com/ppardalj><img src=/assets/img/blog/social-icons/icon-twitter.svg></a></li><li class=list-inline-item><a target=_blank href=https://www.linkedin.com/in/pedro-pardal-jimena-36764344/><img src=/assets/img/blog/social-icons/icon-linkedin.svg></a></li><li class=list-inline-item><a target=_blank href=https://github.com/ppardalj><img src=/assets/img/blog/social-icons/icon-github.svg></a></li><li class=list-inline-item><a target=_blank href=mailto:pedro.pardal@exeal.com><img src=/assets/img/blog/social-icons/icon-email.svg></a></li></ul></div></div></div><div class=addthis_inline_share_toolbox></div></div></div></div></section><footer class="black footer"><div class=container><div class="row align-items-center"><div class="col-lg-6 text-lg-left"><a href=/><img src=/assets/img/logo-exeal-footer.svg alt=Exeal></a></div><div class="col-lg-6 text-lg-right"><ul class="list-inline text-lg-right mt-3 mt-lg-0"><li class=list-inline-item><a target=_blank href=https://twitter.com/exeal_es><img src=/assets/img/social/twitter.svg></a></li><li class=list-inline-item><a target=_blank href=https://www.linkedin.com/company/exeal/><img src=/assets/img/social/linkedin.svg></a></li><li class=list-inline-item><a target=_blank href=https://www.youtube.com/channel/UCxVspi-mashFr1RPGxSxEPA><img src=/assets/img/social/youtube.svg></a></li><li class=list-inline-item><a target=_blank href=https://github.com/exeal-es><img src=/assets/img/social/github.svg></a></li><li class=list-inline-item><a target=_blank href=mailto:hola@exeal.com><img src=/assets/img/social/email.svg></a></li></ul></div></div></div></footer><script src=https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js integrity=sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q crossorigin=anonymous></script><script src=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js integrity=sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl crossorigin=anonymous></script><script src=/assets/js/scroll.js></script><script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"45d30dfb71957d625ad900e4772a2d6a"})});</script><script type=text/javascript src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2bf2edad69c454"></script></body></html>
+<!doctype html><html lang=es>
+<head><meta charset=utf-8>
+<title>Hábitos de productividad como programadores | Exeal</title>
+<meta name=description content="Comienza a usar el IDE de forma correcta para aumentar tu productividad al escribir código.">
+<meta name=author content="Exeal">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta property="og:title" content="Hábitos de productividad como programadores">
+<meta property="og:description" content="Comienza a usar el IDE de forma correcta para aumentar tu productividad al escribir código.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.exeal.com/blog/2021/04/habitos-de-productividad-como-programadores/"><meta property="og:image" content="https://www.exeal.com/assets/img/blog/posts/keyboard.jpg"><meta property="article:section" content="blog">
+<meta property="article:published_time" content="2021-04-18T00:10:00+01:00">
+<meta property="article:modified_time" content="2021-04-18T00:10:00+01:00">
+<meta itemprop=name content="Hábitos de productividad como programadores">
+<meta itemprop=description content="Comienza a usar el IDE de forma correcta para aumentar tu productividad al escribir código."><meta itemprop=datePublished content="2021-04-18T00:10:00+01:00">
+<meta itemprop=dateModified content="2021-04-18T00:10:00+01:00">
+<meta itemprop=wordCount content="779"><meta itemprop=image content="https://www.exeal.com/assets/img/blog/posts/keyboard.jpg">
+<meta itemprop=keywords content="legacy,habitos,refactoring,"><meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://www.exeal.com/assets/img/blog/posts/keyboard.jpg">
+<meta name=twitter:title content="Hábitos de productividad como programadores">
+<meta name=twitter:description content="Comienza a usar el IDE de forma correcta para aumentar tu productividad al escribir código.">
+<link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css integrity=sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm crossorigin=anonymous>
+<link rel=stylesheet href=https://www.exeal.com/scss/main.css>
+<link rel=stylesheet href=https://www.exeal.com/scss/blog.css>
+<link rel=icon type=image/png href=/assets/img/favicon.png>
+<link rel=apple-touch-icon href=/assets/img/apple-touch-icon.png>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172984297-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-172984297-1')</script>
+<script type=text/javascript id=hs-script-loader async defer src=//js.hs-scripts.com/8231847.js></script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-shrink">
+<div class=container>
+<a href=/blog class=navbar-brand>
+<img src=/assets/img/blog/logo-blog.svg alt="Exeal Blog">
+</a>
+</div>
+</nav><header class="hero hero-bg-img" style=background-image:url(/assets/img/blog/posts/keyboard.jpg)>
+<div class="hero-bg-img-mask bg-mask">
+<div class="container h-100">
+<div class="row h-100 align-items-center">
+<div class="col-12 text-center">
+<ul class="tags tags-light">
+<li><a href=https://www.exeal.com/tags/legacy/>#legacy</a></li> <li><a href=https://www.exeal.com/tags/habitos/>#habitos</a></li> <li><a href=https://www.exeal.com/tags/refactoring/>#refactoring</a></li>
+</ul>
+<h1><span class=underline>Hábitos de productividad como programadores</span></h1>
+<h2>Pedro Pardal</h2>
+<p class=date>2021/04/18</p>
+<p><a data-scroll=sect-body href=#><img class=arrow-down src=/assets/img/arrow-down-secondary.svg></a></p>
+</div>
+</div>
+</div>
+</div>
+</header><section id=sect-body>
+<div class=container>
+<article>
+<p>En el <a href=/blog/2021/03/por-que-el-codigo-degenera/>anterior post</a> de esta serie sobre cómo evitar que el código greenfield se convierta en legacy, hablábamos de que una de las áreas en las que podíamos trabajar era en mejorar nuestras competencias y habilidades como desarrolladores para ser más productivo.</p>
+<p>En mi experiencia haciendo coaching a equipos, uno de los primeros grandes saltos cualitativos para la mayoría de ellos es aprender a usar correctamente las herramientas de nuestro día a día. Y la herramienta con la que más tiempo pasamos todos los desarrolladores es <strong>nuestro IDE</strong>, o <strong>entorno de desarrollo</strong>. Adoptar buenos hábitos para exprimir al máximo sus capacidades nos va a dar un boost de productividad muy relevante.</p>
+<h2 id=productividad-con-el-ide>Productividad con el IDE</h2>
+<p>En los últimos años, la mayoría de IDEs han desarrollado funcionalidades para editar y transformar código muy superiores a las que tenían en el pasado, que podemos aprovechar a nuestro favor.</p>
+<p>Sin embargo, hay muchos programadores que siguen usando su <strong>IDE como si fuese un editor de texto</strong>.</p>
+<p>Hay 2 hábitos indispensables en la forma de programar que harán que la experiencia con el IDE sea mucho más productiva:</p>
+<ul>
+<li><strong>Usar el Autofix</strong>. Los IDEs modernos se dan cuenta rápidamente cuando introduces un fallo de compilación, y sugieren posibilidades para arreglarlos por ti. P.ej. si usas una clase que no existe, y el IDE te sugiere crearla. Puedes aprovechar esto adoptando el estilo “consume-first” de programación, en el que escribes código que usa elementos que todavía no existen (clases, métodos, variables…), y luego dejas que el Autofix genere ese código en lugar de escribirlo tú.</li>
+<li>Cambiar el código usando <strong>refactors automáticos</strong>. El IDE es capaz de hacer por ti transformaciones súper típicas, como renombrar variables, extraer métodos, <em>inlinear</em> parámetros, mover métodos de una clase a otra, etc.</li>
+</ul>
+<p>Adoptar estos hábitos te otorgará las siguientes dos ventajas:</p>
+<ul>
+<li><strong>Cambiarás el código más rápido</strong> (porque escribirás menos código, el IDE lo escribirá por ti).</li>
+<li><strong>Minimizarás el riesgo de equivocarnte</strong>. Si el IDE te escribe el código, minimizas la posibilidad del error humano.</li>
+</ul>
+<h2 id=cómo-empezar-cheat-sheet>Cómo empezar: cheat sheet</h2>
+<p>Sea cual sea el IDE que uses, busca en la documentación el “cheat sheet” donde vienen todos los atajos de teclado del IDE. Imprímelo y póntelo al lado de la pantalla.</p>
+<p>De ahora en adelante, cuando te pongas a editar código y te des cuenta de que estás repitiendo múltiples veces la misma tarea, echa un vistazo a la hoja a ver si hay algún atajo para hacerlo más rápido. Poco a poco empezarás a coger mucha más soltura y a ir más rápido.</p>
+<h2 id=quick-win-refactors-seguros>Quick win: refactors seguros</h2>
+<p>Adoptar estos hábitos, aparte de hacerte más productivo, tiene un quick win inmediato, y es que si aprendes a aprovechar la potencia del IDE, puedes empezar a hacer transformaciones locales pequeñitas <strong>incluso a código que no tiene tests</strong>, porque cuando usas un refactor automático, <strong>el IDE se encarga de no cambiar la semántica del código</strong>. Es decir, que puedes tener más confianza en que no vas a romper nada, y así comenzarás a reducir poco a poco el miedo a tocar código legacy.</p>
+<h2 id=katas>Katas</h2>
+<p>El valor de las katas es la repetición de la solución para automatizarla. Es decir, que cuando tu te encuentres en tu código productivo una dependencia acoplada, sepas identificarla y desacoplarla rápidamente de forma segura, porque <strong>lo has repetido ya mil veces</strong>.</p>
+<p><img src=/assets/img/blog/posts/dojo.jpg alt></p>
+<p>Lo que buscamos con la katas es <strong>crear hábitos, automatizar tareas</strong>. Y hacemos esto para dejar de pensar en ellos y poder elevar el nivel de abstracción de nuestro pensamiento. Cuando dejamos de preocuparnos de qué shortcut sirve para hacer determinada tarea, podemos poner foco en lo que de verdad importa:</p>
+<ul>
+<li>Tener una discusión de diseño con los compañeros acerca de qué diseño es mejor.</li>
+<li>Preguntarnos si el código es expresivo o no.</li>
+<li>Probar diferentes diseños a ver cuál me convence más porque es <strong>muy barato</strong>.</li>
+</ul>
+<p>Las katas hay que hacerlas <strong>todos los días</strong> hasta que automatices lo que quieres.</p>
+<h2 id=call-to-action>Call to action</h2>
+<p>A partir de mañana, busca un hueco en tu rutina diaria para hacer una kata. <strong>No más de 10 minutos</strong>. Si no sabes cuál hacer, te recomiendo buscar algún ejercicio de <a href=https://github.com/exeal-es/refactoring-golf>Refactoring Golf</a>, o echarle un vistazo a los <a href=https://github.com/exeal-es/legacy-code-koans>Legacy Code Koans</a> que están en el Github de Exeal. Básicamente son ejercicios muy pequeñitos que se resuelven enteramente con refactors automáticos, y que apenas te llevan 2 o 3 minutos hacer.</p>
+<p>Busca un hueco en el día, después del café, antes de abrir el correo, antes de la daily meeting… lo que a ti te funcione.</p>
+<p>Mide cuánto tiempo tardas en hacer el ejercicio cada día. Repítelo durante una o dos semanas, y fíjate cómo varía el tiempo que tardas en hacerlo cada vez.</p>
+</article>
+</div>
+<div class=container>
+<div class="row h-100 align-items-center">
+<div class="col-12 text-center">
+<ul class="tags tags-dark">
+<li><a href=https://www.exeal.com/tags/legacy/>#legacy</a></li> <li><a href=https://www.exeal.com/tags/habitos/>#habitos</a></li> <li><a href=https://www.exeal.com/tags/refactoring/>#refactoring</a></li>
+</ul>
+<div class=post-author>
+<div class=avatar-with-name>
+<img class=rounded-circle src=/assets/img/blog/authors/pedro-pardal.png>
+<div class=customer-name>
+<h2>Pedro Pardal</h2>
+<p>CEO y fundador de Exeal, Software Craftsman y Technical Coach. Ayudo a equipos a mejorar la forma en que desarrollan software.</p>
+<ul class="social-icons list-inline">
+<li class=list-inline-item>
+<a target=_blank href=https://twitter.com/ppardalj> <img src=/assets/img/blog/social-icons/icon-twitter.svg> </a>
+</li>
+<li class=list-inline-item>
+<a target=_blank href=https://www.linkedin.com/in/pedro-pardal-jimena-36764344/> <img src=/assets/img/blog/social-icons/icon-linkedin.svg> </a>
+</li>
+<li class=list-inline-item>
+<a target=_blank href=https://github.com/ppardalj> <img src=/assets/img/blog/social-icons/icon-github.svg> </a>
+</li>
+<li class=list-inline-item>
+<a target=_blank href=mailto:pedro.pardal@exeal.com> <img src=/assets/img/blog/social-icons/icon-email.svg> </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class=addthis_inline_share_toolbox></div>
+</div>
+</div>
+</div>
+</section><footer class="black footer">
+<div class=container>
+<div class="row align-items-center">
+<div class="col-lg-6 text-lg-left">
+<a href=/><img src=/assets/img/logo-exeal-footer.svg alt=Exeal></a>
+</div>
+<div class="col-lg-6 text-lg-right">
+<ul class="list-inline text-lg-right mt-3 mt-lg-0">
+<li class=list-inline-item>
+<a target=_blank href=https://twitter.com/exeal_es> <img src=/assets/img/social/twitter.svg> </a>
+</li>
+<li class=list-inline-item>
+<a target=_blank href=https://www.linkedin.com/company/exeal/> <img src=/assets/img/social/linkedin.svg> </a>
+</li>
+<li class=list-inline-item>
+<a target=_blank href=https://www.youtube.com/channel/UCxVspi-mashFr1RPGxSxEPA> <img src=/assets/img/social/youtube.svg> </a>
+</li>
+<li class=list-inline-item>
+<a target=_blank href=https://github.com/exeal-es> <img src=/assets/img/social/github.svg> </a>
+</li>
+<li class=list-inline-item>
+<a target=_blank href=mailto:hola@exeal.com> <img src=/assets/img/social/email.svg> </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js integrity=sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q crossorigin=anonymous></script>
+<script src=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js integrity=sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl crossorigin=anonymous></script>
+<script src=/assets/js/scroll.js></script>
+<script>function loadScript(b){var c=document.getElementsByTagName("head")[0],a=document.createElement("script");a.type="text/javascript",a.src="https://tracker.metricool.com/resources/be.js",a.onreadystatechange=b,a.onload=b,c.appendChild(a)}loadScript(function(){beTracker.t({hash:"45d30dfb71957d625ad900e4772a2d6a"})})</script>
+<script type=text/javascript src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2bf2edad69c454"></script>
+</body>
+</html>
