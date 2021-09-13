@@ -142,12 +142,12 @@
   <span style=color:#66d9ef>throw</span> <span style=color:#66d9ef>new</span> Exception(<span style=color:#e6db74>&#34;He mezclado ácido clorhídrico con sulfato de cloro y ha hecho una reacción que flipas y, vamos, que la he liao parda&#34;</span>);
 }
 </code></pre></div><p>Al hacer una llamada, la respuesta que obtenemos es:</p>
-<pre><code>System.Exception: He mezclado ácido clorhídrico con sulfato de cloro y ha hecho una reacción que flipas y, vamos, que la he liao parda
+<pre tabindex=0><code>System.Exception: He mezclado ácido clorhídrico con sulfato de cloro y ha hecho una reacción que flipas y, vamos, que la he liao parda
    at SampleApplication.Controllers.MyController.Post() in /path/to/SampleApplication/SampleApplication/Controllers/MyController.cs:line 43
    at lambda_method(Closure , Object , Object[] )
    at ...
 </code></pre><p>Obtenemos la traza del error en texto plano. De hecho, vemos esto porque tenemos el modo <code>Development</code> activado. Si lo desactivamos, directamente lo que vemos es:</p>
-<pre><code>
+<pre tabindex=0><code>
 </code></pre><p>Exacto, nada de nada. Un error 500 sin más pistas. Si a tu cliente le llega esta respuesta en un entorno productivo, le estarás poniendo las cosas muy difíciles.</p>
 <p>Afortunadamente, ASP.NET Core nos deja engancharnos al ciclo de vida de las excepciones no controladas desde el startup, y añadiendo el siguiente código en nuestra clase <code>Startup</code> podemos redirigir cualquier excepción no controlada a la ruta que queramos:</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> Configure(IApplicationBuilder app, IWebHostEnvironment env) {
