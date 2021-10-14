@@ -633,7 +633,9 @@ div.thank-you-hero {
 
 img.client-logo {
   padding: 1.5rem;
-  max-width: 10rem; }
+  max-width: 10rem;
+  filter: grayscale(100%);
+  opacity: 0.5; }
 
 .course-card {
   box-shadow: 0.5rem 0.5rem 1rem -1rem rgba(0, 0, 0, 0.75);

@@ -13,7 +13,7 @@
 <meta itemprop=name content="Gestiona los errores de tus APIs web como un pro">
 <meta itemprop=description content="La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y darle un punto de calidad de vida a los usuarios de la misma."><meta itemprop=datePublished content="2020-09-04T00:00:00+02:00">
 <meta itemprop=dateModified content="2020-09-04T00:00:00+02:00">
-<meta itemprop=wordCount content="1551"><meta itemprop=image content="https://www.exeal.com/assets/img/blog/posts/controlled-explosion.jpg">
+<meta itemprop=wordCount content="1549"><meta itemprop=image content="https://www.exeal.com/assets/img/blog/posts/controlled-explosion.jpg">
 <meta itemprop=keywords content="apis,netcore,csharp,"><meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://www.exeal.com/assets/img/blog/posts/controlled-explosion.jpg">
 <meta name=twitter:title content="Gestiona los errores de tus APIs web como un pro">
@@ -112,9 +112,7 @@
   <span style=color:#f92672>&#34;status&#34;</span>: <span style=color:#ae81ff>400</span>,
   <span style=color:#f92672>&#34;traceId&#34;</span>: <span style=color:#e6db74>&#34;|66617be8-466db72568d15e33.&#34;</span>,
   <span style=color:#f92672>&#34;errors&#34;</span>: {
-    <span style=color:#f92672>&#34;Name&#34;</span>: [
-      <span style=color:#e6db74>&#34;The Name field is required.&#34;</span>
-    ]
+    <span style=color:#f92672>&#34;Name&#34;</span>: [<span style=color:#e6db74>&#34;The Name field is required.&#34;</span>]
   }
 }
 </code></pre></div><p>Esto tiene pinta de ajustarse al formato del estándar: tenemos los campos <code>type</code>, <code>title</code> y <code>status</code> cuyo contenido se interpreta tal como dice el estándar, además de dos campos adicionales <code>traceId</code> y <code>errors</code> que añade el framework para nosotros. En este caso, <strong>ASP.NET Core ya está usando el estándar para pintar los errores de validación</strong>, así que no tenemos que hacer nada salvo felicitarnos por nuestra sabia decisión. ¡Otro trabajo bien hecho!</p>
@@ -192,19 +190,30 @@
 <img class=rounded-circle src=/assets/img/blog/authors/pedro-pardal.png>
 <div class=customer-name>
 <h2>Pedro Pardal</h2>
-<p>CEO y fundador de Exeal, Software Craftsman y Technical Coach. Ayudo a equipos a mejorar la forma en que desarrollan software.</p>
+<p>
+CEO y fundador de Exeal, Software Craftsman y Technical Coach. Ayudo a
+equipos a mejorar la forma en que desarrollan software.
+</p>
 <ul class="social-icons list-inline">
 <li class=list-inline-item>
-<a target=_blank href=https://twitter.com/ppardalj> <img src=/assets/img/blog/social-icons/icon-twitter.svg> </a>
+<a target=_blank href=https://twitter.com/ppardalj>
+<img src=/assets/img/blog/social-icons/icon-twitter.svg>
+</a>
 </li>
 <li class=list-inline-item>
-<a target=_blank href=https://www.linkedin.com/in/pedro-pardal-jimena-36764344/> <img src=/assets/img/blog/social-icons/icon-linkedin.svg> </a>
+<a target=_blank href=https://www.linkedin.com/in/pedro-pardal-jimena-36764344/>
+<img src=/assets/img/blog/social-icons/icon-linkedin.svg>
+</a>
 </li>
 <li class=list-inline-item>
-<a target=_blank href=https://github.com/ppardalj> <img src=/assets/img/blog/social-icons/icon-github.svg> </a>
+<a target=_blank href=https://github.com/ppardalj>
+<img src=/assets/img/blog/social-icons/icon-github.svg>
+</a>
 </li>
 <li class=list-inline-item>
-<a target=_blank href=mailto:pedro.pardal@exeal.com> <img src=/assets/img/blog/social-icons/icon-email.svg> </a>
+<a target=_blank href=mailto:pedro.pardal@exeal.com>
+<img src=/assets/img/blog/social-icons/icon-email.svg>
+</a>
 </li>
 </ul>
 </div>
