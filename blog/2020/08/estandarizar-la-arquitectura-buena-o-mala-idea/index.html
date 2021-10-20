@@ -29,11 +29,17 @@
 </head>
 <body><nav class="navbar navbar-expand-lg navbar-shrink">
 <div class=container>
+<div class="d-flex flex-row">
+<a href=/ class=navbar-brand>
+<img src=/assets/img/logo-exeal-header-black.svg alt=Exeal>
+</a>
 <a href=/blog class=navbar-brand>
-<img src=/assets/img/blog/logo-blog.svg alt="Exeal Blog">
+<img src=/assets/img/blog/logo-blog.svg alt=Blog>
 </a>
 </div>
-</nav><header class="hero hero-bg-img" style=background-image:url(/assets/img/blog/blog-cover-1.png)>
+</div>
+</nav>
+<header class="hero hero-bg-img" style=background-image:url(/assets/img/blog/blog-cover-1.png)>
 <div class="hero-bg-img-mask bg-mask">
 <div class="container h-100">
 <div class="row h-100 align-items-center">
@@ -51,8 +57,7 @@
 </div>
 </header><section id=sect-body>
 <div class=container>
-<article>
-<p>Reciéntemente en el equipo con el que trabajo actualmente, tuvimos una interesante discusión de diseño de una de nuestras APIs web.</p>
+<article><p>Reciéntemente en el equipo con el que trabajo actualmente, tuvimos una interesante discusión de diseño de una de nuestras APIs web.</p>
 <h2 id=sobre-capas-y-dtos>Sobre capas y DTO&rsquo;s</h2>
 <p>La disyuntiva: usar o no <a href=https://martinfowler.com/eaaCatalog/dataTransferObject.html>DTO&rsquo;s</a> de la capa de presentación como valores devueltos por los repositorios, que pertenecen a la capa de dominio.</p>
 <p>Puesto que a todos nos chillaba, comenzamos planteándonos qué nos dice la teoría: es deseable desacoplar nuestro código usando capas, minimizando el acoplamiento entre ellas. De esta manera, por ejemplo, un cambio en la lógica de negocio no afectaría a la presentación de los datos. Típicamente se plantea un <a href=https://martinfowler.com/bliki/PresentationDomainDataLayering.html>diseño de tres capas</a>: presentación, dominio y acceso a datos. Y así lo establece &ldquo;la arquitectura&rdquo;.</p>
@@ -82,8 +87,7 @@
 <p>El motivo por el que definimos reglas de arquitectura es para <strong>protegernos de cosas que nos pueden doler</strong>. En el caso de nuestro equipo, el dolor a evitar es que el diseño no se entienda dentro de tres meses cuando alguien lo coja sin contexto. En un contexto diferente, plantearíamos un acuerdo o ámbito diferente. Por ejemplo, también hemos acordado no usar nunca bajo ningún concepto modelos de la base de datos en otras capas de la aplicación. Pese a parecer un problema muy similar, en nuestro caso tiene implicaciones mucho más profundas, al tener una arquitectura demasiado acoplada por la base de datos.</p>
 <p><img src=/assets/img/blog/posts/team-developers.jpg alt></p>
 <p>La clave es definir reglas arquitectónicas para aquellos asuntos que sabemos que nos pueden provocar dolor, y dejar libertad de diseño en aquellos sitios en los que el impacto o alcance de una decisión de diseño errónea es menor. En general, decidimos que aquellas partes que nos puedan provocar dolor las intentaremos tratar con un poco de <em>design up-front</em>, y usar diseño emergente para el resto. Y por supuesto, haber podido plantear este debate en el ambito del equipo: que el equipo <strong>esté empoderado y pueda autoorganizarse</strong> para tomar la decisión que más le convenga, sin depender de nadie fuera del equipo, ya que es dentro del equipo donde mejor se conoce el contexto del mismo y donde se puede tomar la decisión óptima.</p>
-<p>¿Qué estrategia adoptas en tu equipo? ¿A qué conclusión habéis llegado? ¿Qué pros y contras has encontrado?</p>
-</article>
+<p>¿Qué estrategia adoptas en tu equipo? ¿A qué conclusión habéis llegado? ¿Qué pros y contras has encontrado?</p></article>
 </div>
 <div class=container>
 <div class="row h-100 align-items-center">
@@ -96,19 +100,30 @@
 <img class=rounded-circle src=/assets/img/blog/authors/pedro-pardal.png>
 <div class=customer-name>
 <h2>Pedro Pardal</h2>
-<p>CEO y fundador de Exeal, Software Craftsman y Technical Coach. Ayudo a equipos a mejorar la forma en que desarrollan software.</p>
+<p>
+CEO y fundador de Exeal, Software Craftsman y Technical Coach. Ayudo a
+equipos a mejorar la forma en que desarrollan software.
+</p>
 <ul class="social-icons list-inline">
 <li class=list-inline-item>
-<a target=_blank href=https://twitter.com/ppardalj> <img src=/assets/img/blog/social-icons/icon-twitter.svg> </a>
+<a target=_blank href=https://twitter.com/ppardalj>
+<img src=/assets/img/blog/social-icons/icon-twitter.svg>
+</a>
 </li>
 <li class=list-inline-item>
-<a target=_blank href=https://www.linkedin.com/in/pedro-pardal-jimena-36764344/> <img src=/assets/img/blog/social-icons/icon-linkedin.svg> </a>
+<a target=_blank href=https://www.linkedin.com/in/pedro-pardal-jimena-36764344/>
+<img src=/assets/img/blog/social-icons/icon-linkedin.svg>
+</a>
 </li>
 <li class=list-inline-item>
-<a target=_blank href=https://github.com/ppardalj> <img src=/assets/img/blog/social-icons/icon-github.svg> </a>
+<a target=_blank href=https://github.com/ppardalj>
+<img src=/assets/img/blog/social-icons/icon-github.svg>
+</a>
 </li>
 <li class=list-inline-item>
-<a target=_blank href=mailto:pedro.pardal@exeal.com> <img src=/assets/img/blog/social-icons/icon-email.svg> </a>
+<a target=_blank href=mailto:pedro.pardal@exeal.com>
+<img src=/assets/img/blog/social-icons/icon-email.svg>
+</a>
 </li>
 </ul>
 </div>

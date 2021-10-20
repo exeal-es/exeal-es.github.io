@@ -13,7 +13,7 @@
 <meta itemprop=name content="Gestiona los errores de tus APIs web como un pro">
 <meta itemprop=description content="La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y darle un punto de calidad de vida a los usuarios de la misma."><meta itemprop=datePublished content="2020-09-04T00:00:00+02:00">
 <meta itemprop=dateModified content="2020-09-04T00:00:00+02:00">
-<meta itemprop=wordCount content="1551"><meta itemprop=image content="https://www.exeal.com/assets/img/blog/posts/controlled-explosion.jpg">
+<meta itemprop=wordCount content="1549"><meta itemprop=image content="https://www.exeal.com/assets/img/blog/posts/controlled-explosion.jpg">
 <meta itemprop=keywords content="apis,netcore,csharp,"><meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://www.exeal.com/assets/img/blog/posts/controlled-explosion.jpg">
 <meta name=twitter:title content="Gestiona los errores de tus APIs web como un pro">
@@ -29,11 +29,17 @@
 </head>
 <body><nav class="navbar navbar-expand-lg navbar-shrink">
 <div class=container>
+<div class="d-flex flex-row">
+<a href=/ class=navbar-brand>
+<img src=/assets/img/logo-exeal-header-black.svg alt=Exeal>
+</a>
 <a href=/blog class=navbar-brand>
-<img src=/assets/img/blog/logo-blog.svg alt="Exeal Blog">
+<img src=/assets/img/blog/logo-blog.svg alt=Blog>
 </a>
 </div>
-</nav><header class="hero hero-bg-img" style=background-image:url(/assets/img/blog/posts/controlled-explosion.jpg)>
+</div>
+</nav>
+<header class="hero hero-bg-img" style=background-image:url(/assets/img/blog/posts/controlled-explosion.jpg)>
 <div class="hero-bg-img-mask bg-mask">
 <div class="container h-100">
 <div class="row h-100 align-items-center">
@@ -51,8 +57,7 @@
 </div>
 </header><section id=sect-body>
 <div class=container>
-<article>
-<p>La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y <strong>darle un punto de calidad de vida a los usuarios de la misma</strong>.</p>
+<article><p>La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y <strong>darle un punto de calidad de vida a los usuarios de la misma</strong>.</p>
 <p>Aún así, son muchos los proveedores que descuidan este aspecto, y no es raro encontrar APIs de terceros con las que la integración se complica. Escenarios como errores no documentados, información insuficiente para diagnosticar los problemas, representación inconsistente que dificulta la integración&mldr; son por desgracia bastante comunes.</p>
 <h2 id=un-estándar-para-dominarlos-a-todos>Un estándar para dominarlos a todos</h2>
 <p>Prueba de que esto es un problema, es que la <strong>existe un estándar RFC</strong> elaborado por la <a href=https://www.ietf.org/>IETF</a> para representar errores devueltos por APIs web HTTP: <a href=https://tools.ietf.org/html/rfc7807>Problem Details for HTTP APIs</a>.</p>
@@ -112,9 +117,7 @@
   <span style=color:#f92672>&#34;status&#34;</span>: <span style=color:#ae81ff>400</span>,
   <span style=color:#f92672>&#34;traceId&#34;</span>: <span style=color:#e6db74>&#34;|66617be8-466db72568d15e33.&#34;</span>,
   <span style=color:#f92672>&#34;errors&#34;</span>: {
-    <span style=color:#f92672>&#34;Name&#34;</span>: [
-      <span style=color:#e6db74>&#34;The Name field is required.&#34;</span>
-    ]
+    <span style=color:#f92672>&#34;Name&#34;</span>: [<span style=color:#e6db74>&#34;The Name field is required.&#34;</span>]
   }
 }
 </code></pre></div><p>Esto tiene pinta de ajustarse al formato del estándar: tenemos los campos <code>type</code>, <code>title</code> y <code>status</code> cuyo contenido se interpreta tal como dice el estándar, además de dos campos adicionales <code>traceId</code> y <code>errors</code> que añade el framework para nosotros. En este caso, <strong>ASP.NET Core ya está usando el estándar para pintar los errores de validación</strong>, así que no tenemos que hacer nada salvo felicitarnos por nuestra sabia decisión. ¡Otro trabajo bien hecho!</p>
@@ -178,8 +181,7 @@
 <h3 id=autowrapper>AutoWrapper</h3>
 <p>Otro Nuget interesante es <a href=https://github.com/proudmonkey/AutoWrapper>AutoWrapper</a>. En este caso se trata de una solución integral que, una vez instalada, puede hacer que todas las respuestas de la API sigan un formato concreto, incluyendo los errores. El precio a pagar es que es bastante más invasivo en nuestro código: para usar la librería debemos devolver objetos <code>ApiResponse</code> en nuestros controllers, y lanzar errores usando excepciones <code>ApiException</code> y <code>ApiProblemDetailsException</code>. En cualquier caso es una opción muy interesante a valorar.</p>
 <h2 id=conclusión>Conclusión</h2>
-<p>Hemos visto cómo el estándar RFC <a href=https://tools.ietf.org/html/rfc7807>Problem Details for HTTP APIs</a> puede ayudarnos en la tarea de implementar el mecanismo de gestión de errores de nuestras APIs Web. Para el caso de APIs basadas en ASP.NET Core, hemos identificado las diferentes vías por las que se pueden devolver errores, y cómo modificar cada una de ellas para devolver errores en un formato consistente. Finalmente, hemos discutido posibles alternativas basadas en Nugets de 3rd parties que abordan esta misma problemática. Sea cual sea el enfoque de implementación, es extremadamente recomendable asegurar que seguimos una política de gestión de errores consistente y estándar.</p>
-</article>
+<p>Hemos visto cómo el estándar RFC <a href=https://tools.ietf.org/html/rfc7807>Problem Details for HTTP APIs</a> puede ayudarnos en la tarea de implementar el mecanismo de gestión de errores de nuestras APIs Web. Para el caso de APIs basadas en ASP.NET Core, hemos identificado las diferentes vías por las que se pueden devolver errores, y cómo modificar cada una de ellas para devolver errores en un formato consistente. Finalmente, hemos discutido posibles alternativas basadas en Nugets de 3rd parties que abordan esta misma problemática. Sea cual sea el enfoque de implementación, es extremadamente recomendable asegurar que seguimos una política de gestión de errores consistente y estándar.</p></article>
 </div>
 <div class=container>
 <div class="row h-100 align-items-center">
@@ -192,19 +194,30 @@
 <img class=rounded-circle src=/assets/img/blog/authors/pedro-pardal.png>
 <div class=customer-name>
 <h2>Pedro Pardal</h2>
-<p>CEO y fundador de Exeal, Software Craftsman y Technical Coach. Ayudo a equipos a mejorar la forma en que desarrollan software.</p>
+<p>
+CEO y fundador de Exeal, Software Craftsman y Technical Coach. Ayudo a
+equipos a mejorar la forma en que desarrollan software.
+</p>
 <ul class="social-icons list-inline">
 <li class=list-inline-item>
-<a target=_blank href=https://twitter.com/ppardalj> <img src=/assets/img/blog/social-icons/icon-twitter.svg> </a>
+<a target=_blank href=https://twitter.com/ppardalj>
+<img src=/assets/img/blog/social-icons/icon-twitter.svg>
+</a>
 </li>
 <li class=list-inline-item>
-<a target=_blank href=https://www.linkedin.com/in/pedro-pardal-jimena-36764344/> <img src=/assets/img/blog/social-icons/icon-linkedin.svg> </a>
+<a target=_blank href=https://www.linkedin.com/in/pedro-pardal-jimena-36764344/>
+<img src=/assets/img/blog/social-icons/icon-linkedin.svg>
+</a>
 </li>
 <li class=list-inline-item>
-<a target=_blank href=https://github.com/ppardalj> <img src=/assets/img/blog/social-icons/icon-github.svg> </a>
+<a target=_blank href=https://github.com/ppardalj>
+<img src=/assets/img/blog/social-icons/icon-github.svg>
+</a>
 </li>
 <li class=list-inline-item>
-<a target=_blank href=mailto:pedro.pardal@exeal.com> <img src=/assets/img/blog/social-icons/icon-email.svg> </a>
+<a target=_blank href=mailto:pedro.pardal@exeal.com>
+<img src=/assets/img/blog/social-icons/icon-email.svg>
+</a>
 </li>
 </ul>
 </div>

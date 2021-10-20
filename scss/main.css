@@ -1,4 +1,84 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -6,20 +86,35 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 table {
@@ -37,7 +132,10 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-input[type="text"], input[type="email"], select, textarea {
+input[type="text"],
+input[type="email"],
+select,
+textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -149,8 +247,7 @@ a.button.button-green {
     content: url("/assets/img/arrow-small-right-dark.svg"); } }
 
 html {
-  font-size: 15pt;
-  background-color: black; }
+  font-size: 15pt; }
 
 .light {
   background-color: white;
@@ -174,7 +271,7 @@ section {
   padding-bottom: 3em; }
 
 body {
-  font-family: 'Work Sans', Sans-Serif;
+  font-family: "Work Sans", Sans-Serif;
   letter-spacing: 0.02rem;
   line-height: 1.75rem; }
 
@@ -183,13 +280,13 @@ h1 {
   line-height: 1.25em;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
-  font-family: 'Gopher Medium', 'Work Sans', sans-serif;
+  font-family: "Gopher Medium", "Work Sans", sans-serif;
   font-weight: normal;
   font-style: normal; }
 
 h2 {
   font-size: 1.5em;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   font-weight: normal;
   font-style: normal;
   margin-bottom: 1.25em; }
@@ -200,7 +297,7 @@ h2 em {
 h3 {
   font-size: 1.375em;
   margin-bottom: 1.25em;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   font-style: italic;
   font-weight: bold; }
 
@@ -208,7 +305,7 @@ h4 {
   font-size: 1.375em;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
-  font-family: 'Work Sans', sans-serif; }
+  font-family: "Work Sans", sans-serif; }
 
 section p {
   margin-top: 1.25em;
@@ -223,11 +320,14 @@ nav.dark {
   border-color: #707070;
   border-bottom-width: 2px;
   font-size: 1.1em;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif; }
+  font-family: "Gopher Regular", "Work Sans", sans-serif; }
 
 .navbar {
   padding-top: 1em;
   padding-bottom: 1em; }
+
+.navbar-brand img {
+  width: 100%; }
 
 @media (min-width: 1200px) {
   .nav-item {
@@ -420,7 +520,7 @@ img.avatar {
   width: 100%;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   color: white; }
 
 .btn-submit:active {
@@ -514,7 +614,7 @@ div.bordered > div.dropdown {
 }
 */
 dl.faq dt {
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   color: #707070;
   border-color: #1fe589;
   border-bottom-style: solid;
@@ -552,7 +652,7 @@ p.taxes {
   top: 0.15em; }
 
 .carousel-indicators.carousel-testimonials li {
-  background-color: #D0D0D0; }
+  background-color: #d0d0d0; }
 
 .carousel-indicators.carousel-testimonials .active {
   background-color: #182935; }
@@ -581,7 +681,7 @@ p.taxes {
   text-align: center; }
 
 .carousel {
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   font-size: 1.3em; }
 
 @media (max-width: 992px) {
@@ -590,7 +690,7 @@ p.taxes {
     margin-top: 1em; } }
 
 p.price {
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   color: #f1fff9;
   font-size: 6em;
   margin-top: 3rem;
@@ -610,7 +710,7 @@ p.price sup {
 a.nav-button {
   display: block;
   background-color: #e6ad1c;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   text-decoration: none;
   width: fit-content;
   justify-content: center;
@@ -656,7 +756,7 @@ img.client-logo {
 .course-body p.level {
   color: #909090;
   font-size: 1em;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   margin-bottom: 1.25rem;
   margin-top: 0rem; }
 
@@ -670,7 +770,7 @@ img.client-logo {
 .course-body li {
   color: #909090;
   font-size: 0.85rem;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   margin-bottom: 0.5rem;
   margin-top: 0rem; }
 
@@ -692,14 +792,14 @@ img.client-logo {
 
 .courses-tagline h1 {
   margin-left: 2rem;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   font-size: 2rem;
   max-width: 25rem; }
 
 .course-header div.featured-course {
   display: block;
   background-color: #e6ad1c;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   color: white;
   padding: 0.25rem 1rem;
   position: absolute;
@@ -729,7 +829,7 @@ input.button {
   border-radius: 2rem;
   background-color: #e6ad1c;
   border-width: 3px;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   text-decoration: none;
   width: 100%;
   font-size: 1.3em;
