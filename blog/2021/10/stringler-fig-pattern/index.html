@@ -13,7 +13,7 @@
 <meta itemprop=name content="Strangler fig pattern">
 <meta itemprop=description content="Implementando Strangler fig pattern"><meta itemprop=datePublished content="2021-10-03T00:10:00+01:00">
 <meta itemprop=dateModified content="2021-10-03T00:10:00+01:00">
-<meta itemprop=wordCount content="244"><meta itemprop=image content="https://www.exeal.com/assets/img/blog/posts/strangler-fig.jpg">
+<meta itemprop=wordCount content="257"><meta itemprop=image content="https://www.exeal.com/assets/img/blog/posts/strangler-fig.jpg">
 <meta itemprop=keywords content="legacy,refactoring,"><meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://www.exeal.com/assets/img/blog/posts/strangler-fig.jpg">
 <meta name=twitter:title content="Strangler fig pattern">
@@ -58,12 +58,13 @@
 </header><section id=sect-body>
 <div class=container>
 <article><h2 id=mi-primer-blog>Mi primer blog</h2>
-<p>Hola como estan? espero que muy bien, Soy Damián, technical coach de <a href=http://exeal.com/>EXEAL</a>, y hoy vengo a comentarles nuestra experiencia aplicando <a href=https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler-fig>Strangler fig pattern</a>.</p>
+<p>¡Hola! ¿cómo estan? Espero que muy bien, Soy Damián 👋, Technical Coach de <a href=https://www.exeal.com/>Exeal</a>, y hoy vengo a comentarles nuestra experiencia aplicando <a href=https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler-fig>Strangler fig pattern</a>.</p>
 <h2 id=antes-de-comenzar->Antes de comenzar &mldr;</h2>
 <p>Me gustaría explicarles brevemente en qué consiste esta técnica de refactoring. Strangler fig pattern es un técnica que nos permitirá <strong>migrar</strong> nuestro actual software a otro anteponiendo un proxy que nos ayudará a <strong>migrar</strong> poco a poco nuestro código obsoleto a nuestro nuevo software.</p>
 <h2 id=en-otras-palabras->En otras palabras &mldr;</h2>
-<p>Nos permitirá trabajar tranquilamente a nuestro ritmo, sin que los consumidores de nuestro aplicativo se den cuenta que estamos migrando de tecnología, framework, o lo que sea que migremos.
-Por ejemplo, imaginemos que tenemos un software legacy donde necesitamos <strong>migrar</strong> de tecnología y arquitectura por X motivo, una excelente práctica es poder implementar Strangler fig pattern, donde pondremos un servicio delante de nuestro servicio actual que funcione de proxy mientras migramos cada funcionalidad. El secreto está en que nuestro Strangler proxy delegue las peticiones al antiguo software si y solo si, la nueva funcionalidad aún no está migrada al 100%; una vez que la nueva funcionalidad está migrada, podremos estrangular la antigua funcionalidad, ya que no se va a utilizar, porque nuestro proxy, jamás redireccionará la petición a nuestro código antiguo.</p>
+<p>Nos permitirá trabajar tranquilamente a nuestro ritmo, sin que los consumidores de nuestro aplicativo se den cuenta que estamos migrando de tecnología, framework, o lo que sea que migremos.</p>
+<p>Por ejemplo, imaginemos que tenemos un software legacy donde necesitamos <strong>migrar</strong> de tecnología y arquitectura por X motivo. Una excelente práctica es implementar Strangler fig pattern, donde pondremos un servicio delante de nuestro servicio actual que funcione de proxy mientras migramos cada funcionalidad.</p>
+<p>El secreto está en que nuestro Strangler proxy delegue las peticiones al antiguo software si y solo si, la nueva funcionalidad aún no está migrada al 100%; una vez que la nueva funcionalidad está migrada, podremos estrangular la antigua funcionalidad, ya que no se va a utilizar, porque nuestro proxy, jamás redireccionará la petición a nuestro código antiguo.</p>
 <h2 id=así-se-ve-nuestro-software>Así se ve nuestro software</h2>
 <ul>
 <li>
@@ -76,10 +77,12 @@ Por ejemplo, imaginemos que tenemos un software legacy donde necesitamos <strong
 </li>
 </ul>
 <h2 id=open-source>Open source</h2>
-<p>Aquí les comparto una librería que hicimos en EXEAL para soportar Strangler fig pattern con net core</p>
+<p>Aquí les comparto una librería que hicimos en EXEAL para soportar Strangler fig pattern con .NET Core:</p>
 <ul>
 <li><strong><a href=https://github.com/exeal-es/StranglerProxy>Strangler Proxy</a></strong></li>
 </ul>
+<p>Espero que hayas podido disfrutar de este post, ¡nos estamos viendo!</p>
+<p>¡Saludos! 🖖</p>
 </article>
 </div>
 <div class=container>
@@ -126,7 +129,8 @@ que desarrollan software.
 </div>
 </div>
 </div>
-</section><footer class="black footer">
+</section>
+<footer class="black footer">
 <div class=container>
 <div class="row align-items-center">
 <div class="col-lg-6 text-lg-left">
@@ -135,7 +139,7 @@ que desarrollan software.
 <div class="col-lg-6 text-lg-right">
 <ul class="list-inline text-lg-right mt-3 mt-lg-0">
 <li class=list-inline-item>
-<a target=_blank href=https://twitter.com/exeal_es> <img src=/assets/img/social/twitter.svg> </a>
+<a target=_blank href=https://twitter.com/exeal> <img src=/assets/img/social/twitter.svg> </a>
 </li>
 <li class=list-inline-item>
 <a target=_blank href=https://www.linkedin.com/company/exeal/> <img src=/assets/img/social/linkedin.svg> </a>
