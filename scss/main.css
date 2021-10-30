@@ -323,7 +323,7 @@ p em {
 
 nav.dark {
   border-style: solid;
-  border-color: #707070;
+  border-color: #8d9199;
   border-bottom-width: 2px;
   font-size: 1.1em;
   font-family: "Gopher Regular", sans-serif; }
@@ -402,6 +402,13 @@ section.background.background-05 {
 
 section.background.background-06 {
   background-image: url("/assets/img/background-06.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover; }
+
+section.background.background-07 {
+  background-image: url("/assets/img/background-07.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
@@ -522,7 +529,7 @@ div.box.case-study-info h4 {
 
 div.box.case-study-info p {
   margin: 0em;
-  color: #707070; }
+  color: #8d9199; }
 
 div.box.case-study-info > img {
   height: 3em; }
@@ -574,10 +581,10 @@ footer {
   padding-bottom: 3em; }
 
 footer a {
-  color: #707070; }
+  color: #8d9199; }
 
 footer a:hover {
-  color: #909090;
+  color: #d1d3d6;
   text-decoration: none; }
 
 footer li img {
@@ -643,7 +650,7 @@ div.bordered > div.dropdown {
 */
 dl.faq dt {
   font-family: "Gopher Regular", sans-serif;
-  color: #707070;
+  color: #8d9199;
   border-color: #1fe589;
   border-bottom-style: solid;
   border-width: 2px;
@@ -652,12 +659,12 @@ dl.faq dt {
   padding-bottom: 0.75em; }
 
 dl.faq dd {
-  color: #707070;
+  color: #8d9199;
   padding-bottom: 1em;
   padding-top: 1em; }
 
 p.taxes {
-  color: #707070;
+  color: #8d9199;
   font-size: 0.75em; }
 
 .carousel-indicators {
@@ -704,9 +711,9 @@ p.taxes {
 .dark .customer h6 {
   color: #1fe589; }
 
-.customer p {
+.customer .customer-info p {
   margin: 0px;
-  color: #909090;
+  color: #8d9199 !important;
   font-size: 0.9em;
   line-height: 1.25em; }
 
@@ -775,21 +782,21 @@ img.client-logo {
   margin-bottom: 1.25rem; }
 
 .course-body p.level {
-  color: #909090;
+  color: #d1d3d6;
   font-size: 1em;
   font-family: "Gopher Regular", sans-serif;
   margin-bottom: 1.25rem;
   margin-top: 0rem; }
 
 .course-body p.description {
-  color: #707070;
+  color: #8d9199;
   font-size: 1rem;
   margin-bottom: 1.25rem;
   margin-top: 0rem;
   line-height: 150%; }
 
 .course-body li {
-  color: #909090;
+  color: #d1d3d6;
   font-size: 0.85rem;
   font-family: "Gopher Regular", sans-serif;
   margin-bottom: 0.5rem;
@@ -835,7 +842,7 @@ img.mockup-brochure {
 
 label {
   font-size: 0.85rem;
-  color: #707070;
+  color: #8d9199;
   line-height: 100%; }
 
 .dark .form-control {
@@ -946,6 +953,18 @@ img.icon-mid {
 p.bigger {
   font-size: 1.25rem; }
 
+body.case-study p {
+  color: #8d9199; }
+
+body.case-study .box p {
+  color: #182935; }
+
+body.case-study .dark .box p {
+  color: #f1f1f1; }
+
+body.case-study .dark p {
+  color: #d1d3d6; }
+
 ul.case-study-index li {
   background-image: url("/assets/img/arrow-cta-yellow.svg");
   background-position-y: 0.3em;
@@ -953,3 +972,80 @@ ul.case-study-index li {
   padding-left: 3em;
   font-family: "Gopher Regular", sans-serif;
   font-size: 1.1rem; }
+
+h2.with-arrow {
+  background-image: url("/assets/img/arrow-right-secondary.svg");
+  background-size: 2em;
+  background-position-y: 0.25em;
+  background-position-x: 0.3em;
+  margin-left: -3em;
+  padding-left: 3em;
+  background-repeat: no-repeat; }
+
+.box h4 {
+  font-family: "Gopher Regular", sans-serif !important;
+  font-size: 1.1em; }
+
+.left {
+  background: #182935;
+  position: relative;
+  top: 50%; }
+
+.left:before {
+  left: -999em;
+  background: #182935;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 999em;
+  top: 0;
+  bottom: 0;
+  z-index: -999; }
+
+@media (max-width: 768px) {
+  .left:after {
+    right: -999em;
+    background: #182935;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 999em;
+    top: 0;
+    bottom: 0;
+    z-index: -999; } }
+
+.right {
+  background: #f1fff9;
+  position: relative;
+  top: 50%; }
+
+@media (max-width: 768px) {
+  .right:before {
+    left: -999em;
+    background: #f1fff9;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 999em;
+    top: 0;
+    bottom: 0;
+    z-index: -999; } }
+
+.right:after {
+  right: -999em;
+  background: #f1fff9;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 999em;
+  top: 0;
+  bottom: 0;
+  z-index: -999; }
+
+@media (min-width: 768px) {
+  .margin-right {
+    margin-right: 4.5rem !important; } }
+
+@media (min-width: 768px) {
+  .margin-left {
+    margin-left: 4.5rem !important; } }
