@@ -165,13 +165,19 @@ textarea {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Avenir Book';
+  src: url("/assets/font/avenir-book.woff2") format("woff2"), url("/assets/font/avenir-book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 a.button {
   display: block;
   border-style: solid;
   border-color: #e6ad1c;
   background-color: #e6ad1c;
   border-width: 3px;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: 'Gopher Regular', sans-serif;
   text-decoration: none;
   width: fit-content;
   font-size: 1.3em;
@@ -205,7 +211,7 @@ a.button-hollow {
   border-style: solid;
   border-color: #e6ad1c;
   border-width: 3px;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: 'Gopher Regular', sans-serif;
   text-decoration: none;
   width: fit-content;
   font-size: 1.3em;
@@ -249,6 +255,11 @@ a.button.button-green {
 html {
   font-size: 15pt; }
 
+body {
+  font-family: "Avenir Book", Sans-Serif;
+  letter-spacing: 0.02rem;
+  line-height: 1.75rem; }
+
 .light {
   background-color: white;
   color: #182935; }
@@ -270,23 +281,18 @@ section {
   padding-top: 3em;
   padding-bottom: 3em; }
 
-body {
-  font-family: "Work Sans", Sans-Serif;
-  letter-spacing: 0.02rem;
-  line-height: 1.75rem; }
-
 h1 {
   font-size: 1.875em;
   line-height: 1.25em;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
-  font-family: "Gopher Medium", "Work Sans", sans-serif;
+  font-family: "Gopher Medium", sans-serif;
   font-weight: normal;
   font-style: normal; }
 
 h2 {
   font-size: 1.5em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   font-weight: normal;
   font-style: normal;
   margin-bottom: 1.25em; }
@@ -297,7 +303,7 @@ h2 em {
 h3 {
   font-size: 1.375em;
   margin-bottom: 1.25em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   font-style: italic;
   font-weight: bold; }
 
@@ -305,7 +311,7 @@ h4 {
   font-size: 1.375em;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Avenir Book", sans-serif; }
 
 section p {
   margin-top: 1.25em;
@@ -320,7 +326,7 @@ nav.dark {
   border-color: #707070;
   border-bottom-width: 2px;
   font-size: 1.1em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif; }
+  font-family: "Gopher Regular", sans-serif; }
 
 .navbar {
   padding-top: 1em;
@@ -333,7 +339,20 @@ nav.dark {
   .nav-item {
     margin-left: 2em; } }
 
-.background.background-01 {
+a.nav-button {
+  display: block;
+  background-color: #e6ad1c;
+  font-family: "Gopher Regular", sans-serif;
+  text-decoration: none;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+  color: #182935 !important;
+  border-radius: 2rem; }
+
+section.background.background-01 {
   background-image: url("/assets/img/background-01-right.png"), url("/assets/img/background-01-left.png");
   background-attachment: fixed, fixed;
   background-position: top right, top;
@@ -341,45 +360,52 @@ nav.dark {
   background-size: 40em, 100em; }
 
 @media (max-width: 1400px) {
-  .background.background-01 {
+  section.background.background-01 {
     background-image: url("/assets/img/background-01-right.png");
     background-attachment: fixed;
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 40em; } }
 
-.background.background-02 {
+section.background.background-01-simple {
+  background-image: url("/assets/img/background-01-left.png");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100em; }
+
+section.background.background-02 {
   background-image: url("/assets/img/background-02.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
   background-size: cover; }
 
-.background.background-03 {
+section.background.background-03 {
   background-image: url("/assets/img/background-03.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
   background-size: cover; }
 
-.background.background-04 {
+section.background.background-04 {
   background-image: url("/assets/img/background-04.png");
   background-position: center;
   background-repeat: repeat; }
 
-.background.background-05 {
+section.background.background-05 {
   background-image: url("/assets/img/background-05.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
   background-size: cover; }
 
-.background.background-01-simple {
-  background-image: url("/assets/img/background-01-left.png");
+section.background.background-06 {
+  background-image: url("/assets/img/background-06.jpg");
   background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 100em; }
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover; }
 
 .icons {
   cursor: default;
@@ -431,42 +457,7 @@ nav.dark {
 .icons li a .label {
   display: none; }
 
-#icons02 {
-  font-size: 1em;
-  width: calc(100% + 1.25rem);
-  margin-left: -0.625rem; }
-
-#icons02 li {
-  margin: 0.625rem; }
-
-#icons02 li a {
-  border-radius: 2rem;
-  width: 2em;
-  height: 2em; }
-
-#icons02 li a svg {
-  width: 60%;
-  height: 60%; }
-
-#icons02 a svg {
-  fill: white; }
-
-#icons02 a {
-  border: solid 1px white; }
-
-#icons02 a:hover {
-  border-color: #1fe589 !important; }
-
-#icons02 a:hover svg {
-  fill: #1fe589 !important; }
-
-#icons02 .n01:hover {
-  border-color: #1fe589 !important; }
-
-#icons02 .n01:hover svg {
-  fill: #1fe589 !important; }
-
-div.service {
+div.box {
   border-style: solid;
   border-color: #1fe589;
   border-width: 4px;
@@ -480,25 +471,61 @@ div.service {
   height: 100%;
   position: relative; }
 
-div.service h3 {
-  padding-left: 2em;
-  padding-right: 2em; }
+div.box h3 {
+  padding: 0em 2em; }
 
-div.service a {
+div.box a {
   margin: auto; }
 
-div.service > div.flap {
+div.box > div.flap {
   display: block;
-  border-top-right-radius: 50%;
   border-color: #1fe589;
+  position: absolute;
+  border-width: 4px;
+  width: 10em; }
+
+div.box > div.flap-top-right {
+  border-top-right-radius: 50%;
   border-right-style: solid;
   border-top-style: solid;
-  border-width: 4px;
-  width: 10em;
   padding-bottom: 10em;
-  position: absolute;
   top: -4px;
   right: -4px; }
+
+div.box > div.flap-top-left {
+  border-top-left-radius: 50%;
+  border-left-style: solid;
+  border-top-style: solid;
+  padding-bottom: 10em;
+  top: -4px;
+  left: -4px; }
+
+div.box > div.flap-bottom-left {
+  border-bottom-left-radius: 50%;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  padding-bottom: 10em;
+  bottom: -4px;
+  left: -4px; }
+
+div.box > div.flap-bottom-right {
+  border-bottom-right-radius: 50%;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  padding-bottom: 10em;
+  bottom: -4px;
+  right: -4px; }
+
+div.box.case-study-info h4 {
+  font-family: "Gopher Regular", sans-serif;
+  margin: 0px; }
+
+div.box.case-study-info p {
+  margin: 0em;
+  color: #707070; }
+
+div.box.case-study-info > img {
+  height: 3em; }
 
 img.avatar {
   width: 6em;
@@ -520,7 +547,7 @@ img.avatar {
   width: 100%;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   color: white; }
 
 .btn-submit:active {
@@ -537,13 +564,14 @@ img.arrow-right {
   height: auto;
   width: 3.5em; }
 
-.footer {
-  padding-top: 3em;
-  padding-bottom: 3em; }
-
 @media (min-width: 992px) {
   div.container img.img-fluid.pad {
     padding: 1.5em; } }
+
+footer {
+  background-color: black;
+  padding-top: 3em;
+  padding-bottom: 3em; }
 
 footer a {
   color: #707070; }
@@ -614,7 +642,7 @@ div.bordered > div.dropdown {
 }
 */
 dl.faq dt {
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   color: #707070;
   border-color: #1fe589;
   border-bottom-style: solid;
@@ -657,40 +685,46 @@ p.taxes {
 .carousel-indicators.carousel-testimonials .active {
   background-color: #182935; }
 
-.avatar-with-name {
+.customer {
   margin-top: 1em;
   margin-bottom: 1em; }
 
-.avatar-with-name > * {
+.customer > * {
   vertical-align: middle; }
 
-.avatar-with-name .customer-name {
-  display: inline-block; }
-
-.avatar-with-name p {
-  margin: 0px;
-  color: #707070; }
+.customer .customer-info {
+  display: inline-block;
+  font-family: "Gopher Regular", sans-serif; }
 
 @media (min-width: 992px) {
-  .avatar-with-name p {
+  .customer .customer-info {
     text-align: left;
     margin-left: 1.5em; } }
+
+.dark .customer h6 {
+  color: #1fe589; }
+
+.customer p {
+  margin: 0px;
+  color: #909090;
+  font-size: 0.9em;
+  line-height: 1.25em; }
 
 .carousel-indicators-parent {
   margin-top: 1.5em;
   text-align: center; }
 
 .carousel {
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   font-size: 1.3em; }
 
 @media (max-width: 992px) {
-  .avatar-with-name .customer-name {
+  .customer .customer-info {
     display: block;
     margin-top: 1em; } }
 
 p.price {
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   color: #f1fff9;
   font-size: 6em;
   margin-top: 3rem;
@@ -706,19 +740,6 @@ p.price sup {
     margin-right: 2em; }
   div.price-box-right {
     margin-left: 2em; } }
-
-a.nav-button {
-  display: block;
-  background-color: #e6ad1c;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
-  text-decoration: none;
-  width: fit-content;
-  justify-content: center;
-  align-items: center;
-  padding-left: 1em !important;
-  padding-right: 1em !important;
-  color: #182935 !important;
-  border-radius: 2rem; }
 
 div.vertical-center {
   display: flex;
@@ -756,7 +777,7 @@ img.client-logo {
 .course-body p.level {
   color: #909090;
   font-size: 1em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   margin-bottom: 1.25rem;
   margin-top: 0rem; }
 
@@ -770,7 +791,7 @@ img.client-logo {
 .course-body li {
   color: #909090;
   font-size: 0.85rem;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   margin-bottom: 0.5rem;
   margin-top: 0rem; }
 
@@ -792,14 +813,14 @@ img.client-logo {
 
 .courses-tagline h1 {
   margin-left: 2rem;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   font-size: 2rem;
   max-width: 25rem; }
 
 .course-header div.featured-course {
   display: block;
   background-color: #e6ad1c;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   color: white;
   padding: 0.25rem 1rem;
   position: absolute;
@@ -829,7 +850,7 @@ input.button {
   border-radius: 2rem;
   background-color: #e6ad1c;
   border-width: 3px;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   text-decoration: none;
   width: 100%;
   font-size: 1.3em;
@@ -924,3 +945,11 @@ img.icon-mid {
 
 p.bigger {
   font-size: 1.25rem; }
+
+ul.case-study-index li {
+  background-image: url("/assets/img/arrow-cta-yellow.svg");
+  background-position-y: 0.3em;
+  background-repeat: no-repeat;
+  padding-left: 3em;
+  font-family: "Gopher Regular", sans-serif;
+  font-size: 1.1rem; }

@@ -22,6 +22,12 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Avenir Book';
+  src: url("/assets/font/avenir-book.woff2") format("woff2"), url("/assets/font/avenir-book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 article em {
   font-weight: normal; }
 
@@ -121,7 +127,7 @@ a.button {
   border-color: #e6ad1c;
   background-color: #e6ad1c;
   border-width: 3px;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: 'Gopher Regular', sans-serif;
   text-decoration: none;
   width: fit-content;
   font-size: 1.3em;
@@ -155,7 +161,7 @@ a.button-hollow {
   border-style: solid;
   border-color: #e6ad1c;
   border-width: 3px;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: 'Gopher Regular', sans-serif;
   text-decoration: none;
   width: fit-content;
   font-size: 1.3em;
@@ -209,7 +215,7 @@ a.button.button-green {
   height: 100%; }
 
 .hero {
-  font-family: "Gopher Regular", "Work Sans", sans-serif; }
+  font-family: "Gopher Regular", sans-serif; }
 
 .hero h1 {
   color: white;
@@ -227,7 +233,7 @@ a.button.button-green {
   margin-bottom: 0px; }
 
 .hero p.date {
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   font-size: 1.25rem;
   color: #a0a0a0;
   margin-top: 0px;
@@ -246,7 +252,7 @@ pre {
   border-width: 4px;
   margin: 0em 2rem;
   padding: 2em 2em;
-  font-family: "JetBrainsMono-Regular", "Work Sans", sans-serif; }
+  font-family: "JetBrainsMono-Regular", sans-serif; }
 
 div.post-author {
   border-top-style: solid;
@@ -254,29 +260,39 @@ div.post-author {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-color: #1fe589;
-  margin: 2em 0em; }
+  margin: 2em 0em;
+  padding: 1em 0em; }
 
-.post-author .customer-name {
+div.post-author > * {
+  vertical-align: middle; }
+
+div.post-author .post-author-name {
+  display: inline-block;
   margin: 2em 2em; }
 
-.post-author .customer-name h2 {
+div.post-author .post-author-name h2 {
   margin-bottom: 0.5em;
   text-align: left; }
 
-.post-author .customer-name p {
+div.post-author .post-author-name p {
   margin: 0px; }
 
-.post-author .customer-name {
+div.post-author .post-author-name {
   max-width: 30rem; }
 
-.post-author .customer-name ul.social-icons {
+div.post-author .post-author-name ul.social-icons {
   margin-top: 1em;
   display: flex; }
 
+@media (min-width: 992px) {
+  div.post-author p {
+    text-align: left;
+    margin-left: 1.5em; } }
+
 @media (max-width: 992px) {
-  .post-author .customer-name h2 {
+  div.post-author .post-author-name h2 {
     text-align: center; }
-  .post-author .customer-name ul.social-icons {
+  div.post-author .post-author-name ul.social-icons {
     display: inline-block; } }
 
 .bg-mask {
@@ -308,7 +324,7 @@ div.post-author {
   border-top-style: solid;
   border-top-width: 4px;
   font-size: 0.75em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif; }
+  font-family: "Gopher Regular", sans-serif; }
 
 .blog-item .post-title {
   position: absolute;
@@ -324,7 +340,7 @@ div.post-author {
 
 .post-card-detail {
   display: none;
-  font-family: "Gopher Regular", "Work Sans", sans-serif; }
+  font-family: "Gopher Regular", sans-serif; }
 
 .post-card-detail a {
   z-index: 1;
@@ -354,11 +370,11 @@ div.post-card-reading-time {
   transition: 0.2s; }
 
 .blog-carousel p.author-name {
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   margin: 1rem 0rem; }
 
 .blog-carousel h1 {
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   font-size: 2rem;
   margin: 1rem 0rem;
   max-width: 25rem; }
