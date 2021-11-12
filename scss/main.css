@@ -973,6 +973,9 @@ ul.case-study-index li {
   font-family: "Gopher Regular", sans-serif;
   font-size: 1.1rem; }
 
+ul.case-study-index li a {
+  color: #182935; }
+
 h2.with-arrow {
   background-image: url("/assets/img/arrow-right-secondary.svg");
   background-size: 2em;
@@ -994,7 +997,7 @@ h2.with-arrow {
 .left:before {
   left: -999em;
   background: #182935;
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 999em;
@@ -1006,7 +1009,7 @@ h2.with-arrow {
   .left:after {
     right: -999em;
     background: #182935;
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 999em;
@@ -1023,7 +1026,7 @@ h2.with-arrow {
   .right:before {
     left: -999em;
     background: #f1fff9;
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 999em;
@@ -1034,7 +1037,7 @@ h2.with-arrow {
 .right:after {
   right: -999em;
   background: #f1fff9;
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 999em;
