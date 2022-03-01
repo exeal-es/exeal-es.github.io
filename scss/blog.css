@@ -214,6 +214,9 @@ div.post-author {
 div.post-author > * {
   vertical-align: middle; }
 
+div.post-author > img {
+  width: 10em; }
+
 div.post-author .post-author-name {
   display: inline-block;
   margin: 2em 2em; }
