@@ -1079,8 +1079,8 @@ h2.with-arrow {
   margin-bottom: 1em; }
 
 .team-card {
-  width: 15vw;
-  height: fit-content;
+  width: 20vw;
+  min-height: 47vh;
   background-color: white;
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
