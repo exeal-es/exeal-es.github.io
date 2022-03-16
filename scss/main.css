@@ -1079,8 +1079,8 @@ h2.with-arrow {
   margin-bottom: 1em; }
 
 .team-card {
-  width: 20vw;
-  min-height: 47vh;
+  width: 100%;
+  height: fit-content;
   background-color: white;
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1098,6 +1098,30 @@ h2.with-arrow {
   .team-card:hover {
     box-shadow: 0 8px 16px 0 rgba(143, 143, 143, 0.6);
     cursor: pointer; }
+
+.team-card-container {
+  padding: 0px 1em;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column; }
+  .team-card-container > p {
+    margin: unset; }
+  .team-card-container > p:first-child {
+    margin-bottom: 0.5em;
+    font-weight: 800;
+    font-family: "Gopher Regular"; }
+  .team-card-container > p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    min-height: 12vh; }
+
+@media (max-width: 768px) {
+  .team-card-container {
+    height: unset; }
+  .team-card {
+    width: 100%; } }
 
 .modal-dialog {
   top: 5%;
@@ -1130,27 +1154,3 @@ h2.with-arrow {
     margin: 0; }
   .modal-team-header > ul {
     margin-top: 1em; }
-
-.team-card-container {
-  padding: 0px 1em;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column; }
-  .team-card-container > p {
-    margin: unset; }
-  .team-card-container > p:first-child {
-    margin-bottom: 0.5em;
-    font-weight: 800;
-    font-family: "Gopher Regular"; }
-  .team-card-container > p:nth-child(2) {
-    margin-bottom: 1em;
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-    font-weight: 400;
-    min-height: 4rem; }
-
-@media (max-width: 768px) {
-  .team-card-container {
-    height: unset; }
-  .team-card {
-    width: 100%; } }
