@@ -1078,50 +1078,53 @@ h2.with-arrow {
   color: #838383;
   margin-bottom: 1em; }
 
-.team-card {
+.team-card--outer {
+  display: flex;
+  flex-wrap: wrap; }
+
+.team-card--inner {
   width: 100%;
-  height: fit-content;
-  background-color: white;
-  color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  margin-bottom: 1em; }
-  .team-card > img {
+  transition: 0.3s; }
+  .team-card--inner > img {
     width: 100%;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
-  .team-card > img:hover {
+  .team-card--inner > img:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0); }
-  .team-card:hover {
+  .team-card--inner:hover {
     box-shadow: 0 8px 16px 0 rgba(143, 143, 143, 0.6);
     cursor: pointer; }
 
-.team-card-container {
-  padding: 0px 1em;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column; }
-  .team-card-container > p {
+.team-card--content {
+  flex: 1;
+  padding: 0px 1em; }
+  .team-card--content > p {
     margin: unset; }
-  .team-card-container > p:first-child {
+  .team-card--content > p:first-child {
     margin-bottom: 0.5em;
     font-weight: 800;
     font-family: "Gopher Regular"; }
-  .team-card-container > p:nth-child(2) {
+  .team-card--content > p:nth-child(2) {
     margin-bottom: 1em;
     font-size: 0.8rem;
     line-height: 1.2rem;
-    font-weight: 400;
-    min-height: 12vh; }
+    font-weight: 400; }
+
+.team-card--footer {
+  padding: 0px 1em; }
 
 @media (max-width: 768px) {
-  .team-card-container {
-    height: unset; }
-  .team-card {
-    width: 100%; } }
+  .team-card--inner {
+    width: 100%; }
+  .team-card--content {
+    height: unset; } }
 
 .modal-dialog {
   top: 5%;
@@ -1143,14 +1146,14 @@ h2.with-arrow {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out; }
 
-.modal-team-header {
+.modal-header--content {
   display: flex;
   flex-direction: column;
   width: 100%; }
-  .modal-team-header > p:first-child {
+  .modal-header--content > p:first-child {
     font-weight: 800;
     font-family: "Gopher Regular"; }
-  .modal-team-header > p {
+  .modal-header--content > p {
     margin: 0; }
-  .modal-team-header > ul {
+  .modal-header--content > ul {
     margin-top: 1em; }
