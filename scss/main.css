@@ -1160,3 +1160,9 @@ h2.with-arrow {
     margin: 0; }
   .modal-header--content > ul {
     margin-top: 1em; }
+
+.modal-body--link {
+  margin-top: 1em; }
+  .modal-body--link > a {
+    color: #1fe589;
+    font-weight: 800; }
