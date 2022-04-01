@@ -1128,9 +1128,10 @@ h2.with-arrow {
 
 .modal-header > .close {
   position: absolute;
-  padding: 0.5em;
-  right: 0.5em;
-  top: 0.5em; }
+  opacity: 1;
+  right: 20px;
+  width: 70px;
+  height: 70px; }
 
 .modal-header > img {
   width: 10em;
@@ -1154,8 +1155,7 @@ h2.with-arrow {
   .modal-header {
     flex-direction: column; }
     .modal-header > .close {
-      height: 1.5em;
-      width: 1.5em; }
+      position: unset; }
     .modal-header > img {
       width: 100%;
       margin-top: 1em; } }
