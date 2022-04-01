@@ -1078,54 +1078,6 @@ h2.with-arrow {
   color: #838383;
   margin-bottom: 1em; }
 
-.team-card--outer {
-  display: flex;
-  flex-wrap: wrap; }
-
-.team-card--inner {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s; }
-  .team-card--inner > img {
-    width: 100%;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out; }
-  .team-card--inner > img:hover {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0); }
-  .team-card--inner:hover {
-    box-shadow: 0 8px 16px 0 rgba(143, 143, 143, 0.6);
-    cursor: pointer; }
-
-.team-card--content {
-  flex: 1;
-  padding: 0px 1em; }
-  .team-card--content > p {
-    margin: unset; }
-  .team-card--content > p:first-child {
-    margin-bottom: 0.5em;
-    font-weight: 800;
-    font-family: "Gopher Regular"; }
-  .team-card--content > p:nth-child(2) {
-    margin-bottom: 1em;
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-    font-weight: 400; }
-
-.team-card--footer {
-  padding: 0px 1em; }
-
-@media (max-width: 768px) {
-  .team-card--inner {
-    width: 100%; }
-  .team-card--content {
-    height: unset; } }
-
 .modal-content {
   position: absolute;
   height: fit-content;
@@ -1134,6 +1086,10 @@ h2.with-arrow {
   left: 0;
   right: 0;
   border-radius: 0px !important; }
+
+.modal-header > .close {
+  right: 1em;
+  top: 1em; }
 
 .modal-header > img {
   width: 10em;
@@ -1152,6 +1108,16 @@ h2.with-arrow {
     margin: 0; }
   .modal-header--content > ul {
     margin-top: 1em; }
+
+@media (max-width: 768px) {
+  .modal-header {
+    flex-direction: column; }
+    .modal-header > .close {
+      height: 1.5em;
+      width: 1.5em; }
+    .modal-header > img {
+      width: 100%;
+      margin-top: 1em; } }
 
 .modal-body--link {
   margin-top: 1em; }
