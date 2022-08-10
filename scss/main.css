@@ -294,6 +294,19 @@ article a:hover {
   text-decoration: none;
   transition: 0.2s; }
 
+article table {
+  border-collapse: collapse;
+  width: 100%; }
+
+article th {
+  border: 1px solid #e6ad1c;
+  background-color: #1fe589;
+  padding: 0.5em; }
+
+article td {
+  border: 1px solid #e6ad1c;
+  padding: 0.5em; }
+
 html {
   font-size: 15pt; }
 
