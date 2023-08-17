@@ -376,6 +376,9 @@ p em {
   font-style: italic;
   font-weight: bold; }
 
+li em {
+  font-weight: bold; }
+
 nav.dark {
   border-style: solid;
   border-color: #8d9199;
