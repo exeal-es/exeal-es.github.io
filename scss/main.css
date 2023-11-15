@@ -978,6 +978,10 @@ p.taxes {
 .carousel-indicators.carousel-testimonials .active {
   background-color: #182935; }
 
+.carousel-item p {
+  font-family: "Avenir Book", Sans-Serif;
+  font-size: 1.05rem; }
+
 .customer {
   margin-top: 1em;
   margin-bottom: 1em; }
