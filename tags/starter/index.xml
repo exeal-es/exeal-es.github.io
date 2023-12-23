@@ -8,4 +8,6 @@ Tu tarea Tu tarea es crear una clase simple llamada SnakesLadders. Los casos de 
 Paso 1 Crea una calculadora simple de cadenas con una firma de método:
 int Add(string numbers) El método puede recibir hasta dos números, separados por comas, y devolverá su suma.
 Por ejemplo:
-Para las entradas &amp;quot;&amp;quot; o &amp;ldquo;1&amp;rdquo; o &amp;ldquo;1,2&amp;rdquo;. Para una cadena vacía, devolverá 0.</description></item></channel></rss>
+Para las entradas &amp;quot;&amp;quot; o &amp;ldquo;1&amp;rdquo; o &amp;ldquo;1,2&amp;rdquo;. Para una cadena vacía, devolverá 0.</description></item><item><title>Tic Tac Toe Kata</title><link>https://www.exeal.com/katas/tic-tac-toe-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/tic-tac-toe-kata/</guid><description>Tu tarea Implementar el clásico juego tres en raya, en el que dos jugadores X y O marcan alternadamente los espacios de un tablero de 3x3. El primer jugador que haga 3 en raya gana la partida.
+Las reglas del juego son las siguientes:
+El juego termina cuando todos los campos están ocupados. El juego termina cuando todos los campos en una columna son ocupados por un jugador. El juego termina cuando todos los campos en una fila son ocupados por un jugador.</description></item></channel></rss>
