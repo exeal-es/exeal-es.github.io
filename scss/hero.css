@@ -200,6 +200,12 @@ a.button.button-green {
   color: #182935;
   text-align: center; }
 
+a.button.button-dark {
+  background-color: #182935 !important;
+  border-style: none;
+  color: #f1fff9;
+  text-align: center; }
+
 @media (min-width: 992px) {
   .dark a.button:after {
     content: url("/assets/img/arrow-cta-dark.svg"); }
