@@ -1,16 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>experienced on Exeal</title><link>https://www.exeal.com/tags/experienced/</link><description>Recent content in experienced on Exeal</description><generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Thu, 18 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.exeal.com/tags/experienced/index.xml" rel="self" type="application/rss+xml"/><item><title>Corporate Hotel Booking</title><link>https://www.exeal.com/katas/corporate-hotel-booking/</link><pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/corporate-hotel-booking/</guid><description>Tu tarea Crear un motor de reservas de hoteles. Este motor debe satisfacer las necesidades de tres tipos diferentes de actores.
-Gerente del Hotel Rol: Establecer todos los diferentes tipos de habitaciones y cantidades respectivas para su hotel
-Casos de uso:
-Recuperar toda la información sobre el número de habitaciones de un hotel dado. Actualizar la cantidad de cierto tipo de habitación para un hotel dado. Un cambio en la cantidad de habitaciones no debe afectar las reservas existentes.</description></item><item><title>Birthday Greetings Kata</title><link>https://www.exeal.com/katas/birthday-greetings-kata/</link><pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/birthday-greetings-kata/</guid><description>Tu tarea Como eres una persona muy amigable, te gustaría enviar una nota de cumpleaños a todos los amigos que tienes. Pero tienes muchos amigos y eres un poco vago, puede que te lleve algunas veces escribir todas las notas a mano.
-La buena noticia es que este sistema puede hacerlo automáticamente por tí.
-Imagina que tienes un archivo plano con todos tus amigos:
-last_name, first_name, date_of_birth, email Doe, John, 1982/10/08, john.</description></item><item><title>Lift Pass Pricing Kata</title><link>https://www.exeal.com/katas/lift-pass-pricing-kata/</link><pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/lift-pass-pricing-kata/</guid><description>Tu tarea Esta aplicación resuelve el problema de calcular el precio de los forfaits, es decir, los pases para acceder a esquiar. Existe una lógica intrincada vinculada al tipo de forfait que deseas, tu edad y la fecha específica en la que te gustaría esquiar.
-Se pide implementar una nueva funcionalidad: poder obtener el precio de varios forfaits, no solo uno.
-Actualmente, el precio de un solo forfait está implementado; desafortunadamente, el código tal como está diseñado no es reutilizable.</description></item><item><title>Parrot Refactoring Kata</title><link>https://www.exeal.com/katas/parrot-refactoring-kata/</link><pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/parrot-refactoring-kata/</guid><description>Tu tarea ¿Puedes detectar algún &amp;ldquo;code smell&amp;rdquo; en este código? Te daré una pista, el problema más evidente se engloba dentro de la categoría de Object orientation abusers.
-Cómo resolverla Descarga el código inicial aquí, y elige el lenguaje en el que desees resolver la kata: https://github.com/emilybache/Parrot-Refactoring-Kata
-Refactoriza el código aplicando los movimientos de la receta &amp;ldquo;Reemplazar condicional con polimorfismo&amp;rdquo;, dando pequeños pasos, y ejecutando los tests con frecuencia. Intenta no modificar el código de producción y el código de tests a la vez y, sobre todo, mantener los tests en verde en todo momento.</description></item><item><title>Bank Kata</title><link>https://www.exeal.com/katas/bank-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/bank-kata/</guid><description>Tu tarea Implementar un servicio para gestionar transacciones de una cuenta bancaria, así como imprimir el extracto bancario. Dicho servicio debe respetar la siguiente interfaz:
-interface AccountService { void deposit(int amount) void withdraw(int amount) void printStatement() } Asumimos que el método printStatement() imprime el extracto bancario a través de la consola o salida estándar.
-Por simplicidad, usaremos int para representar las cantidades monetarias (aunque sabemos que esto no es una buena práctica en sistemas productivos).</description></item><item><title>Trip Service Kata</title><link>https://www.exeal.com/katas/trip-service-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/trip-service-kata/</guid><description>Tu tarea El código de inicio de esta kata consiste en un servicio (TripService) que no está testeado. El código contiene dos dependencias que evitan que añadamos tests correctamente.
-Nuestras tareas con este código son:
-Desacoplar las dependencias que impiden cubrir el código con tests. Añadir tests de caracterización para todos los casos necesarios. Refactorizar el código resultante para mejorar la legibilidad. Reglas:
-No podemos cambiar ningún código existente si no está cubierto por tests.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Experienced on Exeal</title><link>https://www.exeal.com/tags/experienced/</link><description>Recent content in Experienced on Exeal</description><generator>Hugo</generator><language>es</language><lastBuildDate>Thu, 18 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.exeal.com/tags/experienced/index.xml" rel="self" type="application/rss+xml"/><item><title>Corporate Hotel Booking</title><link>https://www.exeal.com/katas/corporate-hotel-booking/</link><pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/corporate-hotel-booking/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Crear un motor de reservas de hoteles. Este motor debe satisfacer las necesidades de tres tipos diferentes de actores.&lt;/p>
+&lt;h3 id="gerente-del-hotel">Gerente del Hotel&lt;/h3>
+&lt;p>&lt;em>Rol: Establecer todos los diferentes tipos de habitaciones y cantidades respectivas para su hotel&lt;/em>&lt;/p>
+&lt;p>Casos de uso:&lt;/p>
+&lt;ul>
+&lt;li>Recuperar toda la información sobre el número de habitaciones de un hotel dado.&lt;/li>
+&lt;li>Actualizar la cantidad de cierto tipo de habitación para un hotel dado.
+&lt;ul>
+&lt;li>Un cambio en la cantidad de habitaciones no debe afectar las reservas existentes. Solo afectarán las nuevas reservas realizadas después del cambio.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="administrador-de-la-empresa">Administrador de la Empresa&lt;/h3>
+&lt;p>&lt;em>Rol: Agregar/eliminar empleados y también crear políticas de reserva para su empresa y empleados.&lt;/em>&lt;/p></description></item><item><title>Birthday Greetings Kata</title><link>https://www.exeal.com/katas/birthday-greetings-kata/</link><pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/birthday-greetings-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Como eres una persona muy amigable, te gustaría enviar una nota de cumpleaños a todos los amigos que tienes. Pero tienes muchos amigos y eres un poco vago, puede que te lleve algunas veces escribir todas las notas a mano.&lt;/p>
+&lt;p>La buena noticia es que este sistema puede hacerlo automáticamente por tí.&lt;/p>
+&lt;p>Imagina que tienes un archivo plano con todos tus amigos:&lt;/p>
+&lt;pre tabindex="0">&lt;code>last_name, first_name, date_of_birth, email
+ Doe, John, 1982/10/08, john.doe@foobar.com
+ Ann, Mary, 1975/09/11, mary.ann@foobar.com
+&lt;/code>&lt;/pre>&lt;p>Y desea enviarles un correo de feliz cumpleaños en su fecha de nacimiento:&lt;/p></description></item><item><title>Lift Pass Pricing Kata</title><link>https://www.exeal.com/katas/lift-pass-pricing-kata/</link><pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/lift-pass-pricing-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Esta aplicación resuelve el problema de calcular el precio de los &lt;em>forfaits&lt;/em>, es decir, los pases para acceder a esquiar. Existe una lógica intrincada vinculada al tipo de &lt;em>forfait&lt;/em> que deseas, tu edad y la fecha específica en la que te gustaría esquiar.&lt;/p>
+&lt;p>Se pide implementar una nueva funcionalidad: poder obtener el precio de varios &lt;em>forfaits&lt;/em>, no solo uno.&lt;/p>
+&lt;p>Actualmente, el precio de un solo &lt;em>forfait&lt;/em> está implementado; desafortunadamente, el código tal como está diseñado no es reutilizable. Podrías implementar algunos tests de alto nivel para realizar una refactorización preparatoria de modo que la nueva funcionalidad requiera un esfuerzo mínimo para implementarse.&lt;/p></description></item><item><title>Parrot Refactoring Kata</title><link>https://www.exeal.com/katas/parrot-refactoring-kata/</link><pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/parrot-refactoring-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>¿Puedes detectar algún &amp;ldquo;code smell&amp;rdquo; en este código? Te daré una pista, el problema más evidente se engloba dentro de la categoría de &lt;a href="https://refactoring.guru/es/refactoring/smells/oo-abusers">Object orientation abusers&lt;/a>.&lt;/p>
+&lt;h2 id="cómo-resolverla">Cómo resolverla&lt;/h2>
+&lt;p>Descarga el código inicial aquí, y elige el lenguaje en el que desees resolver la kata: &lt;a href="https://github.com/emilybache/Parrot-Refactoring-Kata">https://github.com/emilybache/Parrot-Refactoring-Kata&lt;/a>&lt;/p>
+&lt;p>Refactoriza el código aplicando los movimientos de la receta &lt;a href="https://refactoring.guru/es/replace-conditional-with-polymorphism">&amp;ldquo;Reemplazar condicional con polimorfismo&amp;rdquo;&lt;/a>, dando pequeños pasos, y ejecutando los tests con frecuencia. Intenta no modificar el código de producción y el código de tests a la vez y, sobre todo, &lt;strong>mantener los tests en verde en todo momento&lt;/strong>.&lt;/p></description></item><item><title>Bank Kata</title><link>https://www.exeal.com/katas/bank-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/bank-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Implementar un servicio para gestionar transacciones de una cuenta bancaria, así como imprimir el extracto bancario. Dicho servicio debe respetar la siguiente interfaz:&lt;/p>
+&lt;pre tabindex="0">&lt;code>interface AccountService {
+ void deposit(int amount) 
+ void withdraw(int amount) 
+ void printStatement()
+}
+&lt;/code>&lt;/pre>&lt;p>Asumimos que el método &lt;code>printStatement()&lt;/code> imprime el extracto bancario a través de la consola o salida estándar.&lt;/p>
+&lt;p>Por simplicidad, usaremos &lt;code>int&lt;/code> para representar las cantidades monetarias (aunque sabemos que esto no es una buena práctica en sistemas productivos).&lt;/p></description></item><item><title>Trip Service Kata</title><link>https://www.exeal.com/katas/trip-service-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/trip-service-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>El código de inicio de esta kata consiste en un servicio (&lt;code>TripService&lt;/code>) que no está testeado. El código contiene dos dependencias que evitan que añadamos tests correctamente.&lt;/p>
+&lt;p>Nuestras tareas con este código son:&lt;/p>
+&lt;ul>
+&lt;li>Desacoplar las dependencias que impiden cubrir el código con tests.&lt;/li>
+&lt;li>Añadir tests de caracterización para todos los casos necesarios.&lt;/li>
+&lt;li>Refactorizar el código resultante para mejorar la legibilidad.&lt;/li>
+&lt;/ul>
+&lt;p>Reglas:&lt;/p>
+&lt;ul>
+&lt;li>No podemos cambiar ningún código existente si no está cubierto por tests.&lt;/li>
+&lt;li>No podemos permitirnos romper ningún comportamiento existente.
+&lt;ul>
+&lt;li>La única excepción es si necesitamos modificar el código para agregar pruebas unitarias, pero en este caso, solo se permiten refactorizaciones automatizadas (a través del IDE).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Código de inicio de la kata: &lt;a href="https://github.com/exeal-es/trip-service-kata">https://github.com/exeal-es/trip-service-kata&lt;/a>&lt;/p></description></item></channel></rss>

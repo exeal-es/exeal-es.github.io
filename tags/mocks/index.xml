@@ -1,8 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>mocks on Exeal</title><link>https://www.exeal.com/tags/mocks/</link><description>Recent content in mocks on Exeal</description><generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sun, 30 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.exeal.com/tags/mocks/index.xml" rel="self" type="application/rss+xml"/><item><title>Birthday Greetings Kata</title><link>https://www.exeal.com/katas/birthday-greetings-kata/</link><pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/birthday-greetings-kata/</guid><description>Tu tarea Como eres una persona muy amigable, te gustaría enviar una nota de cumpleaños a todos los amigos que tienes. Pero tienes muchos amigos y eres un poco vago, puede que te lleve algunas veces escribir todas las notas a mano.
-La buena noticia es que este sistema puede hacerlo automáticamente por tí.
-Imagina que tienes un archivo plano con todos tus amigos:
-last_name, first_name, date_of_birth, email Doe, John, 1982/10/08, john.</description></item><item><title>Bank Kata</title><link>https://www.exeal.com/katas/bank-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/bank-kata/</guid><description>Tu tarea Implementar un servicio para gestionar transacciones de una cuenta bancaria, así como imprimir el extracto bancario. Dicho servicio debe respetar la siguiente interfaz:
-interface AccountService { void deposit(int amount) void withdraw(int amount) void printStatement() } Asumimos que el método printStatement() imprime el extracto bancario a través de la consola o salida estándar.
-Por simplicidad, usaremos int para representar las cantidades monetarias (aunque sabemos que esto no es una buena práctica en sistemas productivos).</description></item><item><title>Ohce Kata</title><link>https://www.exeal.com/katas/ohce-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/ohce-kata/</guid><description>Tu tarea ohce es una aplicación de consola que reproduce al revés lo que ingreses a través de la consola.
-Aunque parezca una aplicación tonta, ohce hace algunas cosas más:
-Cuando inicias ohce, te saluda de manera diferente según la hora actual, pero solo en español: Entre las 20 y las 6 horas, ohce te saludará diciendo: ¡Buenas noches &amp;lt;tu nombre&amp;gt;! Entre las 6 y las 12 horas, ohce te saludará diciendo: ¡Buenos días &amp;lt;tu nombre&amp;gt;!</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mocks on Exeal</title><link>https://www.exeal.com/tags/mocks/</link><description>Recent content in Mocks on Exeal</description><generator>Hugo</generator><language>es</language><lastBuildDate>Sun, 30 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.exeal.com/tags/mocks/index.xml" rel="self" type="application/rss+xml"/><item><title>Birthday Greetings Kata</title><link>https://www.exeal.com/katas/birthday-greetings-kata/</link><pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/birthday-greetings-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Como eres una persona muy amigable, te gustaría enviar una nota de cumpleaños a todos los amigos que tienes. Pero tienes muchos amigos y eres un poco vago, puede que te lleve algunas veces escribir todas las notas a mano.&lt;/p>
+&lt;p>La buena noticia es que este sistema puede hacerlo automáticamente por tí.&lt;/p>
+&lt;p>Imagina que tienes un archivo plano con todos tus amigos:&lt;/p>
+&lt;pre tabindex="0">&lt;code>last_name, first_name, date_of_birth, email
+ Doe, John, 1982/10/08, john.doe@foobar.com
+ Ann, Mary, 1975/09/11, mary.ann@foobar.com
+&lt;/code>&lt;/pre>&lt;p>Y desea enviarles un correo de feliz cumpleaños en su fecha de nacimiento:&lt;/p></description></item><item><title>Bank Kata</title><link>https://www.exeal.com/katas/bank-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/bank-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Implementar un servicio para gestionar transacciones de una cuenta bancaria, así como imprimir el extracto bancario. Dicho servicio debe respetar la siguiente interfaz:&lt;/p>
+&lt;pre tabindex="0">&lt;code>interface AccountService {
+ void deposit(int amount) 
+ void withdraw(int amount) 
+ void printStatement()
+}
+&lt;/code>&lt;/pre>&lt;p>Asumimos que el método &lt;code>printStatement()&lt;/code> imprime el extracto bancario a través de la consola o salida estándar.&lt;/p>
+&lt;p>Por simplicidad, usaremos &lt;code>int&lt;/code> para representar las cantidades monetarias (aunque sabemos que esto no es una buena práctica en sistemas productivos).&lt;/p></description></item><item><title>Ohce Kata</title><link>https://www.exeal.com/katas/ohce-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/ohce-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>&lt;strong>ohce&lt;/strong> es una aplicación de consola que reproduce al revés lo que ingreses a través de la consola.&lt;/p>
+&lt;p>Aunque parezca una aplicación tonta, ohce hace algunas cosas más:&lt;/p>
+&lt;ul>
+&lt;li>Cuando inicias ohce, te saluda de manera diferente según la hora actual, pero solo en español:
+&lt;ul>
+&lt;li>Entre las 20 y las 6 horas, ohce te saludará diciendo: &lt;code>¡Buenas noches &amp;lt;tu nombre&amp;gt;!&lt;/code>&lt;/li>
+&lt;li>Entre las 6 y las 12 horas, ohce te saludará diciendo: &lt;code>¡Buenos días &amp;lt;tu nombre&amp;gt;!&lt;/code>&lt;/li>
+&lt;li>Entre las 12 y las 20 horas, ohce te saludará diciendo: &lt;code>¡Buenas tardes &amp;lt;tu nombre&amp;gt;!&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cuando introduces un palíndromo, a ohce le gusta y después de eco-revertirlo, añade ¡Bonita palabra!&lt;/li>
+&lt;li>ohce sabe cuándo detenerse, solo tienes que escribir &lt;code>Stop!&lt;/code> y responderá &lt;code>Adiós &amp;lt;tu nombre&amp;gt;&lt;/code> y finalizará.&lt;/li>
+&lt;/ul>
+&lt;p>Este es un ejemplo de cómo usar ohce durante la mañana:&lt;/p></description></item></channel></rss>

@@ -1,2 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>design-patterns on Exeal</title><link>https://www.exeal.com/tags/design-patterns/</link><description>Recent content in design-patterns on Exeal</description><generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sat, 23 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.exeal.com/tags/design-patterns/index.xml" rel="self" type="application/rss+xml"/><item><title>Mars Rover Kata</title><link>https://www.exeal.com/katas/mars-rover-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/mars-rover-kata/</guid><description>Tu tarea Formas parte del equipo que explora Marte enviando vehículos controlados de forma remota a la superficie del planeta. Desarrolla una API que traduzca las instrucciones enviadas desde la Tierra a comandos que el rover pueda entender.
-Requisitos Se te proporciona el punto de inicio inicial (x, y) de un rover y la dirección (N, S, E, W) en la que está orientado. El rover recibe una matriz de caracteres con comandos.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Design-Patterns on Exeal</title><link>https://www.exeal.com/tags/design-patterns/</link><description>Recent content in Design-Patterns on Exeal</description><generator>Hugo</generator><language>es</language><lastBuildDate>Sat, 23 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.exeal.com/tags/design-patterns/index.xml" rel="self" type="application/rss+xml"/><item><title>Mars Rover Kata</title><link>https://www.exeal.com/katas/mars-rover-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/mars-rover-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Formas parte del equipo que explora Marte enviando vehículos controlados de forma remota a la superficie del planeta. Desarrolla una API que traduzca las instrucciones enviadas desde la Tierra a comandos que el rover pueda entender.&lt;/p>
+&lt;p>&lt;img src="https://www.exeal.com/images/katas/marsrover.jpg" alt="">&lt;/p>
+&lt;h3 id="requisitos">Requisitos&lt;/h3>
+&lt;ul>
+&lt;li>Se te proporciona el punto de inicio inicial (x, y) de un rover y la dirección (N, S, E, W) en la que está orientado.&lt;/li>
+&lt;li>El rover recibe una matriz de caracteres con comandos.&lt;/li>
+&lt;li>Implementa comandos que muevan el rover hacia adelante/atrás (f, b).&lt;/li>
+&lt;li>Implementa comandos que giren el rover a la izquierda/derecha (l, r).&lt;/li>
+&lt;li>Implementa el desbordamiento en los bordes. Pero ten cuidado, los planetas son esferas.&lt;/li>
+&lt;li>Implementa la detección de obstáculos antes de cada movimiento a un nuevo cuadro. Si una secuencia dada de comandos encuentra un obstáculo, el rover se mueve hasta el último punto posible, aborta la secuencia e informa sobre el obstáculo.&lt;/li>
+&lt;/ul>
+&lt;h3 id="reglas">Reglas&lt;/h3>
+&lt;ul>
+&lt;li>Ten cuidado con los casos límite y las excepciones. No podemos permitirnos perder un rover en Marte simplemente porque los desarrolladores pasaron por alto una referencia nula.&lt;/li>
+&lt;/ul>
+&lt;h2 id="recursos">Recursos&lt;/h2>
+&lt;p>Fuente: &lt;a href="https://technologyconversations.com/2014/10/17/java-tutorial-through-katas-mars-rover/">https://technologyconversations.com/2014/10/17/java-tutorial-through-katas-mars-rover/&lt;/a>&lt;/p></description></item></channel></rss>
