@@ -76,7 +76,7 @@ article table {
 
 article th {
   border: 1px solid #e6ad1c;
-  background-color: #1fe589;
+  background-color: #05e69b;
   padding: 0.5em; }
 
 article td {
@@ -195,7 +195,7 @@ ul.tags.tags-small {
   width: 100%; }
 
 .button.button-green {
-  background-color: #1fe589 !important;
+  background-color: #05e69b !important;
   border-style: none;
   color: #182935;
   text-align: center; }
@@ -229,7 +229,7 @@ div.post-author {
   border-top-width: 1px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-color: #1fe589;
+  border-color: #05e69b;
   margin: 2em 0em;
   padding: 1em 0em; }
 
@@ -293,7 +293,7 @@ div.post-author .post-author-name ul.social-icons {
   margin-bottom: 0em; }
 
 .blog-item p.author {
-  border-top: #1fe589;
+  border-top: #05e69b;
   border-top-style: solid;
   border-top-width: 4px;
   font-size: 0.75em;
@@ -329,7 +329,7 @@ div.post-card-reading-time {
   left: 2rem;
   right: 2rem;
   font-size: 0.85em;
-  color: #1fe589; }
+  color: #05e69b; }
 
 .post-card-summary {
   font-size: 1.15em; }
