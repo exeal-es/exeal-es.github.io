@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arquitectura on Exeal</title><link>https://www.exeal.com/tags/arquitectura/</link><description>Recent content in Arquitectura on Exeal</description><generator>Hugo</generator><language>es</language><lastBuildDate>Mon, 14 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://www.exeal.com/tags/arquitectura/index.xml" rel="self" type="application/rss+xml"/><item><title>Social Network Kata</title><link>https://www.exeal.com/katas/social-network-kata/</link><pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/social-network-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arquitectura on Exeal</title><link>https://www.exeal.com/tags/arquitectura/</link><description>Recent content in Arquitectura on Exeal</description><generator>Hugo</generator><language>es</language><lastBuildDate>Tue, 13 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://www.exeal.com/tags/arquitectura/index.xml" rel="self" type="application/rss+xml"/><item><title>URL Shortener Kata</title><link>https://www.exeal.com/katas/url-shortener/</link><pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/url-shortener/</guid><description>&lt;h2 id="problema-de-negocio">Problema de negocio&lt;/h2>
+&lt;p>Tu equipo ha sido encargado de desarrollar la primera versión de un sistema de acortado de URLs llamado &lt;strong>HexaShort&lt;/strong>, que permita a los usuarios:&lt;/p>
+&lt;h3 id="1-casos-de-uso-principales">1. Casos de uso principales:&lt;/h3>
+&lt;p>&lt;strong>Crear un short URL&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>A partir de una URL larga, el sistema debe generar un slug único y devolver la URL acortada.&lt;/li>
+&lt;li>Opcionalmente, el usuario puede proponer un slug personalizado.&lt;/li>
+&lt;li>El sistema debe rechazar slugs que ya estén en uso.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Resolver un short URL&lt;/strong>&lt;/p></description></item><item><title>Social Network Kata</title><link>https://www.exeal.com/katas/social-network-kata/</link><pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/social-network-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
 &lt;p>Implementa una aplicación de consola (similar a Twitter) que cumpla con los siguientes escenarios.&lt;/p>
 &lt;h2 id="escenarios">Escenarios&lt;/h2>
 &lt;h3 id="publicar">Publicar&lt;/h3>
