@@ -236,10 +236,8 @@ ul.tags.tags-small {
 .hero-bg-img-mask {
   height: 100%; }
 
-.hero {
-  font-family: "Gopher Regular", sans-serif; }
-
 .hero h1 {
+  font-family: "Gopher Regular", sans-serif;
   color: white;
   font-size: 3rem;
   font-weight: normal;
