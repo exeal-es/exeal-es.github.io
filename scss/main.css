@@ -354,6 +354,9 @@ h1 {
   font-weight: normal;
   font-style: normal; }
 
+h1 em {
+  color: #05e69b; }
+
 h2 {
   font-size: 1.5em;
   font-family: "Gopher Regular", sans-serif;
@@ -1257,3 +1260,62 @@ ul.blocks div.inner {
   color: #05e69b;
   margin: 1rem;
   background-color: #f1fff9; }
+
+.nextevent {
+  display: flex;
+  align-items: stretch;
+  padding: 1.5rem 0;
+  position: relative;
+  min-height: 180px; }
+
+.nextevent-image {
+  width: 180px;
+  height: auto;
+  flex-shrink: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center; }
+
+.nextevent-image img {
+  width: 180px;
+  height: 100%;
+  object-fit: cover; }
+
+.nextevent-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem; }
+
+.nextevent-title {
+  font-family: "Gopher Regular", sans-serif;
+  font-size: 1.5rem;
+  margin: 0; }
+
+.nextevent-subtitle {
+  color: #555;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem; }
+
+.nextevent-meta {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 1.5rem; }
+
+.nextevent-meta span {
+  font-weight: 500; }
+
+.nextevent-meta span:not(:last-child)::after {
+  content: " |";
+  margin-left: 0.7rem;
+  color: #d1d3d6; }
+
+@media (max-width: 768px) {
+  .nextevent-meta span:not(:last-child)::after {
+    content: "";
+    margin-left: 0; }
+  .nextevent-meta {
+    gap: 0.7rem; } }
