@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tdd on Exeal</title><link>https://www.exeal.com/katas/tags/tdd/</link><description>Recent content in Tdd on Exeal</description><generator>Hugo</generator><language>es</language><lastBuildDate>Mon, 14 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://www.exeal.com/katas/tags/tdd/index.xml" rel="self" type="application/rss+xml"/><item><title>Social Network Kata</title><link>https://www.exeal.com/katas/social-network-kata/</link><pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/social-network-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Implementa una aplicación de consola (similar a Twitter) que cumpla con los siguientes escenarios.&lt;/p>
+&lt;h2 id="escenarios">Escenarios&lt;/h2>
+&lt;h3 id="publicar">Publicar&lt;/h3>
+&lt;p>Alice puede publicar mensajes en su línea de tiempo personal.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-md" data-lang="md">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">Alice -&amp;gt; Me encanta el clima de hoy
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">&lt;/span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">Bob -&amp;gt; ¡Maldita sea! ¡Perdimos!
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">&lt;/span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">Bob -&amp;gt; Aunque fue un buen partido.
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="leer">Leer&lt;/h3>
+&lt;p>Bob puede ver la línea de tiempo de Alice.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-md" data-lang="md">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">Alice
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">&lt;/span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">Me encanta el clima de hoy (hace 5 minutos)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">&lt;/span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">Bob
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">&lt;/span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">Aunque fue un buen partido. (hace 1 minuto)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">&lt;/span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">¡Maldita sea! ¡Perdimos! (hace 2 minutos)
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="seguir">Seguir&lt;/h3>
+&lt;p>Charlie puede suscribirse a las líneas de tiempo de Alice y Bob, y ver una lista agregada de todas sus suscripciones.&lt;/p></description></item><item><title>Corporate Hotel Booking</title><link>https://www.exeal.com/katas/corporate-hotel-booking/</link><pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/corporate-hotel-booking/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Crear un motor de reservas de hoteles. Este motor debe satisfacer las necesidades de tres tipos diferentes de actores.&lt;/p>
+&lt;h3 id="gerente-del-hotel">Gerente del Hotel&lt;/h3>
+&lt;p>&lt;em>Rol: Establecer todos los diferentes tipos de habitaciones y cantidades respectivas para su hotel&lt;/em>&lt;/p>
+&lt;p>Casos de uso:&lt;/p>
+&lt;ul>
+&lt;li>Recuperar toda la información sobre el número de habitaciones de un hotel dado.&lt;/li>
+&lt;li>Actualizar la cantidad de cierto tipo de habitación para un hotel dado.
+&lt;ul>
+&lt;li>Un cambio en la cantidad de habitaciones no debe afectar las reservas existentes. Solo afectarán las nuevas reservas realizadas después del cambio.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="administrador-de-la-empresa">Administrador de la Empresa&lt;/h3>
+&lt;p>&lt;em>Rol: Agregar/eliminar empleados y también crear políticas de reserva para su empresa y empleados.&lt;/em>&lt;/p></description></item><item><title>Birthday Greetings Kata</title><link>https://www.exeal.com/katas/birthday-greetings-kata/</link><pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/birthday-greetings-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Como eres una persona muy amigable, te gustaría enviar una nota de cumpleaños a todos los amigos que tienes. Pero tienes muchos amigos y eres un poco vago, puede que te lleve algunas veces escribir todas las notas a mano.&lt;/p>
+&lt;p>La buena noticia es que este sistema puede hacerlo automáticamente por tí.&lt;/p>
+&lt;p>Imagina que tienes un archivo plano con todos tus amigos:&lt;/p>
+&lt;pre tabindex="0">&lt;code>last_name, first_name, date_of_birth, email
+ Doe, John, 1982/10/08, john.doe@foobar.com
+ Ann, Mary, 1975/09/11, mary.ann@foobar.com
+&lt;/code>&lt;/pre>&lt;p>Y desea enviarles un correo de feliz cumpleaños en su fecha de nacimiento:&lt;/p></description></item><item><title>Factorial Kata</title><link>https://www.exeal.com/katas/factorial-kata/</link><pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/factorial-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>El &lt;strong>factorial&lt;/strong> de un número natural, también notado como &lt;code>n!&lt;/code>, se define como:&lt;/p>
+&lt;ul>
+&lt;li>0! = 1&lt;/li>
+&lt;li>n! = n x (n-1) x (n-2) x &amp;hellip; x 1&lt;/li>
+&lt;/ul>
+&lt;p>Escribe una función que tome un número entero y devuelva su factorial.&lt;/p></description></item><item><title>Fibonacci Kata</title><link>https://www.exeal.com/katas/fibonacci-kata/</link><pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/fibonacci-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>La secuencia de &lt;em>Fibonacci&lt;/em> se define como:&lt;/p>
+&lt;ul>
+&lt;li>fib(0) = 0&lt;/li>
+&lt;li>fib(1) = 1&lt;/li>
+&lt;li>fib(n) = fib(n-1) + fib(n-2) para n&amp;gt;=2&lt;/li>
+&lt;/ul>
+&lt;p>Escribe una función para generar el número Fibonacci para la posición n.&lt;/p>
+&lt;p>Ejemplo:&lt;/p>
+&lt;p>&lt;code>int Fibonacci(int n)&lt;/code>&lt;/p>
+&lt;p>Los primeros números Fibonacci en la secuencia son: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.&lt;/p></description></item><item><title>Password Input Field Validation Kata</title><link>https://www.exeal.com/katas/password-input-field-validation-kata/</link><pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/password-input-field-validation-kata/</guid><description>&lt;p>Crea una función que pueda ser utilizada como validador para el campo de contraseña de un formulario de registro de usuario. La función de validación toma una cadena como entrada y devuelve un resultado de validación. El resultado de validación debe contener un booleano que indique si la contraseña es válida o no, y también un campo con los posibles errores de validación.&lt;/p>
+&lt;p>Requisitos:&lt;/p>
+&lt;ul>
+&lt;li>La contraseña debe tener al menos 8 caracteres de longitud. Si no se cumple, entonces se debe devolver el siguiente mensaje de error: &lt;code>&amp;quot;La contraseña debe tener al menos 8 caracteres&amp;quot;&lt;/code>.&lt;/li>
+&lt;li>La contraseña debe contener al menos 2 números. Si no se cumple, entonces se debe devolver el siguiente mensaje de error: &lt;code>&amp;quot;La contraseña debe contener al menos 2 números&amp;quot;&lt;/code>.&lt;/li>
+&lt;li>La función de validación debe manejar múltiples errores de validación.
+&lt;ul>
+&lt;li>Por ejemplo, &lt;code>&amp;quot;abcd&amp;quot;&lt;/code> debería mostrar un mensaje de error: &lt;code>&amp;quot;La contraseña debe tener al menos 8 caracteres\nLa contraseña debe contener al menos 2 números&amp;quot;&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>La contraseña debe contener al menos una letra mayúscula. Si no se cumple, entonces se debe devolver el siguiente mensaje de error: &lt;code>&amp;quot;La contraseña debe contener al menos una letra mayúscula&amp;quot;&lt;/code>.&lt;/li>
+&lt;li>La contraseña debe contener al menos un carácter especial. Si no se cumple, entonces se debe devolver el siguiente mensaje de error: &lt;code>&amp;quot;La contraseña debe contener al menos un carácter especial&amp;quot;&lt;/code>.&lt;/li>
+&lt;/ul></description></item><item><title>Point of Sale Kata</title><link>https://www.exeal.com/katas/point-of-sale-kata/</link><pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/point-of-sale-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Crea una aplicación sencilla para escanear códigos de barras y vender productos.&lt;/p>
+&lt;p>Requisitos:&lt;/p>
+&lt;ul>
+&lt;li>El código de barras &lt;code>12345&lt;/code> debe mostrar el precio &lt;code>$7.25&lt;/code>.&lt;/li>
+&lt;li>El código de barras &lt;code>23456&lt;/code> debe mostrar el precio &lt;code>$12.50&lt;/code>.&lt;/li>
+&lt;li>El código de barras &lt;code>99999&lt;/code> debe mostrar &lt;code>&amp;quot;Error: código de barras no encontrado&amp;quot;&lt;/code>.&lt;/li>
+&lt;li>Un código de barras vacío debe mostrar &lt;code>&amp;quot;Error: código de barras vacío&amp;quot;&lt;/code>.&lt;/li>
+&lt;li>Introduce un concepto de comando total donde sea posible escanear múltiples productos. El comando mostraría la suma de los precios de los productos escaneados.&lt;/li>
+&lt;/ul></description></item><item><title>Roman Numerals Kata</title><link>https://www.exeal.com/katas/roman-numerals-kata/</link><pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/roman-numerals-kata/</guid><description>&lt;p>Los romanos fueron un grupo ingenioso. Conquistaron la mayor parte de Europa y la gobernaron durante cientos de años. Inventaron el concreto, las carreteras rectas e incluso los &lt;a href="https://sights.seindal.dk/italy/sicily/piazza-armerina/villa-romana-del-casale/">bikinis&lt;/a>. Sin embargo, una cosa que nunca descubrieron fue el número cero. Esto hizo que escribir y fechar extensas historias de sus hazañas fuera un poco más desafiante, pero el sistema de números que idearon aún se usa hoy en día. Por ejemplo, la BBC utiliza números romanos para fechar sus programas.&lt;/p></description></item><item><title>Search Functionality Kata</title><link>https://www.exeal.com/katas/search-functionality-kata/</link><pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/search-functionality-kata/</guid><description>&lt;p>Implementa una funcionalidad de búsqueda de ciudades. La función toma una cadena (texto de búsqueda) como entrada y devuelve las ciudades encontradas que corresponden al texto de búsqueda.&lt;/p>
+&lt;h2 id="prerrequisitos">Prerrequisitos&lt;/h2>
+&lt;p>Crea una colección de cadenas que actuarán como una base de datos para los nombres de ciudades.&lt;/p>
+&lt;pre tabindex="0">&lt;code>Nombres de ciudades: París, Budapest, Skopje, Róterdam, Valencia, Vancouver, Ámsterdam, Viena, Sídney, Ciudad de Nueva York, Londres, Bangkok, Hong Kong, Dubái, Roma, Estambul
+&lt;/code>&lt;/pre>&lt;h2 id="requisitos">Requisitos&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Si el texto de búsqueda tiene menos de 2 caracteres, entonces debería devolver ningún resultado. (Es una característica de optimización de la funcionalidad de búsqueda).&lt;/p></description></item><item><title>Bank Kata</title><link>https://www.exeal.com/katas/bank-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/bank-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Implementar un servicio para gestionar transacciones de una cuenta bancaria, así como imprimir el extracto bancario. Dicho servicio debe respetar la siguiente interfaz:&lt;/p>
+&lt;pre tabindex="0">&lt;code>interface AccountService {
+ void deposit(int amount) 
+ void withdraw(int amount) 
+ void printStatement()
+}
+&lt;/code>&lt;/pre>&lt;p>Asumimos que el método &lt;code>printStatement()&lt;/code> imprime el extracto bancario a través de la consola o salida estándar.&lt;/p>
+&lt;p>Por simplicidad, usaremos &lt;code>int&lt;/code> para representar las cantidades monetarias (aunque sabemos que esto no es una buena práctica en sistemas productivos).&lt;/p></description></item><item><title>Fizz Buzz Kata</title><link>https://www.exeal.com/katas/fizz-buzz-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/fizz-buzz-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Escribe una función &lt;code>FizzBuzz(number): string&lt;/code> que reciba un número natural, y devuelva un string conforme a las siguientes reglas:&lt;/p>
+&lt;ul>
+&lt;li>Normalmente, devuelve la representación como string del número.&lt;/li>
+&lt;li>Para los múltiplos de tres, devuelve &lt;code>Fizz&lt;/code> en lugar del número.&lt;/li>
+&lt;li>Para los múltiplos de cinco, imprime &lt;code>Buzz&lt;/code> en lugar del número.&lt;/li>
+&lt;li>Para los números que son múltiplos de tres y cinco, devuelve &lt;code>FizzBuzz&lt;/code> en lugar del número.&lt;/li>
+&lt;/ul>
+&lt;h2 id="cómo-resolverla">Cómo resolverla&lt;/h2>
+&lt;p>Este es un ejercicio para practicar los fundamentos de test-driven development (TDD).&lt;/p></description></item><item><title>Game Of Life Kata</title><link>https://www.exeal.com/katas/game-of-life-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/game-of-life-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Esta kata trata sobre calcular la siguiente generación del Juego de la Vida de Conway, dado cualquier posición inicial. Consulta &lt;a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&lt;/a> para conocer más sobre este famoso problema.&lt;/p>
+&lt;p>&lt;img src="https://www.exeal.com/images/katas/gameoflife.jpg" alt="">&lt;/p>
+&lt;p>Comienzas con una cuadrícula bidimensional de celdas, donde cada celda está viva o muerta. En esta versión del problema, la cuadrícula es finita y no puede haber vida más allá de los bordes. Al calcular la próxima generación de la cuadrícula, sigue estas reglas:&lt;/p></description></item><item><title>Leap Year Kata</title><link>https://www.exeal.com/katas/leap-year-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/leap-year-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Escribir una función que determine si un año dado es bisiesto o no, de acuerdo con las siguientes reglas.&lt;/p>
+&lt;ul>
+&lt;li>Todos los años divisibles por 400 SON años bisiestos (por lo tanto, por ejemplo, el año 2000 fue de hecho un año bisiesto).&lt;/li>
+&lt;li>Todos los años divisibles por 100 pero no por 400 NO SON años bisiestos (por lo tanto, por ejemplo, 1700, 1800 y 1900 NO fueron años bisiestos, NI lo será el año 2100).&lt;/li>
+&lt;li>Todos los años divisibles por 4 pero no por 100 SON años bisiestos (por ejemplo, 2008, 2012, 2016).&lt;/li>
+&lt;li>Todos los años que no son divisibles por 4 NO SON años bisiestos (por ejemplo, 2017, 2018, 2019).&lt;/li>
+&lt;/ul>
+&lt;h2 id="cómo-resolverla">Cómo resolverla&lt;/h2>
+&lt;p>Utiliza test-driven development para resolver este ejercicio.&lt;/p></description></item><item><title>Mars Rover Kata</title><link>https://www.exeal.com/katas/mars-rover-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/mars-rover-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Formas parte del equipo que explora Marte enviando vehículos controlados de forma remota a la superficie del planeta. Desarrolla una API que traduzca las instrucciones enviadas desde la Tierra a comandos que el rover pueda entender.&lt;/p>
+&lt;p>&lt;img src="https://www.exeal.com/images/katas/marsrover.jpg" alt="">&lt;/p>
+&lt;h3 id="requisitos">Requisitos&lt;/h3>
+&lt;ul>
+&lt;li>Se te proporciona el punto de inicio inicial (x, y) de un rover y la dirección (N, S, E, W) en la que está orientado.&lt;/li>
+&lt;li>El rover recibe una matriz de caracteres con comandos.&lt;/li>
+&lt;li>Implementa comandos que muevan el rover hacia adelante/atrás (f, b).&lt;/li>
+&lt;li>Implementa comandos que giren el rover a la izquierda/derecha (l, r).&lt;/li>
+&lt;li>Implementa el desbordamiento en los bordes. Pero ten cuidado, los planetas son esferas.&lt;/li>
+&lt;li>Implementa la detección de obstáculos antes de cada movimiento a un nuevo cuadro. Si una secuencia dada de comandos encuentra un obstáculo, el rover se mueve hasta el último punto posible, aborta la secuencia e informa sobre el obstáculo.&lt;/li>
+&lt;/ul>
+&lt;h3 id="reglas">Reglas&lt;/h3>
+&lt;ul>
+&lt;li>Ten cuidado con los casos límite y las excepciones. No podemos permitirnos perder un rover en Marte simplemente porque los desarrolladores pasaron por alto una referencia nula.&lt;/li>
+&lt;/ul>
+&lt;h2 id="recursos">Recursos&lt;/h2>
+&lt;p>Fuente: &lt;a href="https://web.archive.org/web/20230604125850/https://technologyconversations.com/2014/10/17/java-tutorial-through-katas-mars-rover/">https://web.archive.org/web/20230604125850/https://technologyconversations.com/2014/10/17/java-tutorial-through-katas-mars-rover/&lt;/a>&lt;/p></description></item><item><title>Ohce Kata</title><link>https://www.exeal.com/katas/ohce-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/ohce-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>&lt;strong>ohce&lt;/strong> es una aplicación de consola que reproduce al revés lo que ingreses a través de la consola.&lt;/p>
+&lt;p>Aunque parezca una aplicación tonta, ohce hace algunas cosas más:&lt;/p>
+&lt;ul>
+&lt;li>Cuando inicias ohce, te saluda de manera diferente según la hora actual, pero solo en español:
+&lt;ul>
+&lt;li>Entre las 20 y las 6 horas, ohce te saludará diciendo: &lt;code>¡Buenas noches &amp;lt;tu nombre&amp;gt;!&lt;/code>&lt;/li>
+&lt;li>Entre las 6 y las 12 horas, ohce te saludará diciendo: &lt;code>¡Buenos días &amp;lt;tu nombre&amp;gt;!&lt;/code>&lt;/li>
+&lt;li>Entre las 12 y las 20 horas, ohce te saludará diciendo: &lt;code>¡Buenas tardes &amp;lt;tu nombre&amp;gt;!&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cuando introduces un palíndromo, a ohce le gusta y después de eco-revertirlo, añade ¡Bonita palabra!&lt;/li>
+&lt;li>ohce sabe cuándo detenerse, solo tienes que escribir &lt;code>Stop!&lt;/code> y responderá &lt;code>Adiós &amp;lt;tu nombre&amp;gt;&lt;/code> y finalizará.&lt;/li>
+&lt;/ul>
+&lt;p>Este es un ejemplo de cómo usar ohce durante la mañana:&lt;/p></description></item><item><title>Snake And Ladders Kata</title><link>https://www.exeal.com/katas/snake-and-ladders-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/snake-and-ladders-kata/</guid><description>&lt;p>&lt;em>Snakes and Ladders&lt;/em> (Serpientes y Escaleras) es un antiguo juego de mesa indio considerado hoy en día un clásico mundial. Se juega entre dos o más jugadores en un tablero de juego que tiene cuadrados numerados y enrejados. En el tablero se representan varias &amp;ldquo;escaleras&amp;rdquo; y &amp;ldquo;serpientes&amp;rdquo;, cada una conectando dos cuadrados específicos del tablero. (Fuente: &lt;a href="https://en.wikipedia.org/wiki/Snakes_and_ladders">Wikipedia&lt;/a>)&lt;/p>
+&lt;p>&lt;img src="https://www.exeal.com/images/katas/snakesandladdersboard.jpg" alt="">&lt;/p>
+&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Tu tarea es crear una clase simple llamada &lt;code>SnakesLadders&lt;/code>. Los casos de prueba llamarán al método &lt;code>play(die1: number, die2: number): string&lt;/code> independientemente del estado del juego o del turno del jugador. Las variables &lt;code>die1&lt;/code> y &lt;code>die2&lt;/code> son los dados lanzados en un turno y son ambos enteros entre 1 y 6. El jugador se moverá la suma de die1 y die2.&lt;/p></description></item><item><title>String Calculator Kata</title><link>https://www.exeal.com/katas/string-calculator-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/string-calculator-kata/</guid><description>&lt;p>Este es un ejercicio incremental para simular una situación empresarial real: avanza paso a paso en orden, pero &lt;strong>no leas el siguiente requisito antes de haber terminado el actual&lt;/strong>.&lt;/p>
+&lt;h3 id="paso-1">Paso 1&lt;/h3>
+&lt;p>Crea una calculadora simple de cadenas con una firma de método:&lt;/p>
+&lt;pre tabindex="0">&lt;code>int Add(string numbers)
+&lt;/code>&lt;/pre>&lt;p>El método puede recibir hasta dos números, separados por comas, y devolverá su suma.&lt;/p>
+&lt;p>Por ejemplo:&lt;/p>
+&lt;ul>
+&lt;li>Para las entradas &amp;quot;&amp;quot; o &amp;ldquo;1&amp;rdquo; o &amp;ldquo;1,2&amp;rdquo;.&lt;/li>
+&lt;li>Para una cadena vacía, devolverá 0.&lt;/li>
+&lt;/ul>
+&lt;h3 id="paso-2">Paso 2&lt;/h3>
+&lt;p>Permite que el método &lt;code>Add&lt;/code> maneje una cantidad desconocida de números.&lt;/p></description></item><item><title>Tennis Score Kata</title><link>https://www.exeal.com/katas/tennis-score-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/tennis-score-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Esta Kata trata de implementar las reglas de puntuación de un juego de tenis. El sistema de puntuación es bastante simple:&lt;/p>
+&lt;ul>
+&lt;li>Cada jugador puede tener cualquiera de estos puntos en un juego: &amp;ldquo;love&amp;rdquo; (0), &amp;ldquo;15&amp;rdquo;, &amp;ldquo;30&amp;rdquo;, &amp;ldquo;40&amp;rdquo;.&lt;/li>
+&lt;li>Si tienes 40 y ganas el punto, ganas el juego, sin embargo, hay reglas especiales.&lt;/li>
+&lt;li>Si ambos tienen 40, los jugadores están en &amp;ldquo;deuce&amp;rdquo; (iguales).&lt;/li>
+&lt;li>Si el juego está en &amp;ldquo;deuce&amp;rdquo; (iguales), el ganador de un punto obtendrá ventaja.&lt;/li>
+&lt;li>Si el jugador con ventaja gana la pelota, gana el juego.&lt;/li>
+&lt;li>Si el jugador sin ventaja gana, vuelven a estar en &amp;ldquo;deuce&amp;rdquo; (iguales).&lt;/li>
+&lt;/ul>
+&lt;h2 id="recursos">Recursos&lt;/h2>
+&lt;p>Fuente: &lt;a href="https://codingdojo.org/kata/Tennis/">https://codingdojo.org/kata/Tennis/&lt;/a>&lt;/p></description></item><item><title>Tic Tac Toe Kata</title><link>https://www.exeal.com/katas/tic-tac-toe-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/tic-tac-toe-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Implementar el clásico juego tres en raya, en el que dos jugadores X y O marcan alternadamente los espacios de un tablero de 3x3. El primer jugador que haga 3 en raya gana la partida.&lt;/p>
+&lt;p>&lt;img src="https://www.exeal.com/images/katas/tic-tac-toe.png" alt="">&lt;/p>
+&lt;p>Las reglas del juego son las siguientes:&lt;/p>
+&lt;ul>
+&lt;li>El juego termina cuando todos los campos están ocupados.&lt;/li>
+&lt;li>El juego termina cuando todos los campos en una columna son ocupados por un jugador.&lt;/li>
+&lt;li>El juego termina cuando todos los campos en una fila son ocupados por un jugador.&lt;/li>
+&lt;li>El juego termina cuando todos los campos en una diagonal son ocupados por un jugador.&lt;/li>
+&lt;li>Un jugador puede ocupar un campo si aún no está ocupado.&lt;/li>
+&lt;li>Los jugadores se turnan para ocupar campos hasta que el juego termina.&lt;/li>
+&lt;li>Hay dos jugadores en el juego (X y O).&lt;/li>
+&lt;/ul>
+&lt;h2 id="recursos">Recursos&lt;/h2>
+&lt;p>Fuente: &lt;a href="https://codingdojo.org/kata/tic-tac-toe/">https://codingdojo.org/kata/tic-tac-toe/&lt;/a>&lt;/p></description></item></channel></rss>

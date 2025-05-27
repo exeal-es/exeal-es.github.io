@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Outside-In on Exeal</title><link>https://www.exeal.com/katas/tags/outside-in/</link><description>Recent content in Outside-In on Exeal</description><generator>Hugo</generator><language>es</language><lastBuildDate>Tue, 13 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://www.exeal.com/katas/tags/outside-in/index.xml" rel="self" type="application/rss+xml"/><item><title>URL Shortener Kata</title><link>https://www.exeal.com/katas/url-shortener/</link><pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/url-shortener/</guid><description>&lt;h2 id="problema-de-negocio">Problema de negocio&lt;/h2>
+&lt;p>Tu equipo ha sido encargado de desarrollar la primera versión de un sistema de acortado de URLs llamado &lt;strong>HexaShort&lt;/strong>, que permita a los usuarios:&lt;/p>
+&lt;h3 id="1-casos-de-uso-principales">1. Casos de uso principales:&lt;/h3>
+&lt;p>&lt;strong>Crear un short URL&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>A partir de una URL larga, el sistema debe generar un slug único y devolver la URL acortada.&lt;/li>
+&lt;li>Opcionalmente, el usuario puede proponer un slug personalizado.&lt;/li>
+&lt;li>El sistema debe rechazar slugs que ya estén en uso.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Resolver un short URL&lt;/strong>&lt;/p></description></item><item><title>Social Network Kata</title><link>https://www.exeal.com/katas/social-network-kata/</link><pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/social-network-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Implementa una aplicación de consola (similar a Twitter) que cumpla con los siguientes escenarios.&lt;/p>
+&lt;h2 id="escenarios">Escenarios&lt;/h2>
+&lt;h3 id="publicar">Publicar&lt;/h3>
+&lt;p>Alice puede publicar mensajes en su línea de tiempo personal.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-md" data-lang="md">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">Alice -&amp;gt; Me encanta el clima de hoy
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">&lt;/span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">Bob -&amp;gt; ¡Maldita sea! ¡Perdimos!
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">&lt;/span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">Bob -&amp;gt; Aunque fue un buen partido.
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="leer">Leer&lt;/h3>
+&lt;p>Bob puede ver la línea de tiempo de Alice.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-md" data-lang="md">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">Alice
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">&lt;/span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">Me encanta el clima de hoy (hace 5 minutos)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">&lt;/span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">Bob
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">&lt;/span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">Aunque fue un buen partido. (hace 1 minuto)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">&lt;/span>&lt;span style="color:#66d9ef">&amp;gt; &lt;/span>&lt;span style="font-style:italic">¡Maldita sea! ¡Perdimos! (hace 2 minutos)
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="seguir">Seguir&lt;/h3>
+&lt;p>Charlie puede suscribirse a las líneas de tiempo de Alice y Bob, y ver una lista agregada de todas sus suscripciones.&lt;/p></description></item><item><title>Corporate Hotel Booking</title><link>https://www.exeal.com/katas/corporate-hotel-booking/</link><pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/corporate-hotel-booking/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Crear un motor de reservas de hoteles. Este motor debe satisfacer las necesidades de tres tipos diferentes de actores.&lt;/p>
+&lt;h3 id="gerente-del-hotel">Gerente del Hotel&lt;/h3>
+&lt;p>&lt;em>Rol: Establecer todos los diferentes tipos de habitaciones y cantidades respectivas para su hotel&lt;/em>&lt;/p>
+&lt;p>Casos de uso:&lt;/p>
+&lt;ul>
+&lt;li>Recuperar toda la información sobre el número de habitaciones de un hotel dado.&lt;/li>
+&lt;li>Actualizar la cantidad de cierto tipo de habitación para un hotel dado.
+&lt;ul>
+&lt;li>Un cambio en la cantidad de habitaciones no debe afectar las reservas existentes. Solo afectarán las nuevas reservas realizadas después del cambio.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="administrador-de-la-empresa">Administrador de la Empresa&lt;/h3>
+&lt;p>&lt;em>Rol: Agregar/eliminar empleados y también crear políticas de reserva para su empresa y empleados.&lt;/em>&lt;/p></description></item><item><title>Birthday Greetings Kata</title><link>https://www.exeal.com/katas/birthday-greetings-kata/</link><pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/birthday-greetings-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Como eres una persona muy amigable, te gustaría enviar una nota de cumpleaños a todos los amigos que tienes. Pero tienes muchos amigos y eres un poco vago, puede que te lleve algunas veces escribir todas las notas a mano.&lt;/p>
+&lt;p>La buena noticia es que este sistema puede hacerlo automáticamente por tí.&lt;/p>
+&lt;p>Imagina que tienes un archivo plano con todos tus amigos:&lt;/p>
+&lt;pre tabindex="0">&lt;code>last_name, first_name, date_of_birth, email
+ Doe, John, 1982/10/08, john.doe@foobar.com
+ Ann, Mary, 1975/09/11, mary.ann@foobar.com
+&lt;/code>&lt;/pre>&lt;p>Y desea enviarles un correo de feliz cumpleaños en su fecha de nacimiento:&lt;/p></description></item><item><title>Bank Kata</title><link>https://www.exeal.com/katas/bank-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/bank-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>Implementar un servicio para gestionar transacciones de una cuenta bancaria, así como imprimir el extracto bancario. Dicho servicio debe respetar la siguiente interfaz:&lt;/p>
+&lt;pre tabindex="0">&lt;code>interface AccountService {
+ void deposit(int amount) 
+ void withdraw(int amount) 
+ void printStatement()
+}
+&lt;/code>&lt;/pre>&lt;p>Asumimos que el método &lt;code>printStatement()&lt;/code> imprime el extracto bancario a través de la consola o salida estándar.&lt;/p>
+&lt;p>Por simplicidad, usaremos &lt;code>int&lt;/code> para representar las cantidades monetarias (aunque sabemos que esto no es una buena práctica en sistemas productivos).&lt;/p></description></item><item><title>Ohce Kata</title><link>https://www.exeal.com/katas/ohce-kata/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.exeal.com/katas/ohce-kata/</guid><description>&lt;h2 id="tu-tarea">Tu tarea&lt;/h2>
+&lt;p>&lt;strong>ohce&lt;/strong> es una aplicación de consola que reproduce al revés lo que ingreses a través de la consola.&lt;/p>
+&lt;p>Aunque parezca una aplicación tonta, ohce hace algunas cosas más:&lt;/p>
+&lt;ul>
+&lt;li>Cuando inicias ohce, te saluda de manera diferente según la hora actual, pero solo en español:
+&lt;ul>
+&lt;li>Entre las 20 y las 6 horas, ohce te saludará diciendo: &lt;code>¡Buenas noches &amp;lt;tu nombre&amp;gt;!&lt;/code>&lt;/li>
+&lt;li>Entre las 6 y las 12 horas, ohce te saludará diciendo: &lt;code>¡Buenos días &amp;lt;tu nombre&amp;gt;!&lt;/code>&lt;/li>
+&lt;li>Entre las 12 y las 20 horas, ohce te saludará diciendo: &lt;code>¡Buenas tardes &amp;lt;tu nombre&amp;gt;!&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cuando introduces un palíndromo, a ohce le gusta y después de eco-revertirlo, añade ¡Bonita palabra!&lt;/li>
+&lt;li>ohce sabe cuándo detenerse, solo tienes que escribir &lt;code>Stop!&lt;/code> y responderá &lt;code>Adiós &amp;lt;tu nombre&amp;gt;&lt;/code> y finalizará.&lt;/li>
+&lt;/ul>
+&lt;p>Este es un ejemplo de cómo usar ohce durante la mañana:&lt;/p></description></item></channel></rss>
