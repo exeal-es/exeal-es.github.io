@@ -1420,3 +1420,34 @@ ul.blocks div.inner {
     margin-left: 0; }
   .nextevent-meta {
     gap: 0.7rem; } }
+
+.kataentry {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  position: relative;
+  border-bottom: 2px solid #05e69b;
+  margin-bottom: 1.5rem; }
+
+.kataentry-content {
+  flex-grow: 1; }
+
+.kataentry-title {
+  font-family: "Gopher Regular", sans-serif;
+  font-size: 1.25rem;
+  color: #182935;
+  margin: 0; }
+
+.kataentry-tags {
+  font-size: 0.9rem;
+  color: #8d9199;
+  margin: 0; }
+
+.kataentry a {
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
